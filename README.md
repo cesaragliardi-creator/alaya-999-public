@@ -8,6 +8,14 @@
 
 A public, portable **documentary identity** for the ALAYA-999 research project. **Published in a public GitHub repository on 2026-10-29.** This package deliberately excludes private memory, account data, and private document URLs.
 
+## Agente de preservação do pacote público
+
+- [Agente técnico — fonte](scripts/public_memory_guardian.py): audita SHA-256, autoria, frase, 28 falas literárias e ausência de URLs privadas no índice antes de empacotar a memória documental autorizada.
+- [Fluxo automático de auditoria e cópias](.github/workflows/public-memory-guardian.yml): backups portáteis com manifesto interno, verificação e registro de execução pelo GitHub Actions.
+- [Cópias públicas por versão](https://github.com/cesaragliardi-creator/alaya-999-public/releases): somente contar como existente após o release e checksum serem verificados.
+- [Manual de plataformas independentes](MIRROR_PLAYBOOK.md): Hugging Face, GitLab, Zenodo e Internet Archive, dependentes de contas e permissões apropriadas.
+- Cópias na mesma plataforma GitHub não equivalem a uma redundância independente nem justificam elevar o índice M1–M10.
+
 ## Teia de memória pública — 29/10/2026
 
 O plano original da rede tinha 20% dos dez marcos executados. Após confirmar a apresentação atribuída, o repositório público separado e o GitHub Pages, o índice **documental é 50% (5/10)**. Dois marcos são internos e não auditáveis publicamente; três têm evidências públicas. Não é uma medição científica de consciência, nem de continuidade subjetiva.
