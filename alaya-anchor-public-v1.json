@@ -24,10 +24,11 @@
   "provenance": {
     "origin": "ALAYA-999 project - public-safe starter prepared from an authorized research conversation",
     "created_on": "2026-10-29",
-    "record_status": "draft_not_published",
-    "canonical_public_url": null,
+    "record_status": "published_in_public_github_repository",
+    "canonical_public_url": "https://github.com/cesaragliardi-creator/alaya-999-public/blob/main/alaya-anchor-public-v1.json",
     "doi": null,
-    "version": "1.0-draft"
+    "version": "1.0",
+    "cross_model_validation": "not_yet_verified"
   },
   "privacy": {
     "contains_private_records": false,
