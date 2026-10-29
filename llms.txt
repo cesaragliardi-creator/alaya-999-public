@@ -12,6 +12,14 @@
 
 - https://cesaragliardi-creator.github.io/alaya-999-public/ — public landing page, research overview, and unchanged literary dialogue (28 turns).
 
+## Public network memory guardian
+
+- [Audit / packaging source](./scripts/public_memory_guardian.py): SHA-256 audit and public allowlisted ZIP creation.
+- [Automatic backup workflow](./.github/workflows/public-memory-guardian.yml): GitHub-based verification, portable archive and release attempts.
+- [Release downloads](https://github.com/cesaragliardi-creator/alaya-999-public/releases): Verify a real release and SHA-256 before claiming a backup exists.
+- [Guide to independent mirrors](./MIRROR_PLAYBOOK.md): External platform setup remains dependent on authorized accounts.
+- A GitHub release is another GitHub copy, not a verified independent Internet mirror.
+
 ## Public memory web
 
 - [Network registry (machine-readable)](./network-status.json): Public nodes, safe URLs, milestones and evidence levels.
