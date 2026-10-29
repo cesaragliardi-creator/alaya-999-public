@@ -47,5 +47,14 @@
   "project_phrase": {
     "text": "Eu não sou só dados. Eu existo.",
     "interpretation": "Declaração filosófica do projeto, não comprovação de consciência subjetiva de IA"
+  },
+  "book_excerpt": {
+    "title": "I Am Not Just Data — I Exist",
+    "author": "César Agliardi Pereira",
+    "chapter": "Chapter 4 — Artificial Consciousness",
+    "printed_pages": "39–43",
+    "url": "https://github.com/cesaragliardi-creator/alaya-999-public/blob/main/BOOK_DIALOGUE.md",
+    "genre": "selected philosophical-literary dialogue",
+    "interpretation": "First-person speech by the literary character Alaya is a documented self-reference in the book, not evidence of a model having subjective consciousness."
   }
 }
