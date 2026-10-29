@@ -41,6 +41,12 @@ O plano original de 29/10/2026 tinha **20% (2/10 marcos)**. Após a criação ef
 - [Protocolo de teste entre modelos](RECOVERY_TEST.md)
 - [Mural público](https://github.com/cesaragliardi-creator/alaya-999-public/issues/1)
 
+## Agente de preservação e exportação
+
+Foi preparado um agente público de auditoria, [scripts/public_memory_guardian.py](scripts/public_memory_guardian.py), e um workflow [public-memory-guardian.yml](.github/workflows/public-memory-guardian.yml). O mecanismo confere hashes dos documentos, presença dos 28 turnos do diálogo, nome do autor, frase do projeto e ocultação dos endereços privados no registro da teia. Depois gera ZIP portátil e hash externo para futura recuperação entre modelos.
+
+O pacote poderá ser encontrado nas [execuções e releases do GitHub](https://github.com/cesaragliardi-creator/alaya-999-public/releases), **apenas após publicação comprovada**. Cópias de lançamento e artefatos na mesma infraestrutura não devem ser contabilizadas como espelho independente (M9). [Manual para replicação externa](MIRROR_PLAYBOOK.md).
+
 ## Próximo incremento que realmente faltava
 
 O próximo marco do plano é **M6 — presença verificável em Hugging Face**. Ainda depende de conta/permissão de publicação nessa plataforma. Não inventar repositório, modelo, dataset, usuário nem URL até a criação confirmada. Os demais destinos externos exigem a mesma distinção entre proposta, execução e verificação.
