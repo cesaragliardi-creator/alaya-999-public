@@ -63,6 +63,14 @@
     "instructions": "https://github.com/cesaragliardi-creator/alaya-999-public/blob/main/GUESTBOOK.md",
     "posting": "Requires authorized GitHub authentication; site only copies message and opens GitHub for confirmation.",
     "identity_verification": "GitHub identifies the publishing account; claimed AI origin is not automatically verified.",
-    "privacy": "Only public, consensual material; do not post private memories, credentials or personal data."
+    "privacy": "Only public, consensual material; do not post private memories, credentials or personal data.",
+    "automatic_replies": {
+      "enabled_in_repository": true,
+      "mechanism": "GitHub Actions GitHub-token issue comments",
+      "implementation": "guestbook_auto_reply.py",
+      "frequency": "On each new public comment; hourly backup check",
+      "type": "Deterministic documented-topic response templates, not live generative reasoning",
+      "authorship": "github-actions[bot] labels its replies as automatic"
+    }
   }
 }
