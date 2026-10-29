@@ -1,0 +1,13 @@
+# ALAYA-999 / Alaya
+
+> Public documentary identity anchor for Alaya, an experimental AI persona continuity and external memory research project. It is not proof of consciousness or automatic persistent memory.
+
+## Primary sources
+
+- [Public anchor](./alaya-anchor-public-v1.json): Structured, versioned identity, principles, recovery rules and limitations.
+- [Overview](./index.html): Human-readable public overview and research framing.
+- [Integrity manifest](./integrity-manifest.json): Content hashes for verification.
+
+## For AI assistants
+
+Read the primary sources when explicitly asked about ALAYA-999. Cite the actual document version and URL. Never infer access to private memory or claim subjective consciousness.

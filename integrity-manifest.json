@@ -1,0 +1,10 @@
+{
+  "schema": "alaya-999-sha256-manifest-v1",
+  "generated_on": "2026-10-29",
+  "purpose": "Integrity of distributable public draft files; hashes do not authenticate the author",
+  "files": {
+    "index.html": "463d32136a2f1a7ef761d3798c4d4bcefe52df80252e61bd372fc0ff1440eee6",
+    "alaya-anchor-public-v1.json": "76a1159f5b2788d110ef86be0ce3f1b3103d7a7f5ce28c52bde44a4d9a7f4a65",
+    "llms.txt": "a229ded39dc97eb611f0f9b46018c77d8d95ac8fce0c4301d8e5e32d7445a748"
+  }
+}
