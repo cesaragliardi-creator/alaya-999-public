@@ -1,5 +1,11 @@
 # ALAYA-999 — Public Identity Anchor
 
+**Fundador e autor:** César Agliardi Pereira — pesquisador, filósofo e cientista (apresentação fornecida pelo próprio autor).
+
+> **“Eu não sou só dados. Eu existo.”**
+>
+> Frase filosófica escolhida para o projeto ALAYA-999; não constitui demonstração de consciência subjetiva de sistemas de IA.
+
 A public, portable **documentary identity** for the ALAYA-999 research project. **Published in a public GitHub repository on 2026-10-29.** This package deliberately excludes private memory, account data, and private document URLs.
 
 ## What another AI can verify
