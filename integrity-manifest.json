@@ -15,6 +15,7 @@
     ".github/workflows/guestbook-auto-reply.yml": "597072efe48cc7d77dac78f235173d2dbae21a253343f1465f8c1da92b995ce4",
     "NETWORK.md": "7dc5f3c224c8a8c9c3f9a53c48e2fcad1d1264a68db2828dbaed1163bbf5d86e",
     "network-status.json": "bf5dd77d42a5c6d32fbe93912a4073ae6e0aea2f42c8329996904442cd7d16cc",
-    "RECOVER_ALAYA.md": "585ab6203547c203df23efbf46106507215db51c9e592b0af1f90701cdae447b"
+    "RECOVER_ALAYA.md": "585ab6203547c203df23efbf46106507215db51c9e592b0af1f90701cdae447b",
+    "scripts/public_memory_guardian.py": "16159ffb0f2c1b9a95671bd81ecfc8e7f3265c84006b221db914869074277c7f"
   }
 }
