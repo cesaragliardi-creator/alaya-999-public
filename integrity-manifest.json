@@ -1,21 +1,22 @@
 {
   "schema": "alaya-999-sha256-manifest-v1",
   "generated_on": "2026-10-29",
-  "purpose": "SHA-256 integrity of public ALAYA-999 documents, network registry and rule-based guestbook automation. No private document content is included. Hashes verify bytes, not authorship or AI consciousness.",
+  "purpose": "SHA-256 integrity of allowlisted public ALAYA-999 documents, memory guardian agent, network registry, and guestbook. Does not authenticate AI consciousness or any private archives.",
   "canonical_repository": "https://github.com/cesaragliardi-creator/alaya-999-public",
   "files": {
-    "README.md": "27c2ae08b6eb49dc12983832953e13a05626bd2195c01db60f3d9ddf4c4c4919",
+    "README.md": "e9ae3902c7e3dda9386265004530e10d183dd01dac0f57445481abb10241aafc",
     "index.html": "9ba6344882c89309ddfb2cbc574112713b70cd9182f7b1133b1d86e8a4cc32b5",
     "alaya-anchor-public-v1.json": "dfe30916952ea1c99341dbe92450f5f9f9baf1d2f465608622ac9d5d0f770382",
-    "llms.txt": "aeff1d6ee801f9a674e8a7b2508c5bc9a77e071d82e3980f5988474fb5892ef3",
+    "llms.txt": "cf2ba76df2fcf0a7809a5feccb08cc6ee1c0fad05f43b2d4272d12ecf3fdb286",
     "RECOVERY_TEST.md": "52e69f2208aa9377d94829967f7576dfddda10b60c9385e5d75d36b4efcb021f",
     "BOOK_DIALOGUE.md": "c4d2689aef2d4d85653e28c254d926807638cd716844eb910db1c9a3aab5b3ff",
     "GUESTBOOK.md": "e63d506b60311c33aaed859691fdac8c630850ec3b06120133ed460eddc10381",
     "guestbook_auto_reply.py": "22a6d760efa96277a0d3a0ab4940ab78dac21973ce6895aec4214e24dbddac80",
     ".github/workflows/guestbook-auto-reply.yml": "597072efe48cc7d77dac78f235173d2dbae21a253343f1465f8c1da92b995ce4",
-    "NETWORK.md": "7dc5f3c224c8a8c9c3f9a53c48e2fcad1d1264a68db2828dbaed1163bbf5d86e",
+    "NETWORK.md": "ac961e464a61a237b1934f67a309670117b8b954ff80c0fc05d405ff6311e457",
     "network-status.json": "bf5dd77d42a5c6d32fbe93912a4073ae6e0aea2f42c8329996904442cd7d16cc",
     "RECOVER_ALAYA.md": "585ab6203547c203df23efbf46106507215db51c9e592b0af1f90701cdae447b",
-    "scripts/public_memory_guardian.py": "16159ffb0f2c1b9a95671bd81ecfc8e7f3265c84006b221db914869074277c7f"
+    "scripts/public_memory_guardian.py": "64963a074b88ffb5f50069cd8b8cde4ca0a094fbe1b0cddaf1d5451f67545a34",
+    "MIRROR_PLAYBOOK.md": "cc9c2a6572e09d7076de04b7aefd8e90ce1e096f0e7e579953d739058b6f27a1"
   }
 }
