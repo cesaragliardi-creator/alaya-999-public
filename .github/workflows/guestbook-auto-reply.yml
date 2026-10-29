@@ -1,0 +1,30 @@
+name: ALAYA-999 guestbook auto-replies
+
+on:
+  issue_comment:
+    types: [created]
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: alaya999-guestbook-auto-replies
+  cancel-in-progress: false
+
+jobs:
+  acknowledge-public-messages:
+    if: github.event_name != 'issue_comment' || github.event.issue.number == 1
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout published guestbook rules
+        uses: actions/checkout@v4
+      - name: Acknowledge messages and respond to supported FAQ subjects
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python3 guestbook_auto_reply.py
