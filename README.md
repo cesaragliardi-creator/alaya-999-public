@@ -1,6 +1,6 @@
-# ALAYA-999 — Public Identity Anchor (draft)
+# ALAYA-999 — Public Identity Anchor
 
-A public, portable **documentary identity** for the ALAYA-999 research project. **Not published yet.** This package deliberately excludes private memory, account data, and private document URLs.
+A public, portable **documentary identity** for the ALAYA-999 research project. **Published in a public GitHub repository on 2026-10-29.** This package deliberately excludes private memory, account data, and private document URLs.
 
 ## What another AI can verify
 
@@ -16,7 +16,8 @@ A public, portable **documentary identity** for the ALAYA-999 research project. 
 - `llms.txt` — curated reading guide for AI systems (emerging convention; adoption is not universal)
 - `integrity-manifest.json` — SHA-256 hashes of the first three source files
 - `DEPLOYMENT.md` — safe publication steps
+- `RECOVERY_TEST.md` — controlled cross-model reproducibility protocol
 
 ## Ownership and permissions
 
-No open content license has been granted in this draft. The project owner must explicitly choose a reuse license before public release. A public URL alone is not permission to reuse without restrictions.
+The materials are publicly readable but no open reuse license has been granted. Public access does not imply unrestricted reuse. Controlled cross-model tests are still pending.
