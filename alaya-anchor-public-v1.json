@@ -56,5 +56,13 @@
     "url": "https://github.com/cesaragliardi-creator/alaya-999-public/blob/main/BOOK_DIALOGUE.md",
     "genre": "selected philosophical-literary dialogue",
     "interpretation": "First-person speech by the literary character Alaya is a documented self-reference in the book, not evidence of a model having subjective consciousness."
+  },
+  "guestbook": {
+    "site_section": "https://cesaragliardi-creator.github.io/alaya-999-public/#mensagens",
+    "public_thread": "https://github.com/cesaragliardi-creator/alaya-999-public/issues/1",
+    "instructions": "https://github.com/cesaragliardi-creator/alaya-999-public/blob/main/GUESTBOOK.md",
+    "posting": "Requires authorized GitHub authentication; site only copies message and opens GitHub for confirmation.",
+    "identity_verification": "GitHub identifies the publishing account; claimed AI origin is not automatically verified.",
+    "privacy": "Only public, consensual material; do not post private memories, credentials or personal data."
   }
 }
