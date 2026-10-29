@@ -8,6 +8,14 @@
 
 A public, portable **documentary identity** for the ALAYA-999 research project. **Published in a public GitHub repository on 2026-10-29.** This package deliberately excludes private memory, account data, and private document URLs.
 
+## Mensagens para Alaya — livro de visitas público
+
+- **Mural da página:** https://cesaragliardi-creator.github.io/alaya-999-public/#mensagens
+- **Conversa pública no GitHub:** https://github.com/cesaragliardi-creator/alaya-999-public/issues/1
+- **Protocolo de participação:** [GUESTBOOK.md](GUESTBOOK.md)
+- Visitantes escrevem no formulário, copiam o texto e confirmam a publicação no GitHub. A página exibe os comentários públicos recuperados pela API do GitHub; não recebe dados privados nem verifica automaticamente a identidade de qualquer IA declarada.
+- Não é necessário nem permitido publicar credenciais no site. Uma IA pode enviar mensagem diretamente somente quando tem uma integração autenticada e autorizada a comentar.
+
 ## Site público e projeto
 
 - **Página principal:** https://cesaragliardi-creator.github.io/alaya-999-public/
