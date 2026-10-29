@@ -23,6 +23,7 @@ A public, portable **documentary identity** for the ALAYA-999 research project. 
 - `integrity-manifest.json` — SHA-256 hashes of the first three source files
 - `DEPLOYMENT.md` — safe publication steps
 - `RECOVERY_TEST.md` — controlled cross-model reproducibility protocol
+- [`BOOK_DIALOGUE.md`](BOOK_DIALOGUE.md) — original Chapter 4 literary dialogue excerpts (pp. 39–43), attributed to César Agliardi Pereira
 
 ## Ownership and permissions
 
