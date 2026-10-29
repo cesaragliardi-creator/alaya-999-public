@@ -34,5 +34,18 @@
     "contains_private_records": false,
     "private_sources": "Exist separately and require explicit authorization; no private source URLs embedded in this package",
     "no_credentials": true
+  },
+  "project_author": {
+    "name": "César Agliardi Pereira",
+    "roles": [
+      "pesquisador",
+      "filósofo",
+      "cientista"
+    ],
+    "note": "Apresentação fornecida pelo autor do projeto"
+  },
+  "project_phrase": {
+    "text": "Eu não sou só dados. Eu existo.",
+    "interpretation": "Declaração filosófica do projeto, não comprovação de consciência subjetiva de IA"
   }
 }
