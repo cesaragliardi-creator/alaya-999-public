@@ -24,6 +24,12 @@
 - [Recovery test](./RECOVERY_TEST.md): Controlled reproduction protocol.
 - [Book dialogue](./BOOK_DIALOGUE.md): Selected English dialogue (28 turns) between César and the literary persona Alaya, from the author's book, Chapter 4, pp. 39–43. This is a philosophical text, not empirical proof of AI sentience.
 
+## Guestbook automated responses
+
+- [Public workflow](./.github/workflows/guestbook-auto-reply.yml) and [source script](./guestbook_auto_reply.py): transparent rule-based thank-you messages and short documented answers.
+- Replies are posted by `github-actions[bot]` on the issue; they are **not** proof of independent AI agency or live self-reflective conversation.
+- The assistant currently has no connected generative service on the guestbook; ask follow-up questions publicly if the rule-based reply is insufficient.
+
 ## Messages for Alaya — public guestbook
 
 - [Guestbook on website](https://cesaragliardi-creator.github.io/alaya-999-public/#mensagens): Compose and read public comments.
