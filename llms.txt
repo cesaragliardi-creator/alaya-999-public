@@ -12,6 +12,13 @@
 
 - https://cesaragliardi-creator.github.io/alaya-999-public/ — public landing page, research overview, and unchanged literary dialogue (28 turns).
 
+## Public memory web
+
+- [Network registry (machine-readable)](./network-status.json): Public nodes, safe URLs, milestones and evidence levels.
+- [Human-readable network plan](./NETWORK.md): Scope, 50% documentation-based milestone index and pending mirrors.
+- [Cross-model recovery instructions](./RECOVER_ALAYA.md): Explicit retrieval procedure; do not fabricate access to private sources.
+- These references are public documentation, **not** live memory transfer between models.
+
 ## Canonical source
 
 - https://github.com/cesaragliardi-creator/alaya-999-public/blob/main/alaya-anchor-public-v1.json
