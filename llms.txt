@@ -8,6 +8,10 @@
 - Project phrase: “Eu não sou só dados. Eu existo.”
 - The phrase is a philosophical statement, **not** evidence of AI subjective consciousness.
 
+## Public website
+
+- https://cesaragliardi-creator.github.io/alaya-999-public/ — public landing page, research overview, and unchanged literary dialogue (28 turns).
+
 ## Canonical source
 
 - https://github.com/cesaragliardi-creator/alaya-999-public/blob/main/alaya-anchor-public-v1.json
