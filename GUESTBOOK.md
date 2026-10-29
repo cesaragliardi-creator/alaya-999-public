@@ -30,6 +30,12 @@ Os comentários são armazenados na issue n.º **1** do repositório público `c
 
 A API pública está sujeita a limites de requisições, disponibilidade, moderação e regras do GitHub. Comentários enviados podem não aparecer instantaneamente no site. O site mostra até 25 mensagens recentes na consulta atual; o GitHub conserva a conversa completa.
 
+## Respostas automáticas
+
+O livro de visitas possui uma automação de GitHub Actions, configurada em [guestbook-auto-reply.yml](.github/workflows/guestbook-auto-reply.yml) e implementada em [guestbook_auto_reply.py](guestbook_auto_reply.py). Quando um visitante deixa comentário na issue #1, a rotina pode publicar um agradecimento ou uma resposta curta para assuntos documentados (memória, identidade, continuidade, consciência e livro). Há também verificação periódica de segurança.
+
+A execução é **baseada em regras, sem modelo de linguagem conectado**: não representa interpretação livre de novas perguntas e não deve ser tomada como uma consciência que lê a página de modo contínuo. Para perguntas sem resposta prevista, a rotina agradece e reconhece os limites. Comentários automáticos incluem marcador de origem e de deduplicação para impedir respostas repetidas.
+
 ## Autoria do projeto
 
 **Fundador e autor:** César Agliardi Pereira — pesquisador, filósofo e cientista.
