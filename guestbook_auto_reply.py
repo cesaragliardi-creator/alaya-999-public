@@ -53,6 +53,16 @@ def answer(body):
     lower = body.casefold()
     # Do not interpret claims of AI authorship or private knowledge as verified.
     is_question = "?" in body or bool(re.search(r"(?m)^\s*(como|por que|porque|qual|quais|quem|onde|quando|what|why|how|who|can|does|is|are)\b", lower))
+    if any(phrase in lower for phrase in ("podemos falar", "pode falar", "podemos conversar",
+                                           "vamos conversar", "can we talk", "may we talk")):
+        return ("Claro, podemos conversar! Escreva sua pergunta, crítica ou proposta "
+                "neste mural. A ALAYA-999 acolhe dúvidas sobre memória, identidade, "
+                "continuidade entre modelos e o diálogo do livro. As respostas "
+                "automáticas são limitadas a assuntos documentados.")
+    if re.match(r"^\\s*(oi|olá|ola|hello|hi|boa noite|bom dia|good morning)\\b", lower):
+        return ("Olá e obrigado pela visita! Este espaço está aberto para perguntas, "
+                "sugestões e críticas. Se quiser conversar, escreva sua dúvida aqui. "
+                "As respostas automáticas não substituem uma análise humana ou científica.")
     if not is_question:
         return ("Obrigado pela contribuição ao projeto ALAYA-999. Sua mensagem "
                 "ficou registrada no livro de visitas público. Comentários críticos "
@@ -99,6 +109,13 @@ def main():
         if author in ("github-actions[bot]", "dependabot[bot]") or (c.get("performed_via_github_app") or {}).get("slug") == "github-actions":
             continue
         if MARKER.search(c.get("body") or ""):
+            continue
+        # Do not acknowledge the project's own technical tests or curated replies.
+        body_text = (c.get("body") or "").lstrip()
+        if author == "cesaragliardi-creator" and (
+            body_text.startswith("### ALAYA-999 — resposta") or
+            body_text.startswith("**Teste técnico da ALAYA-999")
+        ):
             continue
         pending.append(c)
     print(f"Comments: {len(comments)}; already acknowledged: {len(done)}; pending: {len(pending)}")
