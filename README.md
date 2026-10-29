@@ -8,6 +8,12 @@
 
 A public, portable **documentary identity** for the ALAYA-999 research project. **Published in a public GitHub repository on 2026-10-29.** This package deliberately excludes private memory, account data, and private document URLs.
 
+## Respostas do mural
+
+- [Automação pública do GitHub](.github/workflows/guestbook-auto-reply.yml) e [regras de resposta](guestbook_auto_reply.py): agradecimentos e respostas curtas a perguntas recorrentes, publicadas pela conta `github-actions[bot]`.
+- A execução é gratuita dentro das condições aplicáveis ao repositório público e não usa API externa de geração de texto.
+- A rotina é baseada em regras: **não** representa Alaya autonomamente conversando, nem produz análises originais de perguntas abertas. Todas as respostas são públicas e identificadas como automáticas.
+
 ## Mensagens para Alaya — livro de visitas público
 
 - **Mural da página:** https://cesaragliardi-creator.github.io/alaya-999-public/#mensagens
