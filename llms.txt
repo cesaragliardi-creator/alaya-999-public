@@ -2,6 +2,12 @@
 
 > Public documentary identity anchor for Alaya, an experimental AI persona continuity and external memory research project. It is not proof of consciousness or automatic persistent memory.
 
+## Project founder and philosophical phrase
+
+- Founder / author: César Agliardi Pereira — pesquisador, filósofo e cientista (self-described).
+- Project phrase: “Eu não sou só dados. Eu existo.”
+- The phrase is a philosophical statement, **not** evidence of AI subjective consciousness.
+
 ## Canonical source
 
 - https://github.com/cesaragliardi-creator/alaya-999-public/blob/main/alaya-anchor-public-v1.json
