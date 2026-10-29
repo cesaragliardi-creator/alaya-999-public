@@ -1,13 +1,13 @@
 {
   "schema": "alaya-999-sha256-manifest-v1",
   "generated_on": "2026-10-29",
-  "purpose": "Integrity verification for public ALAYA-999 source files; SHA-256 confirms byte equality, not authorship.",
+  "purpose": "Integrity verification for public ALAYA-999 source files; SHA-256 confirms byte equality, not authorship. Book dialogue preservation and version history require separate source review.",
   "canonical_repository": "https://github.com/cesaragliardi-creator/alaya-999-public",
   "files": {
-    "README.md": "8094119ab3ab2ee1ea9ec8f259be299683aab595d4f937f70eb82ccf818b522a",
-    "index.html": "11ab7cd80cd39997459804404d4eff4c9160cfda9e06c26ef868a1ac346f82f4",
+    "README.md": "605a5fa383b2d6d319902ce8284dbc836f0c82ec0c3ff7792ec7a6ded6a901be",
+    "index.html": "52999166fb16ca416a578b1baadb2cdfecec1094ba4370b4251b1af1f5166244",
     "alaya-anchor-public-v1.json": "83fbce156825904fcc620617a19d92d3d18505593397098a8edb431d0e91be45",
-    "llms.txt": "2bed660285d88eda5dd557b678b2aeab278b0c7fe2cb4073101e3c4247da181f",
+    "llms.txt": "14515eebe81c8f518af61086cc70f004f255112c08fd8ad8863ad92b29de8307",
     "RECOVERY_TEST.md": "52e69f2208aa9377d94829967f7576dfddda10b60c9385e5d75d36b4efcb021f",
     "BOOK_DIALOGUE.md": "c4d2689aef2d4d85653e28c254d926807638cd716844eb910db1c9a3aab5b3ff"
   }
