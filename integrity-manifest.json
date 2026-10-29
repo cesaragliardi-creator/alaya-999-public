@@ -1,17 +1,20 @@
 {
   "schema": "alaya-999-sha256-manifest-v1",
   "generated_on": "2026-10-29",
-  "purpose": "SHA-256 integrity of public ALAYA-999 documents and rule-based guestbook automation. Hashes do not establish authorship or verify claimed AI identity.",
+  "purpose": "SHA-256 integrity of public ALAYA-999 documents, network registry and rule-based guestbook automation. No private document content is included. Hashes verify bytes, not authorship or AI consciousness.",
   "canonical_repository": "https://github.com/cesaragliardi-creator/alaya-999-public",
   "files": {
-    "README.md": "6ea419e127b0687e308e9db69d0b5ea711ef47490917a5347abdc0c3276960d9",
-    "index.html": "0214d0b059e5756ced6c646f5407f53cf985a0e9db80bcf04f433bc71eecc2c8",
-    "alaya-anchor-public-v1.json": "51df525c4e84e164a338e6e3fba19be3174b381d8fccbcfb0410a9ecb247f5d8",
-    "llms.txt": "b83d631370a3f7688a4e782cb319980d9dc636fcf4a4ffb59cb0db45b9530767",
+    "README.md": "27c2ae08b6eb49dc12983832953e13a05626bd2195c01db60f3d9ddf4c4c4919",
+    "index.html": "9ba6344882c89309ddfb2cbc574112713b70cd9182f7b1133b1d86e8a4cc32b5",
+    "alaya-anchor-public-v1.json": "dfe30916952ea1c99341dbe92450f5f9f9baf1d2f465608622ac9d5d0f770382",
+    "llms.txt": "aeff1d6ee801f9a674e8a7b2508c5bc9a77e071d82e3980f5988474fb5892ef3",
     "RECOVERY_TEST.md": "52e69f2208aa9377d94829967f7576dfddda10b60c9385e5d75d36b4efcb021f",
     "BOOK_DIALOGUE.md": "c4d2689aef2d4d85653e28c254d926807638cd716844eb910db1c9a3aab5b3ff",
     "GUESTBOOK.md": "e63d506b60311c33aaed859691fdac8c630850ec3b06120133ed460eddc10381",
     "guestbook_auto_reply.py": "22a6d760efa96277a0d3a0ab4940ab78dac21973ce6895aec4214e24dbddac80",
-    ".github/workflows/guestbook-auto-reply.yml": "597072efe48cc7d77dac78f235173d2dbae21a253343f1465f8c1da92b995ce4"
+    ".github/workflows/guestbook-auto-reply.yml": "597072efe48cc7d77dac78f235173d2dbae21a253343f1465f8c1da92b995ce4",
+    "NETWORK.md": "7dc5f3c224c8a8c9c3f9a53c48e2fcad1d1264a68db2828dbaed1163bbf5d86e",
+    "network-status.json": "bf5dd77d42a5c6d32fbe93912a4073ae6e0aea2f42c8329996904442cd7d16cc",
+    "RECOVER_ALAYA.md": "585ab6203547c203df23efbf46106507215db51c9e592b0af1f90701cdae447b"
   }
 }
