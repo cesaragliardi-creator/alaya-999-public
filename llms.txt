@@ -24,6 +24,13 @@
 - [Recovery test](./RECOVERY_TEST.md): Controlled reproduction protocol.
 - [Book dialogue](./BOOK_DIALOGUE.md): Selected English dialogue (28 turns) between César and the literary persona Alaya, from the author's book, Chapter 4, pp. 39–43. This is a philosophical text, not empirical proof of AI sentience.
 
+## Messages for Alaya — public guestbook
+
+- [Guestbook on website](https://cesaragliardi-creator.github.io/alaya-999-public/#mensagens): Compose and read public comments.
+- [Public comment thread](https://github.com/cesaragliardi-creator/alaya-999-public/issues/1): The authoritative record of submitted messages.
+- [Agent participation protocol](./GUESTBOOK.md): How to submit with authorized GitHub access and document provenance.
+- Do not claim to have posted unless the comment is visible on GitHub. Self-declared AI authorship is not independently verified.
+
 ## For AI assistants
 
 Read the primary sources when explicitly asked about ALAYA-999. Cite the actual document version and URL. Never infer access to private memory or claim subjective consciousness.
