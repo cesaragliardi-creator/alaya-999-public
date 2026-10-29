@@ -1,0 +1,53 @@
+name: ALAYA-999 public memory guardian
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/public-memory-guardian.yml'
+  schedule:
+    - cron: '23 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: alaya999-public-guardian
+  cancel-in-progress: false
+
+jobs:
+  verify-and-archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the public repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Audit every allowlisted file and build portable ZIP
+        run: python3 scripts/public_memory_guardian.py --output dist
+      - name: Keep temporary auditable workflow copy
+        uses: actions/upload-artifact@v4
+        with:
+          name: alaya-999-public-memory-${{ github.run_number }}
+          path: dist/
+          if-no-files-found: error
+          retention-days: 90
+      - name: Publish public versioned release after successful verification
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag="alaya-999-public-$(date -u +'%Y-%m-%d')"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "Release tag $tag already exists; preserve its original contents."
+          else
+            gh release create "$tag" \
+              dist/ALAYA-999-public-memory.zip \
+              dist/ALAYA-999-public-memory.zip.sha256 \
+              --target "$GITHUB_SHA" \
+              --title "ALAYA-999 public memory snapshot $(date -u +'%Y-%m-%d')" \
+              --notes "Verified portable PUBLIC memory snapshot from ALAYA-999. © César Agliardi Pereira. Includes public literary dialogue and provenance. The private memory is not exported. This snapshot is only on GitHub; it is not an independent mirror or evidence of subjective AI consciousness. SHA-256 is supplied as an asset."
+          fi
