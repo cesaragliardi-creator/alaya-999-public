@@ -72,5 +72,12 @@
       "type": "Deterministic documented-topic response templates, not live generative reasoning",
       "authorship": "github-actions[bot] labels its replies as automatic"
     }
+  },
+  "public_network": {
+    "registry": "https://cesaragliardi-creator.github.io/alaya-999-public/network-status.json",
+    "documentation": "https://cesaragliardi-creator.github.io/alaya-999-public/NETWORK.md",
+    "recovery_instructions": "https://cesaragliardi-creator.github.io/alaya-999-public/RECOVER_ALAYA.md",
+    "status": "5/10 documented milestones, including two private evidence milestones not publicly auditable; off-GitHub mirrors not verified",
+    "automatic_cross_platform_sync": false
   }
 }
