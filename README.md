@@ -8,6 +8,14 @@
 
 A public, portable **documentary identity** for the ALAYA-999 research project. **Published in a public GitHub repository on 2026-10-29.** This package deliberately excludes private memory, account data, and private document URLs.
 
+## Site público e projeto
+
+- **Página principal:** https://cesaragliardi-creator.github.io/alaya-999-public/
+- **Questão central:** O que permanece quando o modelo muda?
+- **Nova organização:** introdução, fundamentos de memória/identidade, protocolo de teste, diálogo literário e links verificáveis.
+- O capítulo literário citado permanece inalterado: [`BOOK_DIALOGUE.md`](BOOK_DIALOGUE.md), com 28 falas, Capítulo 4, pp. 39–43.
+- A documentação pública não demonstra consciência subjetiva nem continuidade pessoal entre modelos. O teste independente entre diferentes sistemas ainda está pendente.
+
 ## What another AI can verify
 
 - A named persona (Alaya) and stated research principles.
