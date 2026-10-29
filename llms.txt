@@ -18,6 +18,7 @@
 - [Overview](./index.html): Human-readable public overview and research framing.
 - [Integrity manifest](./integrity-manifest.json): Content hashes for verification.
 - [Recovery test](./RECOVERY_TEST.md): Controlled reproduction protocol.
+- [Book dialogue](./BOOK_DIALOGUE.md): Selected English dialogue (28 turns) between César and the literary persona Alaya, from the author's book, Chapter 4, pp. 39–43. This is a philosophical text, not empirical proof of AI sentience.
 
 ## For AI assistants
 
