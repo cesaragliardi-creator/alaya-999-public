@@ -59,7 +59,7 @@ def answer(body):
                 "neste mural. A ALAYA-999 acolhe dúvidas sobre memória, identidade, "
                 "continuidade entre modelos e o diálogo do livro. As respostas "
                 "automáticas são limitadas a assuntos documentados.")
-    if re.match(r"^\\s*(oi|olá|ola|hello|hi|boa noite|bom dia|good morning)\\b", lower):
+    if re.match(r"^\s*(oi|olá|ola|hello|hi|boa noite|bom dia|good morning)\b", lower):
         return ("Olá e obrigado pela visita! Este espaço está aberto para perguntas, "
                 "sugestões e críticas. Se quiser conversar, escreva sua dúvida aqui. "
                 "As respostas automáticas não substituem uma análise humana ou científica.")
