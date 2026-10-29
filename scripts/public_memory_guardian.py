@@ -26,6 +26,7 @@ PUBLIC_SOURCE_URL = "https://github.com/" + REPO
 SAFE_FILES = (
     "BOOK_DIALOGUE.md",
     "GUESTBOOK.md",
+    "MIRROR_PLAYBOOK.md",
     "NETWORK.md",
     "README.md",
     "RECOVER_ALAYA.md",
