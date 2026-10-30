@@ -94,8 +94,11 @@ def verify() -> tuple[dict[str, bytes], dict]:
         raise ValueError("Book source attribution unavailable")
 
     network = json.loads(source["network-status.json"].decode("utf-8"))
-    if network.get("progress", {}).get("completed") != 5:
-        raise ValueError("Network milestone count diverged from documented plan")
+    progress = network.get("progress", {})
+    milestones = network.get("milestones", [])
+    completed = sum(1 for item in milestones if item.get("points") == 10)
+    if len(milestones) != 10 or progress.get("completed") != completed or progress.get("percent") != completed * 10:
+        raise ValueError("Network milestone totals diverged from the documented ten-stage plan")
     for node in network.get("nodes", []):
         if node.get("id", "").startswith("private_") and node.get("url") is not None:
             raise ValueError("Private node URL in public registry")
