@@ -8,6 +8,14 @@
 
 A public, portable **documentary identity** for the ALAYA-999 research project. **Published in a public GitHub repository on 2026-10-29.** This package deliberately excludes private memory, account data, and private document URLs.
 
+## Auditoria de continuidade entre plataformas
+
+O agente [cross-platform memory continuity audit](.github/workflows/audit-public-memory-network.yml) verifica diariamente que **GitHub e Hugging Face** disponibilizam os documentos públicos do projeto. A [primeira execução](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40982978618) terminou com sucesso: duas fontes verificadas, diálogo literário idêntico, e divergência de versões corretamente identificada em `alaya-anchor-public-v1.json` e `network-status.json`. O agente não sincroniza sozinho, não acessa memória privada e não demonstra pensamento contínuo.
+
+- [Guia universal de recuperação para IAs](AI_START_HERE.md)
+- [Sitemap público](sitemap.xml) e [regras de leitura](robots.txt) tornam os endereços públicos mais fáceis de encontrar, sem garantir indexação por buscadores.
+- O plano permanece **60%** até os próximos marcos serem executados e verificados.
+
 ## Hugging Face — memória pública confirmada e verificável
 
 Em 29/10/2026, o responsável publicou manualmente 12 arquivos no [Space ALAYA-999](https://huggingface.co/spaces/Alaya999/alaya-999), commit `4f846c4`. A [auditoria independente do GitHub Actions](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40982430206) confirmou que o Space está público e RUNNING e leu os documentos de autoria, frase, âncora e recuperação. **Marco M6 concluído: 60% (6/10).**
