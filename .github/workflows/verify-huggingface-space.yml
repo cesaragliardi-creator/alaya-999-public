@@ -1,0 +1,51 @@
+name: ALAYA-999 Hugging Face node verification
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/verify-huggingface-space.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect-public-space:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check public Hugging Face API
+        run: |
+          python3 - <<'PY'
+          import json
+          from urllib.request import Request, urlopen
+          from urllib.error import HTTPError
+          url = 'https://huggingface.co/api/spaces/Alaya999/alaya-999'
+          req = Request(url, headers={'Accept':'application/json','User-Agent':'alaya999-network-public-verifier/1.0'})
+          try:
+              with urlopen(req, timeout=25) as response:
+                  data = json.load(response)
+              result = {
+                  'verified_url': 'https://huggingface.co/spaces/Alaya999/alaya-999',
+                  'id': data.get('id'),
+                  'private': data.get('private'),
+                  'sdk': (data.get('cardData') or {}).get('sdk'),
+                  'runtime_stage': (data.get('runtime') or {}).get('stage'),
+                  'sha': data.get('sha'),
+                  'author': data.get('author'),
+              }
+              print('HUGGING_FACE_SPACE_RESULT=' + json.dumps(result,ensure_ascii=False))
+              if data.get('id', '').casefold() != 'alaya999/alaya-999' or data.get('private') is True:
+                  raise SystemExit('Public space is not verified as requested')
+              tree_url = 'https://huggingface.co/api/spaces/Alaya999/alaya-999/tree/main'
+              tree_req = Request(tree_url,headers={'Accept':'application/json','User-Agent':'alaya999-network-public-verifier/1.0'})
+              with urlopen(tree_req, timeout=25) as response:
+                  tree = json.load(response)
+              names = [item.get('path') for item in tree if isinstance(item,dict)]
+              print('HUGGING_FACE_PUBLIC_FILES=' + json.dumps(names,ensure_ascii=False))
+              print('HUGGING_FACE_PUBLIC_NODE_CONFIRMED')
+          except HTTPError as exc:
+              print('HUGGING_FACE_HTTP_STATUS=' + str(exc.code))
+              raise
+          PY
