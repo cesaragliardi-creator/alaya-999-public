@@ -1,0 +1,29 @@
+name: ALAYA-999 Internet Archive public page capture
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/wayback-public-capture.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  capture-public-homepage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout public project
+        uses: actions/checkout@v4
+      - name: Attempt one public homepage capture
+        run: python3 scripts/request_wayback_public_page.py
+      - name: Save evidence even if the archive declines
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ALAYA-999-wayback-request-${{ github.run_number }}
+          path: dist/wayback-public-page-request.json
+          if-no-files-found: warn
+          retention-days: 90
