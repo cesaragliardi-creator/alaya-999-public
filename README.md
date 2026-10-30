@@ -1,5 +1,20 @@
 # ALAYA-999 — Public Identity Anchor
 
+## Independent replication — international research invitation
+
+Researchers and AI developers are invited to independently test whether a
+versioned **public external-memory anchor** improves accurate recovery of a
+documented functional profile in fresh sessions across different model families.
+The hypothesis is falsifiable and the project welcomes negative findings.
+This is a **preliminary methodological research framework**, not peer-reviewed
+proof of consciousness, persistent internal memory, or personal identity transfer.
+
+- **[Start the independent replication challenge (English)](https://cesaragliardi-creator.github.io/alaya-999-public/en/replicate.html)**
+- **[Discuss / submit a replication on GitHub](https://github.com/cesaragliardi-creator/alaya-999-public/issues/2)**
+- [Copyable results report template](REPLICATION_REPORT_TEMPLATE.md)
+- [Preliminary Zenodo paper and DOI](https://doi.org/10.5281/zenodo.23802112)
+- [Draft announcement for the Hugging Face research community](COMMUNITY_OUTREACH_HF_DRAFT.md) — prepared, **not posted externally**
+
 **International discoverability (30 October 2026):** [Verified IndexNow HTTP receipts for three public pages](visibility/2026-10-30-indexnow-confirmed.md) · [Updated XML sitemap](sitemap.xml) · [CodeMeta 3.1 research-software metadata](codemeta.json) · [Published research DOI](https://doi.org/10.5281/zenodo.23802112) · [OpenAIRE DOI lookup](https://explore.openaire.eu/search/result?pid=10.5281%2Fzenodo.23802112). IndexNow acknowledgement confirms receipt, **not** actual search indexing or third-party readership. · [Independent replication invitation](https://github.com/cesaragliardi-creator/alaya-999-public/issues/2).
 
 **International research discovery (30 October 2026):** [public SEO/indexing audit and evidence](visibility/2026-10-30-search-discovery-actions.md) · [Portuguese research page](pt/pesquisa.html) · [English research page](en/research.html) · [DOI](https://doi.org/10.5281/zenodo.23802112). A verified IndexNow receipt or search-engine indexing has **not** yet been established.
