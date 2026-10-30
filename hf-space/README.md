@@ -2,7 +2,7 @@
 title: ALAYA-999 | Teia de Memória
 emoji: 🕸️
 colorFrom: blue
-colorTo: teal
+colorTo: green
 sdk: static
 app_file: index.html
 pinned: false
