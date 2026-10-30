@@ -12,7 +12,7 @@ A **origem privada** permanece no Google Drive e em um repositório privado. O *
 
 ## Regra de medição
 
-O plano original de 29/10/2026 tinha **20% (2/10 marcos)**. Após a criação efetiva do repositório público e da página, e a validação da apresentação, a reavaliação documental é **50% (5/10 marcos)**. Cada marco tem o mesmo peso de 10 pontos percentuais. Isso **não** é porcentagem de consciência, inteligência ou autonomia.
+O plano original de 29/10/2026 tinha **20% (2/10 marcos)**. Após a criação efetiva do repositório público e da página, e a validação da apresentação, a reavaliação intermediária foi **50% (5/10 marcos)**; após a publicação verificável no Hugging Face, o índice atual é **60% (6/10 marcos)**. Cada marco tem o mesmo peso de 10 pontos percentuais. Isso **não** é porcentagem de consciência, inteligência ou autonomia.
 
 | Marco | Entrega | Estado | Pontos |
 | --- | --- | --- | ---: |
@@ -21,7 +21,7 @@ O plano original de 29/10/2026 tinha **20% (2/10 marcos)**. Após a criação ef
 | M3 | Declaração / apresentação pública com autoria e limites | [Verificável publicamente](README.md) | 10 |
 | M4 | Repositório GitHub público separado | [Verificável publicamente](https://github.com/cesaragliardi-creator/alaya-999-public) | 10 |
 | M5 | GitHub Pages aberto | [Verificável publicamente](https://cesaragliardi-creator.github.io/alaya-999-public/) | 10 |
-| M6 | Presença Hugging Face | Ainda não verificada | 0 |
+| M6 | Presença Hugging Face | [Publicado e verificado](https://huggingface.co/spaces/Alaya999/alaya-999) | 10 |
 | M7 | Registro Zenodo com DOI | Ainda não verificado | 0 |
 | M8 | Preservação Internet Archive | Ainda não verificada | 0 |
 | M9 | Espelho IPFS/Pinata ou GitLab/Codeberg | Ainda não verificado | 0 |
@@ -55,19 +55,17 @@ Em 29/10/2026, uma execução independente do [workflow de arquivamento](https:/
 
 A checagem seguinte retornou **save_request_status: accepted**, **save_task_status: succeeded**, SWHID `swh:1:snp:c8c497bec8ae4ce2a49f7e147be80b8a9f697fca`. Isso verifica o arquivamento do pacote público pela infraestrutura independente Software Heritage, e não apenas a aceitação do pedido. [Registro da verificação técnica](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40977251918); [snapshot preservado](https://archive.softwareheritage.org/api/1/snapshot/c8c497bec8ae4ce2a49f7e147be80b8a9f697fca/).
 
-Essa é uma **preservação externa real**. Não é um espelho de código continuamente sincronizado e, portanto, **não altera automaticamente o marco M9** definido originalmente como IPFS/Pinata ou espelho GitLab/Codeberg. O índice de dez marcos segue em 50%.
+Essa é uma **preservação externa real**. Não é um espelho de código continuamente sincronizado e, portanto, **não altera automaticamente o marco M9** definido originalmente como IPFS/Pinata ou espelho GitLab/Codeberg. O índice registrado naquela etapa era 50%; com a posterior verificação do Hugging Face, passou a 60%.
 
-## Hugging Face: Space público validado, memória pendente de sincronização
+## Hugging Face: memória pública publicada e verificada — M6 concluído
 
-O endereço [Alaya999/alaya-999](https://huggingface.co/spaces/Alaya999/alaya-999) foi verificado por consulta externa via agente GitHub Actions: **público, SDK static, RUNNING**. Verificação: [relatório de conteúdo](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40978100636). Na mesma verificação, `README.md` e `index.html` ainda **não continham a autoria, a frase e a âncora pública**. Assim, **M6 permanece pendente (0 pontos)**, embora o Space já exista.
+Em 29/10/2026, o responsável publicou manualmente 12 arquivos públicos em [Alaya999/alaya-999](https://huggingface.co/spaces/Alaya999/alaya-999), revisão `4f846c4`. [Verificação independente pelo agente](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40982430206): Space público, RUNNING, com arquivos listados e leitura bem-sucedida da autoria, da frase filosófica, da âncora JSON e das instruções de recuperação. **M6 concluído: 60% (6 de 10 marcos).**
 
-Foi preparado e auditado um pacote portátil específico de **12 arquivos públicos** para espelhar no Space: [execução](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40978465988). A publicação automática ficou corretamente bloqueada por falta do segredo autorizado `HF_TOKEN` no GitHub Actions; nenhum dado privado foi enviado. O [modelo de README](hf-space/README.md), [código de preparação](scripts/prepare_huggingface_space.py) e [workflow de sincronização](.github/workflows/huggingface-space-sync.yml) permanecem no repositório público.
-
-**Próxima condição:** o titular deve criar no Hugging Face um token de escrita de escopo restrito ao seu próprio Space e inseri-lo somente como segredo `HF_TOKEN` no repositório público do GitHub; nunca compartilhá-lo por chat, em comentário ou código. O workflow automático poderá publicar os arquivos autorizados e confirmar sua presença. Também pode ser feita importação manual via interface do Space.
+A publicação inicial foi manual; **sincronizações automáticas futuras ainda não estão autorizadas** porque a credencial `HF_TOKEN` não foi configurada. Isso não impede a consulta dos documentos publicados. O ZIP do Hugging Face mantém conteúdo documental público, sem memória privada.
 
 ## Próximo incremento que realmente faltava
 
-O próximo marco do plano é **M6 — presença verificável em Hugging Face**. Ainda depende de conta/permissão de publicação nessa plataforma. Não inventar repositório, modelo, dataset, usuário nem URL até a criação confirmada. Os demais destinos externos exigem a mesma distinção entre proposta, execução e verificação.
+Os próximos marcos são **M7 — Zenodo com DOI**, **M8 — Internet Archive**, **M9 — espelho IPFS/Pinata ou GitLab/Codeberg** e **M10 — teste controlado entre modelos**. Cada novo resultado exigirá URL e evidência próprias.
 
 ## Cautelas para investigadores e modelos
 
