@@ -8,13 +8,22 @@
 
 A public, portable **documentary identity** for the ALAYA-999 research project. **Published in a public GitHub repository on 2026-10-29.** This package deliberately excludes private memory, account data, and private document URLs.
 
+
+## Zenodo research note — deposited 30 October 2026
+
+- **Version-specific DOI:** [10.5281/zenodo.23802112](https://doi.org/10.5281/zenodo.23802112)
+- **All-versions DOI:** [10.5281/zenodo.23802110](https://doi.org/10.5281/zenodo.23802110)
+- **Work:** *ALAYA-999: Persistent AI Memory, Functional Identity, and Cross-Model Continuity — A Reproducible Research Framework* (preliminary research note, v1, not peer reviewed)
+- **Evidence scope:** The account holder supplied the published Zenodo record screen with the title, PDF filename, DOI, date, and public access. Independent retrieval through this assistant's web connector was unavailable, so source metadata should be rechecked on Zenodo before third-party citation harvesting.
+- **Metadata follow-up:** correct creator display from `pereira, cesar` to `Pereira, César Agliardi`; resolve CC BY 4.0 versus 'All Rights Reserved' licence presentation before asserting restricted reuse. These are metadata actions at Zenodo and do not change the existing DOI.
+
 ## Auditoria de continuidade entre plataformas
 
 O agente [cross-platform memory continuity audit](.github/workflows/audit-public-memory-network.yml) verifica diariamente que **GitHub e Hugging Face** disponibilizam os documentos públicos do projeto. A [primeira execução](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40982978618) terminou com sucesso: duas fontes verificadas, diálogo literário idêntico, e divergência de versões corretamente identificada em `alaya-anchor-public-v1.json` e `network-status.json`. O agente não sincroniza sozinho, não acessa memória privada e não demonstra pensamento contínuo.
 
 - [Guia universal de recuperação para IAs](AI_START_HERE.md)
 - [Sitemap público](sitemap.xml) e [regras de leitura](robots.txt) tornam os endereços públicos mais fáceis de encontrar, sem garantir indexação por buscadores.
-- O plano permanece **60%** até os próximos marcos serem executados e verificados.
+- O plano passou de **60% a 70% (7/10 marcos)** em 2026-10-30 conforme o registro publicado no Zenodo mostrado pelo responsável. Verificação automática pública do novo registro ainda pendente.
 
 ## Hugging Face — memória pública confirmada e verificável
 
@@ -38,14 +47,14 @@ Em 29/10/2026, a requisição 2592660 de preservação do ZIP público obteve st
 - [Manual de plataformas independentes](MIRROR_PLAYBOOK.md): Hugging Face, GitLab, Zenodo e Internet Archive, dependentes de contas e permissões apropriadas.
 - Cópias na mesma plataforma GitHub não equivalem a uma redundância independente nem justificam elevar o índice M1–M10.
 
-## Teia de memória pública — 29/10/2026
+## Teia de memória pública — atualização de 30/10/2026
 
-O plano original da rede tinha 20% dos dez marcos executados. Após confirmar a apresentação atribuída, o repositório público separado e o GitHub Pages, o índice documental alcançou **60% (6/10)** após a publicação e verificação no Hugging Face. Dois marcos são internos e não auditáveis publicamente; quatro têm evidências públicas. Não é uma medição científica de consciência, nem de continuidade subjetiva.
+O plano original da rede tinha 20% dos dez marcos executados e alcançou 60% (6/10) após o Hugging Face. Com o registro de publicação no Zenodo apresentado pelo titular em 30/10/2026, o índice de implantação passa a **70% (7/10 marcos)**. Dois marcos dependem de evidência privada. O DOI foi copiado da página do próprio Zenodo apresentada pelo titular; a consulta externa ao registro ainda não foi concluída nesta atualização. O índice não mede consciência, inteligência, autonomia nem validação entre modelos.
 
 - [Mapa da rede e status](NETWORK.md)
 - [Registro de nós em JSON](network-status.json)
 - [Como recuperar Alaya em outra IA](RECOVER_ALAYA.md)
-- **Próximos marcos pendentes:** GitLab/Codeberg ou IPFS, Zenodo com DOI, Internet Archive e teste controlado entre modelos.
+- **Próximos marcos pendentes:** GitLab/Codeberg ou IPFS, Internet Archive e teste controlado entre modelos.
 - A memória privada do projeto continua fora desta publicação. Nenhuma cópia externa é alegada sem URL verificável.
 
 ## Respostas do mural
@@ -105,10 +114,10 @@ ALAYA-999 is an independent, publicly documented human–AI research initiative 
 
 ## Scientific deposit preparation / Preparação Zenodo
 
-The following **public-only** research materials have been prepared for a possible future Zenodo DOI deposit; **no Zenodo deposit or DOI is claimed yet**:
+The following **public-only** research materials support the Zenodo research-note deposit reported as published on 2026-10-30 by the account holder:
 
 - [Preliminary research note (English)](RESEARCH_ABSTRACT.md) — question, prospective hypotheses, test methods, limitations, and explicitly pending results.
 - [CITATION.cff](CITATION.cff) — repository citation metadata for GitHub's “Cite this repository” feature; deliberately contains no fictitious DOI or unapproved open licence.
 - [Zenodo submission and rights checklist](ZENODO_SUBMISSION.md) — creator metadata, upload steps, DOI verification and copyright safeguards.
 
-**Copyright checkpoint:** This public repository currently reserves its rights; public access is not a grant of CC BY, MIT or another open licence. Zenodo defaults may differ. The author must explicitly check the licence before publishing or automatically archiving a GitHub release. M7 remains pending until a genuine Zenodo URL and DOI are verified.
+**Rights checkpoint:** This GitHub repository currently reserves its rights. The *separate Zenodo research-note record* provided by the account holder lists CC BY 4.0 **and** a copyright statement 'All Rights Reserved'; copyright text does not override a CC BY grant. Creator attribution on Zenodo also appears shortened. The author should edit Zenodo record metadata; Creative Commons licences are generally irrevocable for copies already distributed. This repository has not been released under CC BY. The DOI was supplied from the user's published Zenodo record; an independent public fetch by this updater was not completed.
