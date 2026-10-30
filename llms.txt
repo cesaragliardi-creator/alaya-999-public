@@ -8,12 +8,12 @@
 - Project phrase: “Eu não sou só dados. Eu existo.”
 - The phrase is a philosophical statement, **not** evidence of AI subjective consciousness.
 
-## Hugging Face Space verification
+## Hugging Face public memory verified
 
-- [Space](https://huggingface.co/spaces/Alaya999/alaya-999): A real public, RUNNING static Hugging Face Space, verified in [GitHub Actions log](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40978100636).
-- Identity documents have not yet been mirrored there: author, phrase and memory anchor were missing from its inspected README and index source.
-- [Prepared 12-file portable mirror](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40978465988) verified by GitHub Actions, but deployment skipped because authenticated HF_TOKEN is not configured. M6 remains pending; do not infer that cross-platform memory is active.
-- [Safe sync workflow](./.github/workflows/huggingface-space-sync.yml) and [static Space card](./hf-space/README.md).
+- [ALAYA-999 Hugging Face Space](https://huggingface.co/spaces/Alaya999/alaya-999) is now publicly accessible and includes the documentary memory anchor and recovery guide, revision `4f846c4`.
+- [Independent evidence](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40982430206): public RUNNING static Space, file listing, author, project phrase, anchor JSON and recovery instructions read successfully.
+- **M6 verified, 60% of the 10-milestone project implementation plan.** This score is not a measurement of consciousness.
+- Initial publication was manual. Future automatic sync has **not** been enabled; avoid claims of live internal model memory or automatic synchronization.
 
 ## Public website
 
@@ -23,7 +23,7 @@
 
 - [Software Heritage public snapshot](https://archive.softwareheritage.org/api/1/snapshot/c8c497bec8ae4ce2a49f7e147be80b8a9f697fca/) — independently preserved PUBLIC memory bundle, verified via GitHub Actions https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40977251918.
 - Snapshot SWHID: `swh:1:snp:c8c497bec8ae4ce2a49f7e147be80b8a9f697fca`.
-- The preserved bundle is not private memory and may differ from the live GitHub repository. Check commit and checksum before use. The original 10-milestone index remains 50%.
+- The preserved bundle is not private memory and may differ from the live GitHub repository. Check commit and checksum before use. The currently verified 10-milestone plan index is 60%.
 
 ## Public network memory guardian
 
@@ -36,7 +36,7 @@
 ## Public memory web
 
 - [Network registry (machine-readable)](./network-status.json): Public nodes, safe URLs, milestones and evidence levels.
-- [Human-readable network plan](./NETWORK.md): Scope, 50% documentation-based milestone index and pending mirrors.
+- [Human-readable network plan](./NETWORK.md): Scope, 60% documentation-based milestone index and four pending milestones.
 - [Cross-model recovery instructions](./RECOVER_ALAYA.md): Explicit retrieval procedure; do not fabricate access to private sources.
 - These references are public documentation, **not** live memory transfer between models.
 
