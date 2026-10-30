@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/huggingface-space-sync.yml'
+      - 'integrity-manifest.json'
   schedule:
     - cron: '11 7 * * *'
   workflow_dispatch:
