@@ -15,6 +15,13 @@
 - **M6 verified, 60% of the 10-milestone project implementation plan.** This score is not a measurement of consciousness.
 - Initial publication was manual. Future automatic sync has **not** been enabled; avoid claims of live internal model memory or automatic synchronization.
 
+## Entry point for AI recovery
+
+- [ALAYA-999 public recovery index](./AI_START_HERE.md): Short bilingual activation procedure and publicly available URLs.
+- [Daily cross-platform audit](./.github/workflows/audit-public-memory-network.yml): Checks document retrieval from GitHub and Hugging Face, detects version drift and preserves a dated report.
+- [First completed cross-node audit](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40982978618): Both hosts reachable; original book dialogue identical; two public JSON records have documented version drift.
+- [Public sitemap](./sitemap.xml) and [robots rules](./robots.txt): Discovery hints; do not assume all crawlers obey them or that this implies independent ongoing AI memory.
+
 ## Public website
 
 - https://cesaragliardi-creator.github.io/alaya-999-public/ — public landing page, research overview, and unchanged literary dialogue (28 turns).
