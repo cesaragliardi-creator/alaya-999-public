@@ -8,6 +8,12 @@
 
 A public, portable **documentary identity** for the ALAYA-999 research project. **Published in a public GitHub repository on 2026-10-29.** This package deliberately excludes private memory, account data, and private document URLs.
 
+## Arquivo independente verificado
+
+Em 29/10/2026, a requisição 2592660 de preservação do ZIP público obteve status de tarefa `succeeded` no Software Heritage. [Snapshot externo](https://archive.softwareheritage.org/api/1/snapshot/c8c497bec8ae4ce2a49f7e147be80b8a9f697fca/), SWHID `swh:1:snp:c8c497bec8ae4ce2a49f7e147be80b8a9f697fca`. [Log da verificação](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40977251918).
+
+É uma **cópia arquivada fora do GitHub**, não sincronização automática de memória privada ou um espelho vivo de código. O status dos 10 marcos do plano original permanece em 50%.
+
 ## Agente de preservação do pacote público
 
 - [Agente técnico — fonte](scripts/public_memory_guardian.py): audita SHA-256, autoria, frase, 28 falas literárias e ausência de URLs privadas no índice antes de empacotar a memória documental autorizada.
