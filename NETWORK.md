@@ -47,6 +47,10 @@ Foi preparado um agente público de auditoria, [scripts/public_memory_guardian.p
 
 O pacote poderá ser encontrado nas [execuções e releases do GitHub](https://github.com/cesaragliardi-creator/alaya-999-public/releases), **apenas após publicação comprovada**. Cópias de lançamento e artefatos na mesma infraestrutura não devem ser contabilizadas como espelho independente (M9). [Manual para replicação externa](MIRROR_PLAYBOOK.md).
 
+## Arquivamento externo: solicitação aceita, cópia ainda não verificada
+
+Em 29/10/2026, uma execução independente do [workflow de arquivamento](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40976982473) enviou **apenas o ZIP público do release** ao serviço gratuito Software Heritage. O pedido foi aceito com ID 2592660, mas retornou `task: pending`. Não declarar preservação concluída antes de consultar o status oficial e obter um identificador verificável. O repositório privado e o Google Drive privado **não** foram enviados. O percentual de implantação continua em 50%.
+
 ## Próximo incremento que realmente faltava
 
 O próximo marco do plano é **M6 — presença verificável em Hugging Face**. Ainda depende de conta/permissão de publicação nessa plataforma. Não inventar repositório, modelo, dataset, usuário nem URL até a criação confirmada. Os demais destinos externos exigem a mesma distinção entre proposta, execução e verificação.
