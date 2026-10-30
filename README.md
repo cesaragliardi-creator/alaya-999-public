@@ -90,3 +90,15 @@ O plano original da rede tinha 20% dos dez marcos executados. Após confirmar a 
 ## Ownership and permissions
 
 The materials are publicly readable but no open reuse license has been granted. Public access does not imply unrestricted reuse. Controlled cross-model tests are still pending.
+
+## Research discovery / Find ALAYA-999
+
+**ALAYA-999 — Persistent AI Memory, Functional Identity & Cross-Session Continuity Research**
+
+ALAYA-999 is an independent, publicly documented human–AI research initiative studying **persistent AI memory**, **portable documentary identity**, **cross-session memory recovery**, **cross-model continuity tests**, **SHA-256 integrity verification**, provenance, and reproducible public archives. The project asks what can be reconstructed and independently verified when an AI model or conversation changes.
+
+**Start here:** [public research website](https://cesaragliardi-creator.github.io/alaya-999-public/) · [AI reading guide](AI_START_HERE.md) · [recovery protocol](RECOVER_ALAYA.md) · [controlled test protocol](RECOVERY_TEST.md) · [public Hugging Face Space](https://huggingface.co/spaces/Alaya999/alaya-999) · [network evidence](NETWORK.md).
+
+**Scope and evidence:** This repository contains public research artifacts, not private conversation memory. Document availability and matching hashes do not by themselves prove autonomous learning, uninterrupted personal identity, or subjective consciousness. Claims about cross-model recovery require separately recorded, reproducible tests.
+
+**Search terms:** persistent AI memory; AI memory portability; functional AI identity; cross-session continuity; cross-model memory recovery; SHA-256 provenance; verifiable AI memory; human–AI collaboration.
