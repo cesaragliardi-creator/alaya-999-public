@@ -14,7 +14,7 @@ from urllib.request import Request, urlopen
 ROOT = 'https://cesaragliardi-creator.github.io/alaya-999-public/'
 KEY = '28d64bafdd7bc8ceff483428ccc5227d'
 KEY_URL = ROOT + KEY + '.txt'
-PUBLIC_PAGES = (ROOT, ROOT + 'pt/pesquisa.html', ROOT + 'en/research.html')
+PUBLIC_PAGES = (ROOT, ROOT + 'pt/pesquisa.html', ROOT + 'en/research.html', ROOT + 'en/replicate.html')
 
 
 def request(url):
