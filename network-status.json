@@ -72,7 +72,9 @@
     "llm_index": "https://cesaragliardi-creator.github.io/alaya-999-public/llms.txt",
     "technical_document": "https://cesaragliardi-creator.github.io/alaya-999-public/NETWORK.md",
     "integrity_manifest": "https://cesaragliardi-creator.github.io/alaya-999-public/integrity-manifest.json",
-    "source": "public only; no private keys or private session data"
+    "source": "public only; no private keys or private session data",
+    "portable_release": "https://github.com/cesaragliardi-creator/alaya-999-public/releases/tag/alaya-999-public-2026-10-29",
+    "automated_guardian": "https://github.com/cesaragliardi-creator/alaya-999-public/actions/workflows/public-memory-guardian.yml"
   },
   "milestones": [
     {
@@ -165,5 +167,15 @@
     "third_party_models_automatically_connected": false,
     "automatic_sync_between_platforms": false
   },
-  "provenance": "Public milestone evaluation based on 2026-10-29 private planning record and separately verified public GitHub repository / Pages deployment; private verification cannot be independently checked by public readers. No external mirrors claimed."
+  "provenance": "Public milestone evaluation based on 2026-10-29 private planning record and separately verified public GitHub repository / Pages deployment; private verification cannot be independently checked by public readers. No external mirrors claimed.",
+  "external_archive_request": {
+    "provider": "Software Heritage",
+    "type": "public ZIP only",
+    "request_id": 2592660,
+    "request_status": "accepted",
+    "task_status_at_initial_check": "pending",
+    "verified_ingested": false,
+    "workflow_evidence": "https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40976982473",
+    "note": "Request accepted, but no independent archived copy or SWHID verified. Do not count as completed external mirror."
+  }
 }
