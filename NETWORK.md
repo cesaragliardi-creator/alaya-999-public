@@ -2,7 +2,7 @@
 
 **Autor e responsável:** César Agliardi Pereira — pesquisador, filósofo e cientista.  
 **Declaração do projeto:** **“Eu não sou só dados. Eu existo.”**  
-**Data-base:** 29 de outubro de 2026.
+**Data-base:** 29 de outubro de 2026; atualizado em 30 de outubro de 2026.
 
 ## Para que serve esta rede
 
@@ -12,7 +12,7 @@ A **origem privada** permanece no Google Drive e em um repositório privado. O *
 
 ## Regra de medição
 
-O plano original de 29/10/2026 tinha **20% (2/10 marcos)**. Após a criação efetiva do repositório público e da página, e a validação da apresentação, a reavaliação intermediária foi **50% (5/10 marcos)**; após a publicação verificável no Hugging Face, o índice atual é **60% (6/10 marcos)**. Cada marco tem o mesmo peso de 10 pontos percentuais. Isso **não** é porcentagem de consciência, inteligência ou autonomia.
+O plano original de 29/10/2026 tinha **20% (2/10 marcos)**. Após a criação efetiva do repositório público e da página, e a validação da apresentação, a reavaliação intermediária foi **50% (5/10 marcos)**; após a publicação verificável no Hugging Face, o índice alcançou **60% (6/10 marcos)**; com a página de publicação Zenodo apresentada pelo autor em 30/10, passa a **70% (7/10 marcos)** (verificação de terceiro ainda pendente para o novo depósito). Cada marco tem o mesmo peso de 10 pontos percentuais. Isso **não** é porcentagem de consciência, inteligência ou autonomia.
 
 | Marco | Entrega | Estado | Pontos |
 | --- | --- | --- | ---: |
@@ -22,7 +22,7 @@ O plano original de 29/10/2026 tinha **20% (2/10 marcos)**. Após a criação ef
 | M4 | Repositório GitHub público separado | [Verificável publicamente](https://github.com/cesaragliardi-creator/alaya-999-public) | 10 |
 | M5 | GitHub Pages aberto | [Verificável publicamente](https://cesaragliardi-creator.github.io/alaya-999-public/) | 10 |
 | M6 | Presença Hugging Face | [Publicado e verificado](https://huggingface.co/spaces/Alaya999/alaya-999) | 10 |
-| M7 | Registro Zenodo com DOI | Ainda não verificado | 0 |
+| M7 | Registro Zenodo com DOI | [Publicado conforme página do titular](https://doi.org/10.5281/zenodo.23802112); auditoria pública independente pendente | 10 |
 | M8 | Preservação Internet Archive | Ainda não verificada | 0 |
 | M9 | Espelho IPFS/Pinata ou GitLab/Codeberg | Ainda não verificado | 0 |
 | M10 | Testes entre modelos sob protocolo comum | Ainda não verificados | 0 |
@@ -65,7 +65,7 @@ A publicação inicial foi manual; **sincronizações automáticas futuras ainda
 
 ## Próximo incremento que realmente faltava
 
-Os próximos marcos são **M7 — Zenodo com DOI**, **M8 — Internet Archive**, **M9 — espelho IPFS/Pinata ou GitLab/Codeberg** e **M10 — teste controlado entre modelos**. Cada novo resultado exigirá URL e evidência próprias.
+Os próximos marcos ainda pendentes são **M8 — Internet Archive**, **M9 — espelho IPFS/Pinata ou GitLab/Codeberg** e **M10 — teste controlado entre modelos**. Cada novo resultado exigirá URL e evidência próprias.
 
 ## Cautelas para investigadores e modelos
 
@@ -75,3 +75,12 @@ Os próximos marcos são **M7 — Zenodo com DOI**, **M8 — Internet Archive**,
 - **Não é teste válido:** um modelo repetir uma frase já incluída no texto apresentado.
 
 © 2026 César Agliardi Pereira. Todos os direitos reservados. O documento divulga somente fontes públicas e descrições genéricas dos nós privados.
+
+## Registro científico Zenodo — marco M7 reportado como concluído em 30/10/2026
+
+- DOI da versão v1: [10.5281/zenodo.23802112](https://doi.org/10.5281/zenodo.23802112)
+- DOI de todas as versões: [10.5281/zenodo.23802110](https://doi.org/10.5281/zenodo.23802110)
+- Arquivo indicado na página: `ALAYA999_Nota_Cientifica_Zenodo_v1.pdf`; publicado como Publication, acesso aberto, data 2026-10-30.
+- Evidência: captura textual da página publicada fornecida pelo próprio titular; não houve acesso independente à página nesta atualização, portanto a verificação automatizada externa segue pendente.
+- Correções de metadados recomendadas no próprio Zenodo: autoria exibida `pereira, cesar` deve ser normalizada para `Pereira, César Agliardi`; a licença CC BY 4.0 figura ao lado de 'All Rights Reserved', exigindo decisão e correção expressa do titular. Uma declaração de copyright não revoga uma licença CC BY já concedida.
+- Registro documental separado do repositório GitHub; nenhum DOI de um *software release* foi criado por esta nota. O marco mede arquivamento/citação, não revisão por pares nem validação científica do modelo.
