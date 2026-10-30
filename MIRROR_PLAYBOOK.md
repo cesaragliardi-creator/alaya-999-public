@@ -40,6 +40,10 @@ Com contas autorizadas, tokens específicos e armazenamento de segredos em local
 
 Um agente pediu a preservação **somente do ZIP público aprovado** (não do repositório inteiro) via API oficial. A requisição 2592660 foi aceita, mas o processamento ainda estava pendente na primeira verificação. [Ver o log da execução](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40976982473). Não alegar que a cópia foi salva até que o serviço confirme status de sucesso, identificador e URL de arquivo.
 
+## Atualização: arquivo independente confirmado
+
+A segunda consulta devolveu o estado `succeeded` para o pedido 2592660, identificador `swh:1:snp:c8c497bec8ae4ce2a49f7e147be80b8a9f697fca`. [Prova de execução](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40977251918); [consulta pública do snapshot](https://archive.softwareheritage.org/api/1/snapshot/c8c497bec8ae4ce2a49f7e147be80b8a9f697fca/). Preservação independente **confirmada**, sem publicar memória privada. Não é um espelho vivo nem substitui a verificação dos destinos M6–M9 originais.
+
 ## Validar uma cópia portátil
 
 1. Obter o arquivo ZIP e seu `.sha256` na mesma execução ou release público.
