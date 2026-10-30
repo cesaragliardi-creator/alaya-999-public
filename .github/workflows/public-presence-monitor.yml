@@ -1,0 +1,35 @@
+name: ALAYA-999 autonomous public presence monitor
+
+on:
+  schedule:
+    - cron: '37 11 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/public-presence-monitor.yml'
+      - 'scripts/public_presence_monitor.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: alaya999-public-presence-monitor
+  cancel-in-progress: false
+
+jobs:
+  verify-independent-public-presence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check public platforms without private credentials
+        run: python3 scripts/public_presence_monitor.py
+      - name: Preserve timestamped verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: alaya999-public-presence-${{ github.run_number }}
+          path: dist/public-presence-monitor.json
+          retention-days: 90
+          if-no-files-found: warn
