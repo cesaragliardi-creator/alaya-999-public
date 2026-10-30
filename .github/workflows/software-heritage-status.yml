@@ -1,0 +1,38 @@
+name: ALAYA-999 independent archive status
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/software-heritage-status.yml'
+  schedule:
+    - cron: '51 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-accepted-archive-request:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check Software Heritage public request 2592660
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          from urllib.request import Request, urlopen
+          url = 'https://archive.softwareheritage.org/api/1/origin/save/2592660/'
+          req = Request(url, headers={'Accept': 'application/json', 'User-Agent': 'alaya999-public-archive-status/1.0'})
+          with urlopen(req, timeout=35) as response:
+              data = json.load(response)
+          print('Save request:', data.get('save_request_status'))
+          print('Archive task:', data.get('save_task_status'))
+          print('Snapshot SWHID:', data.get('snapshot_swhid'))
+          print('Snapshot URL:', data.get('snapshot_url'))
+          if data.get('save_task_status') == 'succeeded' and data.get('snapshot_swhid'):
+              print('INDEPENDENT ARCHIVE VERIFIED BY PROVIDER STATUS')
+          else:
+              print('PENDING / UNVERIFIED — do not claim an independent archived copy')
+          PY
