@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite this ALAYA-999 public research package using the information below. No DOI has been issued yet."
+message: "For the published preliminary research note cite https://doi.org/10.5281/zenodo.23802112. This GitHub repository is the separate public code and documentation source."
 title: "ALAYA-999: Persistent AI Memory, Functional Identity, and Cross-Model Continuity — A Reproducible Research Framework"
 type: software
 authors:
