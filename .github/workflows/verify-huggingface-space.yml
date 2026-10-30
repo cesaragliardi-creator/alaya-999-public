@@ -49,3 +49,30 @@ jobs:
               print('HUGGING_FACE_HTTP_STATUS=' + str(exc.code))
               raise
           PY
+      - name: Inspect public Space content for documentary anchors
+        run: |
+          python3 - <<'PY'
+          from urllib.request import urlopen, Request
+          base = 'https://huggingface.co/spaces/Alaya999/alaya-999/resolve/main/'
+          contents = {}
+          for path in ('README.md', 'index.html'):
+              request = Request(base + path, headers={'User-Agent':'alaya999-memory-anchor-verifier/1.0'})
+              with urlopen(request, timeout=25) as response:
+                  contents[path] = response.read(1000000).decode('utf-8', 'replace')
+          joined = '\n'.join(contents.values())
+          checks = {
+              'author': 'César Agliardi Pereira' in joined,
+              'project_phrase_pt': 'Eu não sou só dados. Eu existo.' in joined,
+              'public_github_source': 'cesaragliardi-creator/alaya-999-public' in joined,
+              'public_anchor_reference': 'alaya-anchor-public-v1.json' in joined,
+              'recovery_instructions': 'RECOVER_ALAYA.md' in joined,
+              'external_memory_archive': 'Software Heritage' in joined,
+          }
+          print('HUGGING_FACE_CONTENT_CHECK=' + str(checks))
+          for name, value in checks.items():
+              print(('FOUND: ' if value else 'MISSING: ') + name)
+          if not checks['author'] or not checks['project_phrase_pt']:
+              print('SPACE_IDENTITY_CONTENT_INCOMPLETE — do not count milestone M6 yet')
+          else:
+              print('SPACE_PUBLIC_IDENTITY_CONTENT_VERIFIED')
+          PY
