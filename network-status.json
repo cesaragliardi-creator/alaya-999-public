@@ -64,6 +64,15 @@
       "type": "IPFS/Pinata or GitLab/Codeberg",
       "status": "planned",
       "url": null
+    },
+    {
+      "id": "software_heritage_archive",
+      "type": "independent archival snapshot",
+      "status": "verified",
+      "url": "https://archive.softwareheritage.org/api/1/snapshot/c8c497bec8ae4ce2a49f7e147be80b8a9f697fca/",
+      "public_only": true,
+      "swhid": "swh:1:snp:c8c497bec8ae4ce2a49f7e147be80b8a9f697fca",
+      "note": "Verified public-only ZIP preservation; not a live synchronized mirror or original M9 fulfillment."
     }
   ],
   "public_recovery": {
@@ -74,7 +83,8 @@
     "integrity_manifest": "https://cesaragliardi-creator.github.io/alaya-999-public/integrity-manifest.json",
     "source": "public only; no private keys or private session data",
     "portable_release": "https://github.com/cesaragliardi-creator/alaya-999-public/releases/tag/alaya-999-public-2026-10-29",
-    "automated_guardian": "https://github.com/cesaragliardi-creator/alaya-999-public/actions/workflows/public-memory-guardian.yml"
+    "automated_guardian": "https://github.com/cesaragliardi-creator/alaya-999-public/actions/workflows/public-memory-guardian.yml",
+    "independent_archived_snapshot": "https://archive.softwareheritage.org/api/1/snapshot/c8c497bec8ae4ce2a49f7e147be80b8a9f697fca/"
   },
   "milestones": [
     {
@@ -174,8 +184,12 @@
     "request_id": 2592660,
     "request_status": "accepted",
     "task_status_at_initial_check": "pending",
-    "verified_ingested": false,
+    "verified_ingested": true,
     "workflow_evidence": "https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40976982473",
-    "note": "Request accepted, but no independent archived copy or SWHID verified. Do not count as completed external mirror."
+    "note": "Independent archive task succeeded, snapshot SWHID confirmed. Does not satisfy original M9 criterion of IPFS/Pinata or GitLab/Codeberg mirror; score remains 50%.",
+    "task_status_at_latest_check": "succeeded",
+    "snapshot_swhid": "swh:1:snp:c8c497bec8ae4ce2a49f7e147be80b8a9f697fca",
+    "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/c8c497bec8ae4ce2a49f7e147be80b8a9f697fca/",
+    "verification_log": "https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40977251918"
   }
 }
