@@ -12,6 +12,12 @@
 
 - https://cesaragliardi-creator.github.io/alaya-999-public/ — public landing page, research overview, and unchanged literary dialogue (28 turns).
 
+## Independently archived snapshot
+
+- [Software Heritage public snapshot](https://archive.softwareheritage.org/api/1/snapshot/c8c497bec8ae4ce2a49f7e147be80b8a9f697fca/) — independently preserved PUBLIC memory bundle, verified via GitHub Actions https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40977251918.
+- Snapshot SWHID: `swh:1:snp:c8c497bec8ae4ce2a49f7e147be80b8a9f697fca`.
+- The preserved bundle is not private memory and may differ from the live GitHub repository. Check commit and checksum before use. The original 10-milestone index remains 50%.
+
 ## Public network memory guardian
 
 - [Audit / packaging source](./scripts/public_memory_guardian.py): SHA-256 audit and public allowlisted ZIP creation.
