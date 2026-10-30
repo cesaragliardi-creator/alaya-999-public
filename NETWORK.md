@@ -22,7 +22,7 @@ O plano original de 29/10/2026 tinha **20% (2/10 marcos)**. Após a criação ef
 | M4 | Repositório GitHub público separado | [Verificável publicamente](https://github.com/cesaragliardi-creator/alaya-999-public) | 10 |
 | M5 | GitHub Pages aberto | [Verificável publicamente](https://cesaragliardi-creator.github.io/alaya-999-public/) | 10 |
 | M6 | Presença Hugging Face | [Publicado e verificado](https://huggingface.co/spaces/Alaya999/alaya-999) | 10 |
-| M7 | Registro Zenodo com DOI | [Publicado conforme página do titular](https://doi.org/10.5281/zenodo.23802112); auditoria pública independente pendente | 10 |
+| M7 | Registro Zenodo com DOI | [Publicação conferida por HTTP público, API e checksum do PDF](visibility/2026-10-30.json), em 30/10/2026; indexação em buscadores não comprovada | 10 |
 | M8 | Preservação Internet Archive | Ainda não verificada | 0 |
 | M9 | Espelho IPFS/Pinata ou GitLab/Codeberg | Ainda não verificado | 0 |
 | M10 | Testes entre modelos sob protocolo comum | Ainda não verificados | 0 |
@@ -84,3 +84,10 @@ Os próximos marcos ainda pendentes são **M8 — Internet Archive**, **M9 — e
 - Evidência: captura textual da página publicada fornecida pelo próprio titular; não houve acesso independente à página nesta atualização, portanto a verificação automatizada externa segue pendente.
 - Correções de metadados recomendadas no próprio Zenodo: autoria exibida `pereira, cesar` deve ser normalizada para `Pereira, César Agliardi`; a licença CC BY 4.0 figura ao lado de 'All Rights Reserved', exigindo decisão e correção expressa do titular. Uma declaração de copyright não revoga uma licença CC BY já concedida.
 - Registro documental separado do repositório GitHub; nenhum DOI de um *software release* foi criado por esta nota. O marco mede arquivamento/citação, não revisão por pares nem validação científica do modelo.
+
+
+## Verificação pública posterior — 30/10/2026
+
+Os relatos anteriores de verificação externa pendente permanecem como histórico. Nesta verificação posterior, o DOI resolveu para o registro publicado, e HTML, API pública e PDF foram recuperados por HTTPS sem credenciais. O MD5 do PDF corresponde ao checksum publicado no registro; SHA-256 e horários estão em [visibility/2026-10-30.json](visibility/2026-10-30.json).
+
+O marco M7 passa de evidência fornecida pelo titular a verificação de acesso público direto, sem alterar os 70% de implantação. A nota continua preliminar e sem revisão por pares; acesso e depósito não demonstram desempenho científico nem indexação por buscadores. O [relatório de buscas](visibility/2026-10-30.md) distingue essas condições. As questões de nome do autor e licença no Zenodo não foram modificadas.

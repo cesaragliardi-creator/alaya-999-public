@@ -18,12 +18,12 @@
     "guestbook_auto_reply.py": "22a6d760efa96277a0d3a0ab4940ab78dac21973ce6895aec4214e24dbddac80",
     "GUESTBOOK.md": "e63d506b60311c33aaed859691fdac8c630850ec3b06120133ed460eddc10381",
     "hf-space/README.md": "e12a6c570a2da9d8d92a713eb5fb00077d44c7125294fde439f578035f9ac0f4",
-    "index.html": "aedee63fd43b359cba12fc4bf0b8751812a8512bfcb80963cba7b66622167112",
+    "index.html": "6ae67c9e8ec2e8585b57cfb06e8c9521d1b69f92bd202f122594705cc082d0d3",
     "llms.txt": "842ab835eca9f57d27ad5d09c771ea0fd3ebe87e95872f5d8997b4bede7d6781",
     "MIRROR_PLAYBOOK.md": "7dcd771bb78f3ab031375565e8693a87e5d0a1cbb07862740cd4cbfe5b6a16bb",
-    "network-status.json": "1015ee55927fda38c042342bd3f326b7354e210db608cc5c56e909f7c1b15435",
-    "NETWORK.md": "bc785859bce84f289076ad60fe94ab2ba31a038dc792376c2a15a274dd753e39",
-    "README.md": "380663a44bd476b237711176b5b096040784164c78eea29c7456a5a3c4d2c1bc",
+    "network-status.json": "f4aad21a6f20e1df01ce4ee574006c946920f9bec763aa3d514a291223b1f648",
+    "NETWORK.md": "52d05066f5c9d19fd84bbfd063d94a274c1400742a653833aa0ad2c746983739",
+    "README.md": "97d43739b8404b332850939a54c861427d8ebe181e360c8857cb55e0245d382a",
     "RECOVER_ALAYA.md": "d248318454d9194f4a31428e56d7f1daf1ee016b55d284ffe514aab31e97c95d",
     "RECOVERY_TEST.md": "52e69f2208aa9377d94829967f7576dfddda10b60c9385e5d75d36b4efcb021f",
     "robots.txt": "30bc17cb224e687f95ee891a275fa5c225cd86b0e9ed519869e2f70f44ab56ee",
@@ -32,6 +32,12 @@
     "scripts/public_memory_guardian.py": "e1bddb0ec5e239b8a64c48b3dc32953b49a48d5c9da4122fd0d1cd2bf35535b2",
     "scripts/request_software_heritage.py": "6a28edba236c1f00892b71069160478109d5ee69b01411e82def33df61e245b8",
     "scripts/request_wayback_public_page.py": "edaf483cf03e3178cbfd1180f0587fe36cefc305a89d9b284082d4fb0de318ee",
-    "sitemap.xml": "c7c8383b813f8ef66fbcb9f91e19e48433a0bbda0b9cf2c5c66b07cf772ca8c8"
-  }
+    "sitemap.xml": "ec889474694eeddabed79e7a60337a788c9a69d6df8f3c2c3bb359f8018bd8de",
+    "RESEARCH_ABSTRACT.md": "4cffaee8f3a5ac13a6a7f983ff30e19389f36e9a09a11a1e964fdf004ed6609c",
+    "en/research.html": "8af242e84da3065b8c99a802cc584e2cdb2139af99c75634a6ff2209c50f2fad",
+    "visibility/2026-10-30.json": "c0c174fd25db9d7bf1cc1f4f6c09501df19f8694dc54757860f477d7ec647b20",
+    "visibility/2026-10-30.md": "b28dc8cdca7529db0f5aa1aa056b675945be1380dba6b9e3c6ba863813b93081"
+  },
+  "updated_on": "2026-10-30",
+  "update_note": "Dated visibility audit and public Zenodo verification; prior three documentary mismatches are recorded in visibility/2026-10-30.json. Existing code/workflow hashes unchanged."
 }

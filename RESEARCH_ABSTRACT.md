@@ -68,3 +68,10 @@ A preregistered test matrix, model-by-model raw results, evaluation scripts, sco
 Pereira, César Agliardi (2026). *ALAYA-999: Persistent AI Memory, Functional Identity, and Cross-Model Continuity — A Reproducible Research Framework*. Version 1.0, public research note, GitHub repository: https://github.com/cesaragliardi-creator/alaya-999-public . **DOI: not yet assigned.**
 
 © 2026 César Agliardi Pereira. All rights reserved unless the author explicitly grants a different licence.
+
+
+### Dated post-deposit verification — 30 October 2026
+
+The original pre-deposit wording above (including “no DOI issued”) is preserved as the drafting record. The subsequent published research note is now publicly retrievable at [10.5281/zenodo.23802112](https://doi.org/10.5281/zenodo.23802112). Anonymous requests verified the DOI destination, Zenodo record, public metadata and matching deposited PDF. See [dated evidence](visibility/2026-10-30.json) and the [English research landing page](https://cesaragliardi-creator.github.io/alaya-999-public/en/research.html).
+
+This update establishes publication availability only. Prospective hypotheses, pending cross-model validation and the original evidence boundaries are unchanged.

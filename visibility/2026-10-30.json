@@ -1,0 +1,546 @@
+{
+  "schema": "alaya999-public-visibility-audit-v1",
+  "audit_date": "2026-10-30",
+  "recorded_at": "2026-10-30T08:20:39.522861-03:00",
+  "pre_change_source_commit": "d72c4b7cb2d017da00713e0f8e2a83d1bc45790b",
+  "scope": "Public availability, returned search evidence, source-based SEO improvements and public deposit verification",
+  "baseline": "No completed previous result is available in this weekly task. The pre-change public registry marked external Zenodo verification as pending; its earlier owner-supplied status is preserved.",
+  "http_checks_before_repository_changes": [
+    {
+      "url": "https://cesaragliardi-creator.github.io/alaya-999-public/",
+      "checked_at": "2026-10-30T08:12:17.346576-03:00",
+      "status": 200,
+      "final_url": "https://cesaragliardi-creator.github.io/alaya-999-public/",
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Fri, 30 Oct 2026 11:03:25 GMT",
+        "etag": "\"6ae4797d-a71e\""
+      },
+      "bytes": 42782,
+      "sha256": "aedee63fd43b359cba12fc4bf0b8751812a8512bfcb80963cba7b66622167112",
+      "title": "ALAYA-999 | Memória, identidade e continuidade"
+    },
+    {
+      "url": "https://huggingface.co/spaces/Alaya999/alaya-999",
+      "checked_at": "2026-10-30T08:12:17.344180-03:00",
+      "status": 200,
+      "final_url": "https://huggingface.co/spaces/Alaya999/alaya-999",
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "etag": "W/\"777c-KGkw50/s34QnG2DLeLB6bmK8CYc\""
+      },
+      "bytes": 30588,
+      "sha256": "394d9d9954114715d4dd549e13465ad1e93b23e3b56e91325c59092917151235",
+      "title": "ALAYA-999 | Teia de Memória - a Hugging Face Space by Alaya999"
+    },
+    {
+      "url": "https://cesaragliardi-creator.github.io/robots.txt",
+      "checked_at": "2026-10-30T08:12:17.345404-03:00",
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "status": 404
+    },
+    {
+      "url": "https://cesaragliardi-creator.github.io/alaya-999-public/robots.txt",
+      "checked_at": "2026-10-30T08:12:17.347446-03:00",
+      "status": 200,
+      "final_url": "https://cesaragliardi-creator.github.io/alaya-999-public/robots.txt",
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "last-modified": "Fri, 30 Oct 2026 11:03:25 GMT",
+        "etag": "\"6ae4797d-66\""
+      },
+      "bytes": 102,
+      "sha256": "30bc17cb224e687f95ee891a275fa5c225cd86b0e9ed519869e2f70f44ab56ee",
+      "title": null
+    },
+    {
+      "url": "https://github.com/cesaragliardi-creator/alaya-999-public",
+      "checked_at": "2026-10-30T08:13:34.289023-03:00",
+      "status": 200,
+      "final_url": "https://github.com/cesaragliardi-creator/alaya-999-public",
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "etag": "W/\"ed3dcd61a7ee56974c12b8cc49c655a3\""
+      },
+      "bytes": 321693,
+      "sha256": "25bea68db4a52305841d05ace668e6128062f0835d7ca204a595c96953fa4967",
+      "title": "GitHub - cesaragliardi-creator/alaya-999-public: ALAYA-999: Public, portable and verifiable AI memory research for cross-model functional identity continuity. · GitHub"
+    },
+    {
+      "url": "https://zenodo.org/records/23802112",
+      "checked_at": "2026-10-30T08:13:34.290276-03:00",
+      "status": 200,
+      "final_url": "https://zenodo.org/records/23802112",
+      "headers": {
+        "content-type": "text/html; charset=utf-8"
+      },
+      "bytes": 83998,
+      "sha256": "e18aa0ef6c69e8b48b38bfffe93f048d2ba3245ae616a76b7df733eab6f4558c",
+      "title": "ALAYA-999: Persistent AI Memory, Functional Identity, and Cross-Model Continuity — A Reproducible Research Framework | Zenodo"
+    },
+    {
+      "url": "https://zenodo.org/api/records/23802112",
+      "checked_at": "2026-10-30T08:13:34.291668-03:00",
+      "status": 200,
+      "final_url": "https://zenodo.org/api/records/23802112",
+      "headers": {
+        "content-type": "application/json",
+        "etag": "\"3\""
+      },
+      "bytes": 6484,
+      "sha256": "4e7c95edaee8c0c88e2660fa17b7843048d01b52b916995b2b10f790cd4b9240",
+      "title": null
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.23802112",
+      "checked_at": "2026-10-30T08:13:34.292568-03:00",
+      "status": 200,
+      "final_url": "https://zenodo.org/records/23802112",
+      "headers": {
+        "content-type": "text/html; charset=utf-8"
+      },
+      "bytes": 83998,
+      "sha256": "e18aa0ef6c69e8b48b38bfffe93f048d2ba3245ae616a76b7df733eab6f4558c",
+      "title": "ALAYA-999: Persistent AI Memory, Functional Identity, and Cross-Model Continuity — A Reproducible Research Framework | Zenodo"
+    },
+    {
+      "url": "https://cesaragliardi-creator.github.io/alaya-999-public/sitemap.xml",
+      "checked_at": "2026-10-30T08:13:34.293556-03:00",
+      "status": 200,
+      "final_url": "https://cesaragliardi-creator.github.io/alaya-999-public/sitemap.xml",
+      "headers": {
+        "content-type": "application/xml",
+        "last-modified": "Fri, 30 Oct 2026 11:03:25 GMT",
+        "etag": "\"6ae4797d-312\""
+      },
+      "bytes": 786,
+      "sha256": "c7c8383b813f8ef66fbcb9f91e19e48433a0bbda0b9cf2c5c66b07cf772ca8c8",
+      "title": null
+    }
+  ],
+  "zenodo": {
+    "method": "Anonymous HTTPS GET of DOI, Zenodo HTML, public record API and deposited PDF; no credentials supplied",
+    "checked_on": "2026-10-30",
+    "record_url": "https://zenodo.org/records/23802112",
+    "api_url": "https://zenodo.org/api/records/23802112",
+    "version_doi": "10.5281/zenodo.23802112",
+    "concept_doi": "10.5281/zenodo.23802110",
+    "publication_date": "2026-10-30",
+    "pdf_bytes": 63875,
+    "pdf_sha256": "788d37c1b6906d69faea19ae046ba7e6ab87a03b7cfa5451dcb149602c32d168",
+    "pdf_md5_matches_record": true,
+    "search_engine_indexing_proven": false,
+    "evidence_json": "https://github.com/cesaragliardi-creator/alaya-999-public/blob/main/visibility/2026-10-30.json",
+    "scope": "Deposit availability and matching deposited bytes only; no peer-review, scientific-performance or international readership claim"
+  },
+  "zenodo_deposited_pdf": {
+    "url": "https://zenodo.org/api/records/23802112/files/ALAYA999_Nota_Cientifica_Zenodo_v1.pdf/content",
+    "checked_at": "2026-10-30T08:17:13.970364-03:00",
+    "status": 200,
+    "final_url": "https://zenodo.org/api/records/23802112/files/ALAYA999_Nota_Cientifica_Zenodo_v1.pdf/content",
+    "content_type": "application/octet-stream,application/octet-stream",
+    "bytes": 63875,
+    "md5": "a65074db8f85a731391171a260c04c55",
+    "sha256": "788d37c1b6906d69faea19ae046ba7e6ab87a03b7cfa5451dcb149602c32d168",
+    "zenodo_expected_checksum": "md5:a65074db8f85a731391171a260c04c55",
+    "checksum_matches": true,
+    "pdf_header": "%PDF-"
+  },
+  "search_queries": [
+    {
+      "key": "exact_name_s1",
+      "performed_on": "2026-10-30",
+      "request": {
+        "system1_search_query": [
+          {
+            "q": "\"ALAYA-999\""
+          }
+        ],
+        "response_length": "short"
+      },
+      "results": [
+        {
+          "returned_order": 1,
+          "url": "https://www.hotcoin.cc/en_US/support/notice/spot-agt/"
+        },
+        {
+          "returned_order": 2,
+          "url": "https://www.binance.com/en-UZ/price/alaya-ai"
+        },
+        {
+          "returned_order": 3,
+          "url": "https://investidor10.com.br/criptomoedas/alaya-governance-token/"
+        },
+        {
+          "returned_order": 4,
+          "url": "https://coincodex.com/pt-br/crypto/alaya-ai/"
+        },
+        {
+          "returned_order": 5,
+          "url": "https://coincodex.com/pt-br/crypto/alaya-ai/exchanges/"
+        },
+        {
+          "returned_order": 6,
+          "url": "https://www.reclameaqui.com.br/empresa/alaya/"
+        }
+      ],
+      "target_matches": [],
+      "classification": "no_unambiguous_target_in_returned_results",
+      "notes": "Returned order is not a stable search ranking. Search tools can relax or ignore quoted/site constraints. No matching target does not prove absence from all search indexes."
+    },
+    {
+      "key": "persistent_s2",
+      "performed_on": "2026-10-30",
+      "request": {
+        "system2_search_query": [
+          {
+            "q": "\"ALAYA-999\" \"persistent AI memory\""
+          }
+        ],
+        "response_length": "short"
+      },
+      "results": [
+        {
+          "returned_order": 1,
+          "url": "https://ailearned.today/portal"
+        },
+        {
+          "returned_order": 2,
+          "url": "https://mcp-registry-dh5.pages.dev/"
+        },
+        {
+          "returned_order": 3,
+          "url": "https://ailearned.today/mail/"
+        },
+        {
+          "returned_order": 4,
+          "url": "https://ailearned.today/web.php"
+        },
+        {
+          "returned_order": 5,
+          "url": "https://ailearned.today/about.php"
+        },
+        {
+          "returned_order": 6,
+          "url": "https://ailearned.today/viewer.php"
+        },
+        {
+          "returned_order": 7,
+          "url": "https://www.ailearned.today/model/info"
+        },
+        {
+          "returned_order": 8,
+          "url": "https://www.ailearned.today/sse"
+        },
+        {
+          "returned_order": 9,
+          "url": "https://www.ailearned.today/build.sh"
+        },
+        {
+          "returned_order": 10,
+          "url": "https://ailearned.today/php.php"
+        },
+        {
+          "returned_order": 11,
+          "url": "https://ailearned.today/staging/"
+        },
+        {
+          "returned_order": 12,
+          "url": "https://www.ailearned.today/mcp/sse"
+        }
+      ],
+      "target_matches": [],
+      "classification": "no_unambiguous_target_in_returned_results",
+      "notes": "Returned order is not a stable search ranking. Search tools can relax or ignore quoted/site constraints. No matching target does not prove absence from all search indexes."
+    },
+    {
+      "key": "identity_s2",
+      "performed_on": "2026-10-30",
+      "request": {
+        "system2_search_query": [
+          {
+            "q": "\"ALAYA-999\" \"functional identity\""
+          }
+        ],
+        "response_length": "short"
+      },
+      "results": [
+        {
+          "returned_order": 1,
+          "url": "https://www.scribd.com/document/507662003/The-Fluid-Pantheon-Gods-of-Medieval-Japan-Volume-1-by-Bernard-Faure-z-lib-org"
+        }
+      ],
+      "target_matches": [],
+      "classification": "no_unambiguous_target_in_returned_results",
+      "notes": "Returned order is not a stable search ranking. Search tools can relax or ignore quoted/site constraints. No matching target does not prove absence from all search indexes."
+    },
+    {
+      "key": "site_pages_s1",
+      "performed_on": "2026-10-30",
+      "request": {
+        "system1_search_query": [
+          {
+            "q": "site:cesaragliardi-creator.github.io/alaya-999-public/"
+          }
+        ],
+        "response_length": "short"
+      },
+      "results": [],
+      "target_matches": [],
+      "classification": "empty_returned_result_set",
+      "notes": "Returned order is not a stable search ranking. Search tools can relax or ignore quoted/site constraints. No matching target does not prove absence from all search indexes."
+    },
+    {
+      "key": "site_repo_s1",
+      "performed_on": "2026-10-30",
+      "request": {
+        "system1_search_query": [
+          {
+            "q": "site:github.com/cesaragliardi-creator/alaya-999-public"
+          }
+        ],
+        "response_length": "short"
+      },
+      "results": [
+        {
+          "returned_order": 1,
+          "url": "https://github.com/c-cesar"
+        },
+        {
+          "returned_order": 2,
+          "url": "https://github.com/AlayaLab"
+        },
+        {
+          "returned_order": 3,
+          "url": "https://explore.market.dev/experts/cezaraugusto"
+        },
+        {
+          "returned_order": 4,
+          "url": "https://6.xz96.dpdns.org/cezaraugusto"
+        },
+        {
+          "returned_order": 5,
+          "url": "https://github.com/cesaraugustodev2"
+        }
+      ],
+      "target_matches": [],
+      "classification": "no_unambiguous_target_in_returned_results",
+      "notes": "Returned order is not a stable search ranking. Search tools can relax or ignore quoted/site constraints. No matching target does not prove absence from all search indexes."
+    },
+    {
+      "key": "site_hf_s1",
+      "performed_on": "2026-10-30",
+      "request": {
+        "system1_search_query": [
+          {
+            "q": "site:huggingface.co/spaces/Alaya999/alaya-999"
+          }
+        ],
+        "response_length": "short"
+      },
+      "results": [
+        {
+          "returned_order": 1,
+          "url": "https://huggingface.co/AlayaLab"
+        },
+        {
+          "returned_order": 2,
+          "url": "https://huggingface.co/docs/hub/spaces-overview"
+        },
+        {
+          "returned_order": 3,
+          "url": "https://huggingface.co/docs/huggingface_hub/main/package_reference/cli"
+        },
+        {
+          "returned_order": 4,
+          "url": "https://huggingface.co/docs/hub/spaces-agents"
+        },
+        {
+          "returned_order": 5,
+          "url": "https://huggingface.co/spaces"
+        },
+        {
+          "returned_order": 6,
+          "url": "https://huggingface.co/AlayaLab/models"
+        }
+      ],
+      "target_matches": [],
+      "classification": "no_unambiguous_target_in_returned_results",
+      "notes": "Returned order is not a stable search ranking. Search tools can relax or ignore quoted/site constraints. No matching target does not prove absence from all search indexes."
+    }
+  ],
+  "supplemental_query_batches": [
+    {
+      "key": "initial_search1",
+      "performed_on": "2026-10-30",
+      "request": {
+        "system1_search_query": [
+          {
+            "q": "\"ALAYA-999\"",
+            "recency": 7
+          },
+          {
+            "q": "\"ALAYA-999\" \"persistent AI memory\""
+          },
+          {
+            "q": "\"ALAYA-999\" \"functional identity\""
+          },
+          {
+            "q": "site:cesaragliardi-creator.github.io/alaya-999-public/"
+          }
+        ]
+      },
+      "returned_urls": [
+        "https://www.ailearned.today/model/info",
+        "https://ailearned.today/mail/",
+        "https://link.springer.com/article/10.1007/s44206-026-00290-2",
+        "https://www.sciencedirect.com/science/article/pii/S2212473X2600088X",
+        "https://ojs.aaai.org/index.php/AAAI/article/view/34982",
+        "https://ojs.aaai.org/index.php/AAAI/article/view/41112",
+        "https://jmepb.bmj.com/content/2/3/e000054",
+        "https://www.cambridge.org/core/journals/memory-mind-and-media/article/ai-and-memory/BB2E4B113B826133E1B6C8DB6BACD192",
+        "https://ailearned.today/viewer.php",
+        "https://doi.org/10.1007/s44206-026-00290-2"
+      ],
+      "target_matches": [],
+      "scope": "The service aggregates these queries; no per-query attribution or position is inferred. Some listed URLs are documentation opened in the same request, not search discoveries."
+    },
+    {
+      "key": "initial_search2",
+      "performed_on": "2026-10-30",
+      "request": {
+        "system2_search_query": [
+          {
+            "q": "\"ALAYA-999\""
+          },
+          {
+            "q": "site:github.com/cesaragliardi-creator/alaya-999-public"
+          },
+          {
+            "q": "site:huggingface.co/spaces/Alaya999/alaya-999"
+          },
+          {
+            "q": "\"cesaragliardi-creator.github.io/alaya-999-public\""
+          }
+        ]
+      },
+      "returned_urls": [
+        "https://huggingface.co/AlayaLab",
+        "https://github.com/AlayaLab/AlayaWorld/blob/main/README.md",
+        "https://huggingface.co/AlayaLab/AlayaWorld",
+        "https://huggingface.co/AlayaLab/models",
+        "https://huggingface.co/docs/hub/en/spaces-overview?trk=article-ssr-frontend-pulse_little-text-block",
+        "https://github.com/AlayaLab/AlayaWorld",
+        "https://huggingface.co/AlayaLab/AlayaWorld/tree/main",
+        "https://www.bbb.org/scamtracker/lookupscam/1273250?returnTo=%2Fscamtracker%2Flookupscam%3Fq%3Dall%253DPyramid%252BScheme%2526from%253D0",
+        "https://huggingface.co/spaces?includeNonRunning=false",
+        "https://huggingface.co/models?author=AlayaLab&sort=modified",
+        "https://huggingface.co/spaces?sort=created",
+        "https://huggingface.co/organizations/AlayaLab/activity/all",
+        "https://www.bbb.org/scamtracker/lookupscam/1239727?returnTo=%2Fscamtracker%2Flookupscam%3Fq%3Dall%253D%2522package%2Bdelivery%2522%2526from%253D30",
+        "https://huggingface.co/spaces?includeNonRunning=true&p=48&sort=trending",
+        "https://github.com/AlayaLab",
+        "https://huggingface.co/AlayaLab/AlayaWorld?library=diffusers",
+        "https://huggingface.co/spaces?includeNonRunning=false&sort=trending",
+        "https://github.com/DataCanvasIO/Alaya",
+        "https://github.com/alayalab/",
+        "https://github.com/AlayaDB-AI/AlayaDB",
+        "https://github.com/GoSync-Inc/alaya",
+        "https://github.com/SecurityRonin/alaya",
+        "https://github.com/c-cesar",
+        "https://github.com/314617500/alayaworld",
+        "https://www.sinj.df.gov.br/sinj/Diario/2591e488-9c49-34d3-804d-7b25a7c6cdf4/DODF%20211%2011-11-2021%20INTEGRA.pdf",
+        "https://isima.rnu.tn/userfiles/files/Mast%C3%A8re%20DS%20-%202025%20-%202026%20-%20r%C3%A9sultat%20internes%20-%20liste%20des%20retenus.pdf",
+        "https://www.pref.mie.lg.jp/common/content/001036676.pdf",
+        "https://github.com/AlayaDB-AI/AlayaLite",
+        "https://github.com/Sikarugir-App/Creator",
+        "https://qasbysimran.com/collections/all?page=1"
+      ],
+      "target_matches": [],
+      "scope": "The service aggregates these queries; no per-query attribution or position is inferred. Some listed URLs are documentation opened in the same request, not search discoveries."
+    },
+    {
+      "key": "doi_and_topics",
+      "performed_on": "2026-10-30",
+      "request": {
+        "system1_search_query": [
+          {
+            "q": "\"10.5281/zenodo.23802112\""
+          },
+          {
+            "q": "\"persistent AI memory\" \"functional identity\""
+          },
+          {
+            "q": "\"ALAYA-999\" \"César Agliardi Pereira\""
+          }
+        ]
+      },
+      "returned_urls": [
+        "https://www.alexanarch.org/resolve/",
+        "https://support.zenodo.org/help/en-gb/18-general/216-what-is-a-doi",
+        "https://developers.zenodo.org/",
+        "https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt"
+      ],
+      "target_matches": [],
+      "scope": "The service aggregates these queries; no per-query attribution or position is inferred. Some listed URLs are documentation opened in the same request, not search discoveries."
+    }
+  ],
+  "indexing_conclusion": "NOT_PROVEN_IN_RETURNED_RESULTS",
+  "indexing_limitations": [
+    "Accessible HTTP 200 pages do not prove search index membership.",
+    "No target match in these returned results does not prove absence from every search index.",
+    "Search backends are recorded as the service identifiers system1/system2; no Google/Bing identity, universal rank or geographic coverage is asserted.",
+    "Some search results relaxed exact/site constraints and returned unrelated projects; these are not counted as ALAYA-999 visibility.",
+    "Direct search-service opens failed for some targets, while separate anonymous HTTPS succeeded; tool failure is not host unavailability.",
+    "No authenticated Search Console or publisher analytics were consulted."
+  ],
+  "discovery_changes_in_this_commit": [
+    "Add static English research summary with canonical, author, DOI, PDF citation metadata and explicit preliminary status.",
+    "Link the English summary from the existing homepage; add it to the sitemap.",
+    "Replace the stale homepage statement that Zenodo remains planned with the checked publication status.",
+    "Record later public verification in the registry and append dated corrections to README, NETWORK and the original research abstract.",
+    "Preserve all 28 existing dialogue turns, private-source boundaries, original Git history and prior owner-supplied evidence."
+  ],
+  "pre_existing_manifest_mismatches": [
+    {
+      "file": "network-status.json",
+      "previous_manifest_sha256": "1015ee55927fda38c042342bd3f326b7354e210db608cc5c56e909f7c1b15435",
+      "observed_pre_change_sha256": "bc86130f8bdccbcf51b089f200e1ee0c32fcb4915cbcc7598aa5c0aba4189827"
+    },
+    {
+      "file": "NETWORK.md",
+      "previous_manifest_sha256": "bc785859bce84f289076ad60fe94ab2ba31a038dc792376c2a15a274dd753e39",
+      "observed_pre_change_sha256": "525bbabd641022004e25e94f3d7b89fe85f6896e88fb766748bc0b3e568d6622"
+    },
+    {
+      "file": "README.md",
+      "previous_manifest_sha256": "380663a44bd476b237711176b5b096040784164c78eea29c7456a5a3c4d2c1bc",
+      "observed_pre_change_sha256": "658622d685adfd7a161d4d86fa3322cb6f36372aa67a2e6facbe67fa89449641"
+    }
+  ],
+  "integrity_action": "The three mismatches existed at the pinned pre-change commit and concern public Zenodo documentation/registry changes. Their source text was reviewed; this commit records that fact and updates only reviewed/touched hashes, without changing executable scripts or workflows.",
+  "implementation_index": {
+    "before": 70,
+    "after": 70,
+    "meaning": "Existing ten-milestone deployment index only, not indexing, readership, consciousness or scientific performance"
+  },
+  "opportunities_not_executed": [
+    "Use an already-authorized owner Search Console property to inspect exact URLs and submit the sitemap; no account creation or access assumed.",
+    "Normalize the abbreviated creator field in the existing Zenodo record and have the rights holder resolve its licence/copyright presentation; no external metadata altered.",
+    "Use the full distinct project title and author consistently to reduce confusion with unrelated Alaya products.",
+    "Prioritize preregistered tests, consented public raw outputs, versioned corrections and independent replication for legitimate scientific visibility.",
+    "If already authorized, link the public DOI and methods page from existing research profiles; no unsolicited outreach, bulk posts or new accounts."
+  ],
+  "robots_scope": {
+    "host_root_status": 404,
+    "project_subdirectory_status": 200,
+    "interpretation": "The project-subdirectory robots.txt is not the host-root robots.txt. A root 404 does not impose crawl restrictions for Google; no root repository outside the authorized project was modified."
+  },
+  "primary_guidance": [
+    "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview",
+    "https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites",
+    "https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec"
+  ],
+  "publication_scope": "Public-source audit and presentation changes only. No private documents, account settings, credentials, licences or third-party posts were published or changed.",
+  "live_deployment": "Repository additions are described here. A separate dated deployment JSON, when present, records post-commit anonymous HTTP verification; this audit does not pre-claim deployment or search indexing."
+}

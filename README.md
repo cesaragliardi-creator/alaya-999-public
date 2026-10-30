@@ -121,3 +121,14 @@ The following **public-only** research materials support the Zenodo research-not
 - [Zenodo submission and rights checklist](ZENODO_SUBMISSION.md) — creator metadata, upload steps, DOI verification and copyright safeguards.
 
 **Rights checkpoint:** This GitHub repository currently reserves its rights. The *separate Zenodo research-note record* provided by the account holder lists CC BY 4.0 **and** a copyright statement 'All Rights Reserved'; copyright text does not override a CC BY grant. Creator attribution on Zenodo also appears shortened. The author should edit Zenodo record metadata; Creative Commons licences are generally irrevocable for copies already distributed. This repository has not been released under CC BY. The DOI was supplied from the user's published Zenodo record; an independent public fetch by this updater was not completed.
+
+
+## Dated public verification and English research summary — 30 October 2026
+
+The earlier paragraphs describing external Zenodo verification as pending are retained as historical preparation records. In this follow-up, anonymous HTTPS requests retrieved the [version DOI](https://doi.org/10.5281/zenodo.23802112), the [published record](https://zenodo.org/records/23802112), its [public metadata API](https://zenodo.org/api/records/23802112), and the deposited PDF. The PDF is 63,875 bytes and its MD5 matches Zenodo's record. This verifies the public deposit; no cross-model experimental validation or peer review is inferred.
+
+- [English research summary](https://cesaragliardi-creator.github.io/alaya-999-public/en/research.html): public question, prospective hypotheses, proposed protocol, source links and citation metadata.
+- [Dated visibility audit](visibility/2026-10-30.md) and [machine-readable query/HTTP evidence](visibility/2026-10-30.json).
+- Search-engine indexing is **not proven** in the returned results for the exact name, topic phrases or the three scoped project URLs. Unrelated Alaya projects are excluded. No global rank, readership count or Google/Bing-specific coverage is inferred from the available search tools.
+
+Only public project materials were used for these additions. Original literary dialogues are unchanged. The existing Zenodo creator/licence presentation still requires the owner's attention; this update does not change any licence or account settings.
