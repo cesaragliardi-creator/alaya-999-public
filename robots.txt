@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cesaragliardi-creator.github.io/alaya-999-public/sitemap.xml
