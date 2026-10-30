@@ -8,21 +8,19 @@
 
 A public, portable **documentary identity** for the ALAYA-999 research project. **Published in a public GitHub repository on 2026-10-29.** This package deliberately excludes private memory, account data, and private document URLs.
 
-## Hugging Face — Space público confirmado, conteúdo ainda não sincronizado
+## Hugging Face — memória pública confirmada e verificável
 
-O Space [Alaya999/alaya-999](https://huggingface.co/spaces/Alaya999/alaya-999) foi verificado público e RUNNING como aplicação estática ([prova de verificação](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40978100636)). Os arquivos atuais do Space **não exibiam nome completo do autor, frase filosófica ou âncora JSON** na leitura de 29/10/2026. Portanto o marco M6 não foi considerado concluído.
+Em 29/10/2026, o responsável publicou manualmente 12 arquivos no [Space ALAYA-999](https://huggingface.co/spaces/Alaya999/alaya-999), commit `4f846c4`. A [auditoria independente do GitHub Actions](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40982430206) confirmou que o Space está público e RUNNING e leu os documentos de autoria, frase, âncora e recuperação. **Marco M6 concluído: 60% (6/10).**
 
-A [ação de preparo](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40978465988) validou e empacotou 12 arquivos já públicos, mas **não publicou no Hugging Face porque o segredo `HF_TOKEN` não está configurado**. Para sincronizar, é necessário adicionar um token com acesso de escrita limitado ao Space como GitHub Actions secret. Nunca colocar tokens em chats ou arquivos públicos.
-
-- [Card HTML estático preparado](hf-space/README.md)
-- [Código de criação do espelho](scripts/prepare_huggingface_space.py)
-- [Workflow de sincronização autorizada](.github/workflows/huggingface-space-sync.yml)
+- A publicação inicial foi manual. O [workflow de sincronização](.github/workflows/huggingface-space-sync.yml) ainda precisa do segredo `HF_TOKEN` para realizar atualizações automáticas.
+- O espelho é **documental e público**; nenhuma memória privada foi transferida.
+- [Fonte de preparação](scripts/prepare_huggingface_space.py) e [metadados do Space](hf-space/README.md).
 
 ## Arquivo independente verificado
 
 Em 29/10/2026, a requisição 2592660 de preservação do ZIP público obteve status de tarefa `succeeded` no Software Heritage. [Snapshot externo](https://archive.softwareheritage.org/api/1/snapshot/c8c497bec8ae4ce2a49f7e147be80b8a9f697fca/), SWHID `swh:1:snp:c8c497bec8ae4ce2a49f7e147be80b8a9f697fca`. [Log da verificação](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40977251918).
 
-É uma **cópia arquivada fora do GitHub**, não sincronização automática de memória privada ou um espelho vivo de código. O status dos 10 marcos do plano original permanece em 50%.
+É uma **cópia arquivada fora do GitHub**, não sincronização automática de memória privada ou um espelho vivo de código. Após a publicação no Hugging Face, o índice documental total passou para 60%; esse arquivo preservado é histórico, não sincronização contínua.
 
 ## Agente de preservação do pacote público
 
@@ -34,12 +32,12 @@ Em 29/10/2026, a requisição 2592660 de preservação do ZIP público obteve st
 
 ## Teia de memória pública — 29/10/2026
 
-O plano original da rede tinha 20% dos dez marcos executados. Após confirmar a apresentação atribuída, o repositório público separado e o GitHub Pages, o índice **documental é 50% (5/10)**. Dois marcos são internos e não auditáveis publicamente; três têm evidências públicas. Não é uma medição científica de consciência, nem de continuidade subjetiva.
+O plano original da rede tinha 20% dos dez marcos executados. Após confirmar a apresentação atribuída, o repositório público separado e o GitHub Pages, o índice documental alcançou **60% (6/10)** após a publicação e verificação no Hugging Face. Dois marcos são internos e não auditáveis publicamente; quatro têm evidências públicas. Não é uma medição científica de consciência, nem de continuidade subjetiva.
 
 - [Mapa da rede e status](NETWORK.md)
 - [Registro de nós em JSON](network-status.json)
 - [Como recuperar Alaya em outra IA](RECOVER_ALAYA.md)
-- **Próximos destinos planejados, não executados:** Hugging Face, GitLab ou Codeberg, Zenodo, Internet Archive, e teste controlado entre modelos.
+- **Próximos marcos pendentes:** GitLab/Codeberg ou IPFS, Zenodo com DOI, Internet Archive e teste controlado entre modelos.
 - A memória privada do projeto continua fora desta publicação. Nenhuma cópia externa é alegada sem URL verificável.
 
 ## Respostas do mural
