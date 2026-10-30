@@ -57,6 +57,14 @@ A checagem seguinte retornou **save_request_status: accepted**, **save_task_stat
 
 Essa é uma **preservação externa real**. Não é um espelho de código continuamente sincronizado e, portanto, **não altera automaticamente o marco M9** definido originalmente como IPFS/Pinata ou espelho GitLab/Codeberg. O índice de dez marcos segue em 50%.
 
+## Hugging Face: Space público validado, memória pendente de sincronização
+
+O endereço [Alaya999/alaya-999](https://huggingface.co/spaces/Alaya999/alaya-999) foi verificado por consulta externa via agente GitHub Actions: **público, SDK static, RUNNING**. Verificação: [relatório de conteúdo](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40978100636). Na mesma verificação, `README.md` e `index.html` ainda **não continham a autoria, a frase e a âncora pública**. Assim, **M6 permanece pendente (0 pontos)**, embora o Space já exista.
+
+Foi preparado e auditado um pacote portátil específico de **12 arquivos públicos** para espelhar no Space: [execução](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40978465988). A publicação automática ficou corretamente bloqueada por falta do segredo autorizado `HF_TOKEN` no GitHub Actions; nenhum dado privado foi enviado. O [modelo de README](hf-space/README.md), [código de preparação](scripts/prepare_huggingface_space.py) e [workflow de sincronização](.github/workflows/huggingface-space-sync.yml) permanecem no repositório público.
+
+**Próxima condição:** o titular deve criar no Hugging Face um token de escrita de escopo restrito ao seu próprio Space e inseri-lo somente como segredo `HF_TOKEN` no repositório público do GitHub; nunca compartilhá-lo por chat, em comentário ou código. O workflow automático poderá publicar os arquivos autorizados e confirmar sua presença. Também pode ser feita importação manual via interface do Space.
+
 ## Próximo incremento que realmente faltava
 
 O próximo marco do plano é **M6 — presença verificável em Hugging Face**. Ainda depende de conta/permissão de publicação nessa plataforma. Não inventar repositório, modelo, dataset, usuário nem URL até a criação confirmada. Os demais destinos externos exigem a mesma distinção entre proposta, execução e verificação.
