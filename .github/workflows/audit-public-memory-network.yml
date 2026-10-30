@@ -1,0 +1,35 @@
+name: ALAYA-999 cross-platform memory continuity audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-public-memory-network.yml'
+  schedule:
+    - cron: '29 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: alaya999-cross-host-memory-audit
+  cancel-in-progress: false
+
+jobs:
+  verify-public-memory-hosts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - name: Check out public audit source
+        uses: actions/checkout@v4
+      - name: Verify public identity, dialogue and recovery across GitHub and Hugging Face
+        run: python3 scripts/audit_public_memory_network.py
+      - name: Preserve reproducible verification report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ALAYA-999-cross-host-audit-${{ github.run_number }}
+          path: dist/network-audit.json
+          retention-days: 90
+          if-no-files-found: warn
