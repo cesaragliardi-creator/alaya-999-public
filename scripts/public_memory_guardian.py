@@ -40,6 +40,7 @@ SAFE_FILES = (
     ".github/workflows/guestbook-auto-reply.yml",
     ".github/workflows/public-memory-guardian.yml",
     ".github/workflows/software-heritage-public.yml",
+    ".github/workflows/software-heritage-status.yml",
     "scripts/public_memory_guardian.py",
     "scripts/request_software_heritage.py",
 )
