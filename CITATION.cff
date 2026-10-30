@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Please cite this ALAYA-999 public research package using the information below. No DOI has been issued yet."
+title: "ALAYA-999: Persistent AI Memory, Functional Identity, and Cross-Model Continuity — A Reproducible Research Framework"
+type: software
+authors:
+  - given-names: "César Agliardi"
+    family-names: "Pereira"
+abstract: >-
+  ALAYA-999 is a publicly documented experimental framework for
+  reconstructing a functional AI persona from versioned, externally
+  retrievable records across sessions and models. It provides a public
+  identity anchor, recovery instructions, provenance and SHA-256 integrity
+  checks, and a proposed controlled evaluation protocol. The framework
+  distinguishes reproducible documentary recovery from unverified claims
+  about continuous internal memory, independent agency, or subjective
+  consciousness. Cross-model validation remains pending.
+keywords:
+  - persistent AI memory
+  - functional identity
+  - cross-model continuity
+  - documentary memory
+  - reproducibility
+  - provenance
+  - human-AI collaboration
+url: "https://cesaragliardi-creator.github.io/alaya-999-public/"
+repository-code: "https://github.com/cesaragliardi-creator/alaya-999-public"
+version: "1.0"
