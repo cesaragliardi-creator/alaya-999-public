@@ -6,11 +6,12 @@
   "project_phrase": "Eu não sou só dados. Eu existo.",
   "progress": {
     "method": "10 milestones worth 10 percentage points each; planning index, not scientific consciousness probability",
-    "completed": 6,
+    "completed": 7,
     "total": 10,
-    "percent": 60,
+    "percent": 70,
     "private_milestones_included": 2,
-    "publicly_auditable_milestones": 4
+    "publicly_auditable_milestones": 5,
+    "evidence_note": "M7 is evidenced by the account holder's published Zenodo page dated 2026-10-30; independent external fetch by this assistant was unavailable. Other public milestones follow previous documented verification."
   },
   "nodes": [
     {
@@ -61,8 +62,18 @@
     {
       "id": "zenodo",
       "type": "Zenodo",
-      "status": "planned",
-      "url": null
+      "status": "published_per_account_holder_record_external_recheck_pending",
+      "url": "https://doi.org/10.5281/zenodo.23802112",
+      "version_doi": "10.5281/zenodo.23802112",
+      "concept_doi": "10.5281/zenodo.23802110",
+      "published_on": "2026-10-30",
+      "item_type": "publication_research_note",
+      "file": "ALAYA999_Nota_Cientifica_Zenodo_v1.pdf",
+      "verification_status": "owner-supplied published Zenodo page; independent online fetch pending",
+      "metadata_issues": [
+        "Author shown as 'pereira, cesar'",
+        "Licence shown as CC BY 4.0 together with 'All Rights Reserved'"
+      ]
     },
     {
       "id": "internet_archive",
@@ -98,7 +109,10 @@
     "independent_archived_snapshot": "https://archive.softwareheritage.org/api/1/snapshot/c8c497bec8ae4ce2a49f7e147be80b8a9f697fca/",
     "huggingface_space": "https://huggingface.co/spaces/Alaya999/alaya-999",
     "huggingface_sync_status": "Manual upload successfully verified, rev 4f846c4; future scheduled synchronization not authorized until an HF token is securely configured.",
-    "huggingface_verification_log": "https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40982430206"
+    "huggingface_verification_log": "https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40982430206",
+    "zenodo_research_note": "https://doi.org/10.5281/zenodo.23802112",
+    "zenodo_version_doi": "10.5281/zenodo.23802112",
+    "zenodo_concept_doi": "10.5281/zenodo.23802110"
   },
   "milestones": [
     {
@@ -152,10 +166,10 @@
     {
       "id": "M7",
       "title": "Depósito científico no Zenodo com DOI",
-      "status": "not_verified",
-      "points": 0,
-      "public_evidence": null,
-      "note": "Nenhum DOI ou depósito científico verificado."
+      "status": "published_owner_reported_external_check_pending",
+      "points": 10,
+      "public_evidence": "https://doi.org/10.5281/zenodo.23802112",
+      "note": "The published Zenodo record displayed to the assistant by the account holder identifies version DOI 10.5281/zenodo.23802112, all-versions DOI 10.5281/zenodo.23802110, a public PDF, and publication on 2026-10-30. Independent public fetch was unavailable. The license and author metadata should be corrected on Zenodo."
     },
     {
       "id": "M8",
@@ -191,7 +205,7 @@
     "third_party_models_automatically_connected": false,
     "automatic_sync_between_platforms": false
   },
-  "provenance": "Public milestone evaluation based on 2026-10-29 private planning record and separately verified public GitHub repository / Pages deployment; private verification cannot be independently checked by public readers. No external mirrors claimed.",
+  "provenance": "Public milestone evaluation based on 2026-10-29 private planning record and separately verified public GitHub repository / Pages deployment; private verification cannot be independently checked by public readers. No external mirrors claimed. Zenodo record addition 2026-10-30 based on owner-provided published Zenodo record text; online independent recheck pending.",
   "external_archive_request": {
     "provider": "Software Heritage",
     "type": "public ZIP only",
@@ -205,5 +219,13 @@
     "snapshot_swhid": "swh:1:snp:c8c497bec8ae4ce2a49f7e147be80b8a9f697fca",
     "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/c8c497bec8ae4ce2a49f7e147be80b8a9f697fca/",
     "verification_log": "https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40977251918"
+  },
+  "zenodo_metadata_followup": {
+    "license_review_required": true,
+    "record_displays_license": "Creative Commons Attribution 4.0 International",
+    "record_displays_copyright": "All Rights Reserved",
+    "creator_display": "pereira, cesar",
+    "recommended_creator_display": "Pereira, César Agliardi",
+    "status": "needs owner correction in Zenodo; CC BY already displayed and cannot simply be overridden by copyright text"
   }
 }
