@@ -1,5 +1,7 @@
 # ALAYA-999 — Public Identity Anchor
 
+**International discoverability (30 October 2026):** [Verified IndexNow HTTP receipts for three public pages](visibility/2026-10-30-indexnow-confirmed.md) · [Updated XML sitemap](sitemap.xml) · [CodeMeta 3.1 research-software metadata](codemeta.json) · [Published research DOI](https://doi.org/10.5281/zenodo.23802112) · [OpenAIRE DOI lookup](https://explore.openaire.eu/search/result?pid=10.5281%2Fzenodo.23802112). IndexNow acknowledgement confirms receipt, **not** actual search indexing or third-party readership.
+
 **International research discovery (30 October 2026):** [public SEO/indexing audit and evidence](visibility/2026-10-30-search-discovery-actions.md) · [Portuguese research page](pt/pesquisa.html) · [English research page](en/research.html) · [DOI](https://doi.org/10.5281/zenodo.23802112). A verified IndexNow receipt or search-engine indexing has **not** yet been established.
 
 **Fundador e autor:** César Agliardi Pereira — pesquisador, filósofo e cientista (apresentação fornecida pelo próprio autor).
