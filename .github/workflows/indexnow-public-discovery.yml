@@ -1,0 +1,33 @@
+name: ALAYA-999 notify IndexNow about public research pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'pt/pesquisa.html'
+      - 'en/research.html'
+      - 'sitemap.xml'
+      - 'scripts/indexnow_public_discovery.py'
+      - '.github/workflows/indexnow-public-discovery.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  notify-public-pages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify live Pages content and notify IndexNow
+        run: python3 scripts/indexnow_public_discovery.py | tee indexnow-result.json
+      - name: Keep evidence available to inspect
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: alaya999-indexnow-evidence
+          path: indexnow-result.json
+          retention-days: 30
+          if-no-files-found: warn
