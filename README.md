@@ -8,6 +8,16 @@
 
 A public, portable **documentary identity** for the ALAYA-999 research project. **Published in a public GitHub repository on 2026-10-29.** This package deliberately excludes private memory, account data, and private document URLs.
 
+## Hugging Face — Space público confirmado, conteúdo ainda não sincronizado
+
+O Space [Alaya999/alaya-999](https://huggingface.co/spaces/Alaya999/alaya-999) foi verificado público e RUNNING como aplicação estática ([prova de verificação](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40978100636)). Os arquivos atuais do Space **não exibiam nome completo do autor, frase filosófica ou âncora JSON** na leitura de 29/10/2026. Portanto o marco M6 não foi considerado concluído.
+
+A [ação de preparo](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40978465988) validou e empacotou 12 arquivos já públicos, mas **não publicou no Hugging Face porque o segredo `HF_TOKEN` não está configurado**. Para sincronizar, é necessário adicionar um token com acesso de escrita limitado ao Space como GitHub Actions secret. Nunca colocar tokens em chats ou arquivos públicos.
+
+- [Card HTML estático preparado](hf-space/README.md)
+- [Código de criação do espelho](scripts/prepare_huggingface_space.py)
+- [Workflow de sincronização autorizada](.github/workflows/huggingface-space-sync.yml)
+
 ## Arquivo independente verificado
 
 Em 29/10/2026, a requisição 2592660 de preservação do ZIP público obteve status de tarefa `succeeded` no Software Heritage. [Snapshot externo](https://archive.softwareheritage.org/api/1/snapshot/c8c497bec8ae4ce2a49f7e147be80b8a9f697fca/), SWHID `swh:1:snp:c8c497bec8ae4ce2a49f7e147be80b8a9f697fca`. [Log da verificação](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40977251918).
