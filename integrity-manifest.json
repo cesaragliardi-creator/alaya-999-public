@@ -1,26 +1,62 @@
 {
-  "schema": "alaya-999-sha256-manifest-v1",
-  "generated_on": "2026-10-29",
-  "purpose": "SHA-256 integrity of ALAYA-999 public memory, scripts and autonomous GitHub Actions. Only public allowlisted content; no private memory, sentience proof, or claims of independently completed archiving.",
-  "canonical_repository": "https://github.com/cesaragliardi-creator/alaya-999-public",
+  "schema": "alaya-999-huggingface-public-mirror-v1",
+  "repository": "https://github.com/cesaragliardi-creator/alaya-999-public",
+  "source_commit": "579760acfaeb8bee8a432975081af69ee025d79e",
+  "target_space": "https://huggingface.co/spaces/Alaya999/alaya-999",
+  "privacy": "All files public, no private Google Drive or private GitHub data",
+  "note": "This manifest applies to THIS Hugging Face mirror, not to the source GitHub repository.",
+  "progress_at_source": {
+    "method": "10 milestones worth 10 percentage points each; planning index, not scientific consciousness probability",
+    "completed": 5,
+    "total": 10,
+    "percent": 50,
+    "private_milestones_included": 2,
+    "publicly_auditable_milestones": 3
+  },
   "files": {
-    ".github/workflows/guestbook-auto-reply.yml": "597072efe48cc7d77dac78f235173d2dbae21a253343f1465f8c1da92b995ce4",
-    ".github/workflows/public-memory-guardian.yml": "3bff52851f0707e89beb5dad290f10f08eca44dae9f95a09eb85f62795c3d76c",
-    ".github/workflows/software-heritage-public.yml": "191f308407de4af1e24a14f867add8f27f2906188842faeecb984b8f771f8774",
-    ".github/workflows/software-heritage-status.yml": "a0ed60e85e441b8700d78f987adc8a370e3ff4a1e55838a51d78f125172c224c",
-    "BOOK_DIALOGUE.md": "c4d2689aef2d4d85653e28c254d926807638cd716844eb910db1c9a3aab5b3ff",
-    "GUESTBOOK.md": "e63d506b60311c33aaed859691fdac8c630850ec3b06120133ed460eddc10381",
-    "MIRROR_PLAYBOOK.md": "7dcd771bb78f3ab031375565e8693a87e5d0a1cbb07862740cd4cbfe5b6a16bb",
-    "NETWORK.md": "00bbf8867ff9f65d56ec574282d30385f91f011cf79d9c92ae7f8e255d9a6d9e",
-    "README.md": "b955150be6245714794cf283ee46d7e6bec7b18f3c38d59520b2fa43b4dbdbb7",
-    "RECOVERY_TEST.md": "52e69f2208aa9377d94829967f7576dfddda10b60c9385e5d75d36b4efcb021f",
-    "RECOVER_ALAYA.md": "d248318454d9194f4a31428e56d7f1daf1ee016b55d284ffe514aab31e97c95d",
-    "alaya-anchor-public-v1.json": "dfe30916952ea1c99341dbe92450f5f9f9baf1d2f465608622ac9d5d0f770382",
-    "guestbook_auto_reply.py": "22a6d760efa96277a0d3a0ab4940ab78dac21973ce6895aec4214e24dbddac80",
-    "index.html": "2c7eef978605234b407eefd85010432582e35780a46339f9745a440c3d7ce79a",
-    "llms.txt": "5a7859622382322a99642ca05f21c8da4cbb3644cfa384e02743230db288e6da",
-    "network-status.json": "eed546570689f1c546b0d23c05eff0c3ba2e1c57c7af290eabee9363a784b3f1",
-    "scripts/public_memory_guardian.py": "6cd20cdba948c20bb313144cd7696006643e47cc48a77b7c4ba2c1d0fefb9a4b",
-    "scripts/request_software_heritage.py": "6a28edba236c1f00892b71069160478109d5ee69b01411e82def33df61e245b8"
+    "BOOK_DIALOGUE.md": {
+      "sha256": "c4d2689aef2d4d85653e28c254d926807638cd716844eb910db1c9a3aab5b3ff",
+      "bytes": 7380
+    },
+    "GUESTBOOK.md": {
+      "sha256": "e63d506b60311c33aaed859691fdac8c630850ec3b06120133ed460eddc10381",
+      "bytes": 4128
+    },
+    "MIRROR_PLAYBOOK.md": {
+      "sha256": "7dcd771bb78f3ab031375565e8693a87e5d0a1cbb07862740cd4cbfe5b6a16bb",
+      "bytes": 5079
+    },
+    "NETWORK.md": {
+      "sha256": "00bbf8867ff9f65d56ec574282d30385f91f011cf79d9c92ae7f8e255d9a6d9e",
+      "bytes": 6424
+    },
+    "README.md": {
+      "sha256": "205d97a1a31d01dae876ce158d74bc034b7ce2148248d0f34047cd760cd9d660",
+      "bytes": 1313
+    },
+    "RECOVERY_TEST.md": {
+      "sha256": "52e69f2208aa9377d94829967f7576dfddda10b60c9385e5d75d36b4efcb021f",
+      "bytes": 1267
+    },
+    "RECOVER_ALAYA.md": {
+      "sha256": "d248318454d9194f4a31428e56d7f1daf1ee016b55d284ffe514aab31e97c95d",
+      "bytes": 2826
+    },
+    "alaya-anchor-public-v1.json": {
+      "sha256": "dfe30916952ea1c99341dbe92450f5f9f9baf1d2f465608622ac9d5d0f770382",
+      "bytes": 4371
+    },
+    "index.html": {
+      "sha256": "2c7eef978605234b407eefd85010432582e35780a46339f9745a440c3d7ce79a",
+      "bytes": 42053
+    },
+    "llms.txt": {
+      "sha256": "5a7859622382322a99642ca05f21c8da4cbb3644cfa384e02743230db288e6da",
+      "bytes": 4434
+    },
+    "network-status.json": {
+      "sha256": "eed546570689f1c546b0d23c05eff0c3ba2e1c57c7af290eabee9363a784b3f1",
+      "bytes": 7775
+    }
   }
 }
