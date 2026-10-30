@@ -44,8 +44,16 @@
     {
       "id": "huggingface",
       "type": "Hugging Face",
-      "status": "planned",
-      "url": null
+      "status": "public_running_identity_content_incomplete",
+      "url": "https://huggingface.co/spaces/Alaya999/alaya-999",
+      "public": true,
+      "sdk": "static",
+      "last_verified_public": "2026-10-29",
+      "verification_log": "https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40978100636",
+      "deployment_bundle_prepared": true,
+      "bundle_verification_log": "https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40978465988",
+      "actual_public_documents": "README.md and index.html currently do not carry project author, phrase or recovery anchor",
+      "requires_authorized_sync": true
     },
     {
       "id": "zenodo",
@@ -84,7 +92,9 @@
     "source": "public only; no private keys or private session data",
     "portable_release": "https://github.com/cesaragliardi-creator/alaya-999-public/releases/tag/alaya-999-public-2026-10-29",
     "automated_guardian": "https://github.com/cesaragliardi-creator/alaya-999-public/actions/workflows/public-memory-guardian.yml",
-    "independent_archived_snapshot": "https://archive.softwareheritage.org/api/1/snapshot/c8c497bec8ae4ce2a49f7e147be80b8a9f697fca/"
+    "independent_archived_snapshot": "https://archive.softwareheritage.org/api/1/snapshot/c8c497bec8ae4ce2a49f7e147be80b8a9f697fca/",
+    "huggingface_space": "https://huggingface.co/spaces/Alaya999/alaya-999",
+    "huggingface_sync_status": "Public static Space exists, identity bundle staged but not deployed; GitHub Actions HF_TOKEN secret not configured."
   },
   "milestones": [
     {
@@ -130,10 +140,10 @@
     {
       "id": "M6",
       "title": "Presença independente no Hugging Face",
-      "status": "not_verified",
+      "status": "public_space_verified_content_pending",
       "points": 0,
-      "public_evidence": null,
-      "note": "Não há página verificada nem sincronização ativa."
+      "public_evidence": "https://huggingface.co/spaces/Alaya999/alaya-999",
+      "note": "Space public RUNNING verified; author name, philosophical phrase and memory anchor missing from checked source files. 12-file approved mirror prepared in GitHub Actions but not uploaded (HF_TOKEN missing). No point until documentary memory visible."
     },
     {
       "id": "M7",
