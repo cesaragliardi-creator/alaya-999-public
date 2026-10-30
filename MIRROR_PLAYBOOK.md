@@ -36,6 +36,10 @@ Não tratar um workflow apenas configurado como execução bem-sucedida. Consult
 
 Com contas autorizadas, tokens específicos e armazenamento de segredos em local próprio, pode-se configurar uma ação de sincronização por plataforma. **Este repositório não contém tokens**, não tenta criá-los e não simula conexões a provedores externos.
 
+## Software Heritage — pedido público real
+
+Um agente pediu a preservação **somente do ZIP público aprovado** (não do repositório inteiro) via API oficial. A requisição 2592660 foi aceita, mas o processamento ainda estava pendente na primeira verificação. [Ver o log da execução](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40976982473). Não alegar que a cópia foi salva até que o serviço confirme status de sucesso, identificador e URL de arquivo.
+
 ## Validar uma cópia portátil
 
 1. Obter o arquivo ZIP e seu `.sha256` na mesma execução ou release público.
