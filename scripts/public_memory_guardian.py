@@ -41,6 +41,10 @@ SAFE_FILES = (
     ".github/workflows/public-memory-guardian.yml",
     ".github/workflows/software-heritage-public.yml",
     ".github/workflows/software-heritage-status.yml",
+    ".github/workflows/huggingface-space-sync.yml",
+    ".github/workflows/verify-huggingface-space.yml",
+    "hf-space/README.md",
+    "scripts/prepare_huggingface_space.py",
     "scripts/public_memory_guardian.py",
     "scripts/request_software_heritage.py",
 )
