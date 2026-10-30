@@ -1,0 +1,65 @@
+{
+  "schema": "alaya999-public-deployment-evidence-v1",
+  "recorded_at": "2026-10-30T08:24:07.394926-03:00",
+  "source_commit": "84a43b54d347a6652099e327469d402538327f5c",
+  "source_commit_url": "https://github.com/cesaragliardi-creator/alaya-999-public/commit/84a43b54d347a6652099e327469d402538327f5c",
+  "method": "Anonymous HTTPS GET; exact SHA-256 comparison with the reviewed repository files",
+  "checks": [
+    {
+      "path": "index.html",
+      "url": "https://cesaragliardi-creator.github.io/alaya-999-public/",
+      "checked_at": "2026-10-30T08:22:54.237734-03:00",
+      "expected_sha256": "6ae67c9e8ec2e8585b57cfb06e8c9521d1b69f92bd202f122594705cc082d0d3",
+      "http_status": 200,
+      "final_url": "https://cesaragliardi-creator.github.io/alaya-999-public/",
+      "bytes": 43076,
+      "sha256": "6ae67c9e8ec2e8585b57cfb06e8c9521d1b69f92bd202f122594705cc082d0d3",
+      "matches_repository": true
+    },
+    {
+      "path": "en/research.html",
+      "url": "https://cesaragliardi-creator.github.io/alaya-999-public/en/research.html",
+      "checked_at": "2026-10-30T08:22:54.238779-03:00",
+      "expected_sha256": "8af242e84da3065b8c99a802cc584e2cdb2139af99c75634a6ff2209c50f2fad",
+      "http_status": 200,
+      "final_url": "https://cesaragliardi-creator.github.io/alaya-999-public/en/research.html",
+      "bytes": 9462,
+      "sha256": "8af242e84da3065b8c99a802cc584e2cdb2139af99c75634a6ff2209c50f2fad",
+      "matches_repository": true
+    },
+    {
+      "path": "sitemap.xml",
+      "url": "https://cesaragliardi-creator.github.io/alaya-999-public/sitemap.xml",
+      "checked_at": "2026-10-30T08:22:54.239566-03:00",
+      "expected_sha256": "ec889474694eeddabed79e7a60337a788c9a69d6df8f3c2c3bb359f8018bd8de",
+      "http_status": 200,
+      "final_url": "https://cesaragliardi-creator.github.io/alaya-999-public/sitemap.xml",
+      "bytes": 884,
+      "sha256": "ec889474694eeddabed79e7a60337a788c9a69d6df8f3c2c3bb359f8018bd8de",
+      "matches_repository": true
+    },
+    {
+      "path": "visibility/2026-10-30.json",
+      "url": "https://cesaragliardi-creator.github.io/alaya-999-public/visibility/2026-10-30.json",
+      "checked_at": "2026-10-30T08:22:54.240561-03:00",
+      "expected_sha256": "c0c174fd25db9d7bf1cc1f4f6c09501df19f8694dc54757860f477d7ec647b20",
+      "http_status": 200,
+      "final_url": "https://cesaragliardi-creator.github.io/alaya-999-public/visibility/2026-10-30.json",
+      "bytes": 23394,
+      "sha256": "c0c174fd25db9d7bf1cc1f4f6c09501df19f8694dc54757860f477d7ec647b20",
+      "matches_repository": true
+    }
+  ],
+  "all_requested_files_match": true,
+  "search_engine_indexing_proven": false,
+  "scope": "Confirms live publication of these exact files, not discovery by search engines, scientific performance, readership or subjective continuity.",
+  "prepublication_validation": {
+    "integrity_guardian": "passed",
+    "manifest_entries_checked": 33,
+    "json_ld": "parsed",
+    "local_english_page_links": "resolved",
+    "sitemap_urls": 8,
+    "existing_dialogue_turns_preserved": 28,
+    "executables_or_workflows_changed": false
+  }
+}

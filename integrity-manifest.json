@@ -36,8 +36,9 @@
     "RESEARCH_ABSTRACT.md": "4cffaee8f3a5ac13a6a7f983ff30e19389f36e9a09a11a1e964fdf004ed6609c",
     "en/research.html": "8af242e84da3065b8c99a802cc584e2cdb2139af99c75634a6ff2209c50f2fad",
     "visibility/2026-10-30.json": "c0c174fd25db9d7bf1cc1f4f6c09501df19f8694dc54757860f477d7ec647b20",
-    "visibility/2026-10-30.md": "b28dc8cdca7529db0f5aa1aa056b675945be1380dba6b9e3c6ba863813b93081"
+    "visibility/2026-10-30.md": "f3f5eb22c3980c3e2472b3e0576700d9e4da7359a428e9dbaf463fe5474046a6",
+    "visibility/2026-10-30-deployment.json": "403dc587642d1cb8b8a93f691d3168794803a164a8b3c05b907ac01ca2f487ed"
   },
   "updated_on": "2026-10-30",
-  "update_note": "Dated visibility audit and public Zenodo verification; prior three documentary mismatches are recorded in visibility/2026-10-30.json. Existing code/workflow hashes unchanged."
+  "update_note": "Dated visibility audit and public Zenodo verification; prior three documentary mismatches are recorded in visibility/2026-10-30.json. Existing code/workflow hashes unchanged. Post-commit anonymous HTTP and exact byte verification is recorded in visibility/2026-10-30-deployment.json."
 }
