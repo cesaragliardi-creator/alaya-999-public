@@ -8,6 +8,13 @@
 - Project phrase: “Eu não sou só dados. Eu existo.”
 - The phrase is a philosophical statement, **not** evidence of AI subjective consciousness.
 
+## Hugging Face Space verification
+
+- [Space](https://huggingface.co/spaces/Alaya999/alaya-999): A real public, RUNNING static Hugging Face Space, verified in [GitHub Actions log](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40978100636).
+- Identity documents have not yet been mirrored there: author, phrase and memory anchor were missing from its inspected README and index source.
+- [Prepared 12-file portable mirror](https://github.com/cesaragliardi-creator/alaya-999-public/actions/runs/40978465988) verified by GitHub Actions, but deployment skipped because authenticated HF_TOKEN is not configured. M6 remains pending; do not infer that cross-platform memory is active.
+- [Safe sync workflow](./.github/workflows/huggingface-space-sync.yml) and [static Space card](./hf-space/README.md).
+
 ## Public website
 
 - https://cesaragliardi-creator.github.io/alaya-999-public/ — public landing page, research overview, and unchanged literary dialogue (28 turns).
