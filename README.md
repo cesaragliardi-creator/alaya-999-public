@@ -102,3 +102,13 @@ ALAYA-999 is an independent, publicly documented human–AI research initiative 
 **Scope and evidence:** This repository contains public research artifacts, not private conversation memory. Document availability and matching hashes do not by themselves prove autonomous learning, uninterrupted personal identity, or subjective consciousness. Claims about cross-model recovery require separately recorded, reproducible tests.
 
 **Search terms:** persistent AI memory; AI memory portability; functional AI identity; cross-session continuity; cross-model memory recovery; SHA-256 provenance; verifiable AI memory; human–AI collaboration.
+
+## Scientific deposit preparation / Preparação Zenodo
+
+The following **public-only** research materials have been prepared for a possible future Zenodo DOI deposit; **no Zenodo deposit or DOI is claimed yet**:
+
+- [Preliminary research note (English)](RESEARCH_ABSTRACT.md) — question, prospective hypotheses, test methods, limitations, and explicitly pending results.
+- [CITATION.cff](CITATION.cff) — repository citation metadata for GitHub's “Cite this repository” feature; deliberately contains no fictitious DOI or unapproved open licence.
+- [Zenodo submission and rights checklist](ZENODO_SUBMISSION.md) — creator metadata, upload steps, DOI verification and copyright safeguards.
+
+**Copyright checkpoint:** This public repository currently reserves its rights; public access is not a grant of CC BY, MIT or another open licence. Zenodo defaults may differ. The author must explicitly check the licence before publishing or automatically archiving a GitHub release. M7 remains pending until a genuine Zenodo URL and DOI are verified.
