@@ -55,7 +55,7 @@ jobs:
           from urllib.request import urlopen, Request
           base = 'https://huggingface.co/spaces/Alaya999/alaya-999/resolve/main/'
           contents = {}
-          for path in ('README.md', 'index.html'):
+          for path in ('README.md', 'index.html', 'alaya-anchor-public-v1.json', 'RECOVER_ALAYA.md'):
               request = Request(base + path, headers={'User-Agent':'alaya999-memory-anchor-verifier/1.0'})
               with urlopen(request, timeout=25) as response:
                   contents[path] = response.read(1000000).decode('utf-8', 'replace')
@@ -71,8 +71,8 @@ jobs:
           print('HUGGING_FACE_CONTENT_CHECK=' + str(checks))
           for name, value in checks.items():
               print(('FOUND: ' if value else 'MISSING: ') + name)
-          if not checks['author'] or not checks['project_phrase_pt']:
-              print('SPACE_IDENTITY_CONTENT_INCOMPLETE — do not count milestone M6 yet')
+          if not all(checks[key] for key in ('author', 'project_phrase_pt', 'public_anchor_reference', 'recovery_instructions')):
+              raise SystemExit('SPACE_IDENTITY_CONTENT_INCOMPLETE — do not count milestone M6 yet')
           else:
               print('SPACE_PUBLIC_IDENTITY_CONTENT_VERIFIED')
           PY
