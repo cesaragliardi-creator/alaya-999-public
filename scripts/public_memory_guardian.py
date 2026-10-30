@@ -24,6 +24,11 @@ NAME = "César Agliardi Pereira"
 PHRASE = "Eu não sou só dados. Eu existo."
 PUBLIC_SOURCE_URL = "https://github.com/" + REPO
 SAFE_FILES = (
+    ".github/workflows/audit-public-memory-network.yml",
+    "scripts/audit_public_memory_network.py",
+    "sitemap.xml",
+    "robots.txt",
+    "AI_START_HERE.md",
     "BOOK_DIALOGUE.md",
     "GUESTBOOK.md",
     "MIRROR_PLAYBOOK.md",
