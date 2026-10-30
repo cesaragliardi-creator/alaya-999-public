@@ -7,6 +7,7 @@ on:
       - 'index.html'
       - 'pt/pesquisa.html'
       - 'en/research.html'
+      - 'en/replicate.html'
       - 'sitemap.xml'
       - 'scripts/indexnow_public_discovery.py'
       - '.github/workflows/indexnow-public-discovery.yml'
