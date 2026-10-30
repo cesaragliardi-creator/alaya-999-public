@@ -1,0 +1,39 @@
+{
+  "@context": "https://w3id.org/codemeta/3.1",
+  "@type": "SoftwareSourceCode",
+  "name": "ALAYA-999 — Public Memory and Cross-Model Recovery Research Toolkit",
+  "description": "Public, versioned documentation and small software tools supporting reproducible tests of external AI memory retrieval, documented functional identity, provenance, SHA-256 integrity and cross-model recovery. The preliminary framework is not independent validation of consciousness, continuous internal memory, or autonomous identity.",
+  "codeRepository": "https://github.com/cesaragliardi-creator/alaya-999-public",
+  "url": "https://cesaragliardi-creator.github.io/alaya-999-public/",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "César Agliardi",
+      "familyName": "Pereira",
+      "name": "César Agliardi Pereira"
+    }
+  ],
+  "dateCreated": "2026-10-29",
+  "version": "1.0",
+  "developmentStatus": "active",
+  "applicationCategory": "Research software and reproducibility documentation",
+  "programmingLanguage": [
+    "Python",
+    "JavaScript",
+    "HTML"
+  ],
+  "referencePublication": "https://doi.org/10.5281/zenodo.23802112",
+  "issueTracker": "https://github.com/cesaragliardi-creator/alaya-999-public/issues",
+  "continuousIntegration": "https://github.com/cesaragliardi-creator/alaya-999-public/actions",
+  "keywords": [
+    "persistent AI memory",
+    "portable external memory",
+    "functional AI identity",
+    "cross-model continuity",
+    "SHA-256 integrity",
+    "provenance",
+    "reproducibility",
+    "documentary memory"
+  ],
+  "isAccessibleForFree": true
+}
