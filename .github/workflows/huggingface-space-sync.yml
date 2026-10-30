@@ -1,0 +1,57 @@
+name: ALAYA-999 safe Hugging Face Space mirror
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/huggingface-space-sync.yml'
+  schedule:
+    - cron: '11 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: alaya999-huggingface-static-mirror
+  cancel-in-progress: false
+
+jobs:
+  prepare-and-sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout public repository
+        uses: actions/checkout@v4
+      - name: Audit GitHub public sources and build backup
+        run: python3 scripts/public_memory_guardian.py --output dist
+      - name: Prepare self-contained public Hugging Face Space mirror
+        run: python3 scripts/prepare_huggingface_space.py
+      - name: Save prepared upload bundle for inspection
+        uses: actions/upload-artifact@v4
+        with:
+          name: ALAYA-999-huggingface-public-mirror-${{ github.run_number }}
+          path: dist/hf-space/
+          if-no-files-found: error
+          retention-days: 90
+      - name: Check authorized Hugging Face credential availability
+        id: permission
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        shell: bash
+        run: |
+          if [ -n "$HF_TOKEN" ]; then
+            echo 'enabled=true' >> "$GITHUB_OUTPUT"
+            echo 'Authorized HF credential is present; syncing reviewed public files.'
+          else
+            echo 'enabled=false' >> "$GITHUB_OUTPUT"
+            echo 'NO HF_TOKEN secret. Bundle prepared and verified, but NO upload performed.'
+          fi
+      - name: Install Hugging Face Hub
+        if: steps.permission.outputs.enabled == 'true'
+        run: python3 -m pip install --quiet huggingface_hub
+      - name: Publish approved public memory mirror to existing Hugging Face Space
+        if: steps.permission.outputs.enabled == 'true'
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python3 scripts/prepare_huggingface_space.py --publish
