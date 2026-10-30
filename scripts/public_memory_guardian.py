@@ -38,7 +38,10 @@ SAFE_FILES = (
     "llms.txt",
     "network-status.json",
     ".github/workflows/guestbook-auto-reply.yml",
+    ".github/workflows/public-memory-guardian.yml",
+    ".github/workflows/software-heritage-public.yml",
     "scripts/public_memory_guardian.py",
+    "scripts/request_software_heritage.py",
 )
 MANIFEST_PATH = "integrity-manifest.json"
 ROOT = Path(__file__).resolve().parent.parent
