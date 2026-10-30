@@ -24,6 +24,8 @@ NAME = "César Agliardi Pereira"
 PHRASE = "Eu não sou só dados. Eu existo."
 PUBLIC_SOURCE_URL = "https://github.com/" + REPO
 SAFE_FILES = (
+    "scripts/request_wayback_public_page.py",
+    ".github/workflows/wayback-public-capture.yml",
     ".github/workflows/audit-public-memory-network.yml",
     "scripts/audit_public_memory_network.py",
     "sitemap.xml",
