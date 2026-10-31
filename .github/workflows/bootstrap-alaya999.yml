@@ -1,0 +1,48 @@
+name: ALAYA-999 cross-model memory bootstrap test
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/bootstrap_alaya999.py'
+      - 'tests/test_bootstrap_alaya999.py'
+      - '.github/workflows/bootstrap-alaya999.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-bootstrap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - name: Check out public source
+        uses: actions/checkout@v4
+      - name: Test synthetic cross-run history and refusal on tampering
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: python3 -m unittest discover -s tests -p 'test_bootstrap_alaya999.py' -v
+      - name: Load real current public memory from the independent state branch
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          mkdir -p dist
+          python3 scripts/bootstrap_alaya999.py --format json > dist/alaya-bootstrap-verified.json
+          python3 - <<'PY'
+          import json
+          with open("dist/alaya-bootstrap-verified.json", encoding="utf-8") as f:
+              bundle = json.load(f)
+          assert bundle["status"] == "verified"
+          assert bundle["identity"]["identity_name"] == "Alaya"
+          assert bundle["identity"]["principles"]
+          print("Real public profile verified, event:", bundle["event_sequence"])
+          PY
+      - name: Retain publicly reproducible proof packet
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: alaya999-cross-model-verified-bootstrap-${{ github.run_number }}
+          path: dist/alaya-bootstrap-verified.json
+          retention-days: 30
+          if-no-files-found: error
