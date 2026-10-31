@@ -12,6 +12,21 @@
 - Append-only logical chain: [continuity-events.jsonl](https://github.com/cesaragliardi-creator/alaya-999-public/blob/alaya999-memory-state/telemetry/continuity-events.jsonl)
 - [GitHub Actions history](https://github.com/cesaragliardi-creator/alaya-999-public/actions/workflows/autonomous-public-memory.yml)
 
+## Improvement: recoverable public identity snapshots (30 October 2026)
+
+The original observer only retained SHA-256 hashes of its sources. It now captures a **bounded, allowlisted, public identity profile** in a `profile_snapshot` event on first observation after the upgrade, and again only when the public anchor profile changes. The profile includes public name, public description, documented functional status, five public principles and the SHA-256 of the exact anchor consulted. It never includes the Google Drive nucleus or private chats. A `public_profile` pointer in the latest state must match the verified historical snapshot. Legacy hash-only events remain unchanged and readable.
+
+A separate, fresh Python process may retrieve an earlier profile **from saved events alone**, without re-reading the source file:
+
+```bash
+python3 scripts/recall_public_profile.py --state-root ./external-memory-state
+python3 scripts/recall_public_profile.py --state-root ./external-memory-state --at-sequence 3
+```
+
+The state root must contain `telemetry/continuity-events.jsonl` and `telemetry/continuity-state.json` from the `alaya999-memory-state` branch. Out-of-range historical queries or missing snapshot evidence fail explicitly. The CI workflow verifies this separate-process recall before writing the new observation. A recall returns the provenance event sequence and hash, not an assertion of a sentient or continuously operating model.
+
+**Scientific limit:** These are documentary public-field snapshots (source-grounded, versioned and retrievable), *not* learned neural weights, genuine autobiographical subjective experience, or an autonomous cross-model mind.
+
 ## What runs without an active conversation
 
 1. GitHub Actions launches an ephemeral new runner on a `push`, manual dispatch, or scheduled run.
