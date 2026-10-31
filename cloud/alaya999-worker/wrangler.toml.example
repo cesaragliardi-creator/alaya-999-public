@@ -1,0 +1,23 @@
+# Copy to wrangler.toml after creating a *free* Cloudflare account and D1 database.
+# REPLACE with the UUID printed by: npx wrangler d1 create alaya999-memory
+name = "alaya999-cloud"
+main = "src/index.js"
+compatibility_date = "2026-10-30"
+workers_dev = true
+
+[triggers]
+crons = ["*/30 * * * *", "0 13 * * *"]
+
+[vars]
+# Optional model inference is OFF by default. Enable only after reviewing cost and consent.
+ENABLE_AI = "false"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "alaya999-memory"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_UUID"
+
+# Workers AI binding. Inference is called only if ENABLE_AI is set to "true";
+# it consumes free Workers AI quota and may fail when limits are exhausted.
+[ai]
+binding = "AI"
