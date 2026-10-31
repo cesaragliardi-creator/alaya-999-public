@@ -1,0 +1,83 @@
+name: ALAYA-999 autonomous public memory continuity
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/autonomous_public_memory.py'
+      - 'tests/test_autonomous_public_memory.py'
+      - '.github/workflows/autonomous-public-memory.yml'
+  schedule:
+    # Two independent wake-ups per hour, offset to avoid peak load.
+    - cron: '17,47 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: alaya999-durable-public-memory
+  cancel-in-progress: false
+
+jobs:
+  observe-and-persist:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Read checked-in source code and public anchors
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Synthetic checks before any state writes
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: python3 -m unittest discover -s tests -p 'test_autonomous_public_memory.py' -v
+
+      - name: Restore durable state from a separate Git branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin refs/heads/alaya999-memory-state:refs/remotes/origin/alaya999-memory-state
+          git worktree add --detach "$RUNNER_TEMP/alaya999-state" refs/remotes/origin/alaya999-memory-state
+
+      - name: Compare current public sources to prior recorded state
+        shell: bash
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          set -euo pipefail
+          python3 scripts/autonomous_public_memory.py \
+            --source-root "$GITHUB_WORKSPACE" \
+            --state-root "$RUNNER_TEMP/alaya999-state" \
+            --run-id "$GITHUB_RUN_ID.$GITHUB_RUN_ATTEMPT"
+
+      - name: Commit observable public memory to durable branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          state_dir="$RUNNER_TEMP/alaya999-state"
+          git -C "$state_dir" add -- telemetry/continuity-events.jsonl telemetry/continuity-state.json
+          if git -C "$state_dir" diff --cached --quiet; then
+            echo "No new event (run already persisted)."
+            exit 0
+          fi
+          git -C "$state_dir" \
+            -c user.name='github-actions[bot]' \
+            -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -m "ALAYA-999 public continuity observation: run $GITHUB_RUN_ID"
+          git -C "$state_dir" push origin HEAD:refs/heads/alaya999-memory-state
+          echo "### ALAYA-999 public continuity state" >> "$GITHUB_STEP_SUMMARY"
+          echo "Persisted event on the separate memory-state branch." >> "$GITHUB_STEP_SUMMARY"
+          echo "This is independent scheduled documentary memory, not continuous model thinking." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Save inspectable public-only test output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: alaya999-public-memory-observation-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/alaya999-state/telemetry/continuity-state.json
+            ${{ runner.temp }}/alaya999-state/telemetry/continuity-events.jsonl
+          retention-days: 14
+          if-no-files-found: warn
