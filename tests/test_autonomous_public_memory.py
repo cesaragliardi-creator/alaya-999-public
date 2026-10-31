@@ -143,7 +143,7 @@ class TestDurablePublicMemory(unittest.TestCase):
         historic = dict(events[0])
         historic.pop("profile_snapshot", None)
         historic["hash"] = m.event_hash(historic)
-        path.write_text(m.compact(historic) + "\\n", encoding="utf-8")
+        path.write_text(m.compact(historic) + "\n", encoding="utf-8")
         state_path = self.state / "telemetry" / "continuity-state.json"
         current.pop("public_profile", None)
         current["head_hash"] = historic["hash"]
