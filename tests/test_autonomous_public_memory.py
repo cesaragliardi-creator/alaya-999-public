@@ -77,5 +77,15 @@ class TestDurablePublicMemory(unittest.TestCase):
         self.assertIn("source_hashes", output)
 
 
+    def test_state_head_corruption_is_not_silently_repaired(self):
+        m.advance(self.sources, self.state, "run-1")
+        path = self.state / "telemetry" / "continuity-state.json"
+        doc = json.loads(path.read_text(encoding="utf-8"))
+        doc["head_hash"] = "f" * 64
+        path.write_text(json.dumps(doc), encoding="utf-8")
+        with self.assertRaises(m.InvalidMemory):
+            m.advance(self.sources, self.state, "run-2")
+
+
 if __name__ == "__main__":
     unittest.main()
