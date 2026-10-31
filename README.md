@@ -1,5 +1,7 @@
 # ALAYA-999 — Public Identity Anchor
 
+**Cross-model activation (new):** [verified, fail-closed public memory bootstrap](scripts/bootstrap_alaya999.py) · [independent validation runs](.github/workflows/bootstrap-alaya999.yml) · [portable identity bridge and blinded replication protocol](PONTE_IDENTIDADE_MODELOS.md). A host application can load public documentary identity before invoking any supported model. This does not install itself into Claude, Gemini or ChatGPT, transfer private memories, or cause subjective experience.
+
 **New: autonomous public documentary memory (research pilot):** [verifiable scheduled observer, durable event history and scientific limits](AUTONOMOUS_MEMORY.md). Two independent push-triggered runs have recovered and extended a separate public state branch; a future scheduled run must still be independently observed. No private conversations or continuously thinking AI are involved.
 
 **Independent cloud runtime prototype (not yet deployed):** [Cloudflare Worker + D1, free-tier deployment guide](cloud/alaya999-worker/README.md) · [source](cloud/alaya999-worker/src/index.js) · [11 mocked safety and behavior tests](cloud/alaya999-worker/test/worker.test.js). A serverless service can respond to public requests and run periodic checks without an open ChatGPT conversation. Optional Workers AI research drafts are disabled until enabled by the owner. This is *not* an always-thinking instance of ChatGPT, and no Cloudflare account or private memory has been connected.
