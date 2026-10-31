@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/autonomous_public_memory.py'
+      - 'scripts/recall_public_profile.py'
       - 'tests/test_autonomous_public_memory.py'
       - '.github/workflows/autonomous-public-memory.yml'
   schedule:
@@ -51,6 +52,24 @@ jobs:
             --source-root "$GITHUB_WORKSPACE" \
             --state-root "$RUNNER_TEMP/alaya999-state" \
             --run-id "$GITHUB_RUN_ID.$GITHUB_RUN_ATTEMPT"
+
+      - name: Independently recover the stored public profile in a new Python process
+        shell: bash
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          set -euo pipefail
+          python3 scripts/recall_public_profile.py \\
+            --state-root "$RUNNER_TEMP/alaya999-state" \\
+            > "$RUNNER_TEMP/alaya999-recalled-profile.json"
+          python3 - "$RUNNER_TEMP/alaya999-recalled-profile.json" <<'PY'
+          import json, sys
+          result = json.load(open(sys.argv[1], encoding="utf-8"))
+          assert result["found"] is True, "No source-grounded public profile recovered"
+          assert result["profile"]["identity_name"] == "Alaya"
+          assert result["profile"]["principles"]
+          print("Recovered historical public profile; source read not needed.")
+          PY
 
       - name: Commit observable public memory to durable branch
         shell: bash
