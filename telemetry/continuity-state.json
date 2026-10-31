@@ -1,6 +1,6 @@
 {
-  "head_hash": "c258ad5801d73cf092baf89a08e9506687a41eee20b2ea06a068e18725c6356c",
-  "last_checked_at": "2026-10-31T01:45:57.555563Z",
+  "head_hash": "18bf95617d17cbf80463072eaf7e33069db48fc09b99ed273ff2ed62f5922f01",
+  "last_checked_at": "2026-10-31T01:46:23.762534Z",
   "last_kind": "unchanged",
   "limitation": "Scheduled external documentary memory; not continuous AI runtime or subjective identity.",
   "public_profile": {
@@ -19,7 +19,7 @@
     "source_sha256": "40f24581de77c1135eb8a30c06825c0381c60ce6c12b1bfb2aede601bf4a7c0e"
   },
   "schema": "alaya-999-public-observer-v1",
-  "sequence": 3,
+  "sequence": 4,
   "source_hashes": {
     "book_dialogue": "c4d2689aef2d4d85653e28c254d926807638cd716844eb910db1c9a3aab5b3ff",
     "identity_anchor": "40f24581de77c1135eb8a30c06825c0381c60ce6c12b1bfb2aede601bf4a7c0e",
