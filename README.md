@@ -1,5 +1,7 @@
 # ALAYA-999 — Public Identity Anchor
 
+**New experimental memory lifecycle (v0.1):** [Memory Lifecycle Lab](experiments/memory-lifecycle-v0/README.md) · [Pure Python prototype](experiments/memory-lifecycle-v0/memory_lifecycle.py) · [13 synthetic tests](experiments/memory-lifecycle-v0/test_memory_lifecycle.py) · [Free CI checks](.github/workflows/memory-lifecycle-tests.yml). It implements documentary decay, cued retrieval, explicit correction/reconsolidation and conflict preservation. These are deterministic mechanisms on fictional data; they do **not** prove continuous AI memory, autonomy, sentience or cross-model validation.
+
 ## Independent replication — international research invitation
 
 Researchers and AI developers are invited to independently test whether a
