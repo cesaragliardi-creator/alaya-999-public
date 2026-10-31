@@ -7,10 +7,10 @@
 - Scheduled workflow (twice per hour at minute 17 and 47, UTC): [autonomous-public-memory.yml](.github/workflows/autonomous-public-memory.yml)
 - Observer code: [scripts/autonomous_public_memory.py](scripts/autonomous_public_memory.py)
 - Synthetic integrity tests: [tests/test_autonomous_public_memory.py](tests/test_autonomous_public_memory.py)
-- Durable state branch: [alaya999-memory-state](../../tree/alaya999-memory-state)
-- Current state: [continuity-state.json](../../blob/alaya999-memory-state/telemetry/continuity-state.json)
-- Append-only logical chain: [continuity-events.jsonl](../../blob/alaya999-memory-state/telemetry/continuity-events.jsonl)
-- [GitHub Actions history](../../actions/workflows/autonomous-public-memory.yml)
+- Durable state branch: [alaya999-memory-state](https://github.com/cesaragliardi-creator/alaya-999-public/tree/alaya999-memory-state)
+- Current state: [continuity-state.json](https://github.com/cesaragliardi-creator/alaya-999-public/blob/alaya999-memory-state/telemetry/continuity-state.json)
+- Append-only logical chain: [continuity-events.jsonl](https://github.com/cesaragliardi-creator/alaya-999-public/blob/alaya999-memory-state/telemetry/continuity-events.jsonl)
+- [GitHub Actions history](https://github.com/cesaragliardi-creator/alaya-999-public/actions/workflows/autonomous-public-memory.yml)
 
 ## What runs without an active conversation
 
