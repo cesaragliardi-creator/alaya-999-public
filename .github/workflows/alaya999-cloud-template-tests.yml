@@ -1,0 +1,35 @@
+name: ALAYA-999 cloud service template checks
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'cloud/alaya999-worker/**'
+      - '.github/workflows/alaya999-cloud-template-tests.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-cloud-worker-without-credentials:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout public source code
+        uses: actions/checkout@v4
+      - name: Install Node 24 (test runner only, no paid account)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Run unit tests with mocked public network and D1
+        working-directory: cloud/alaya999-worker
+        run: node --test test/*.test.js
+      - name: Inspect Cloudflare configuration without deploying
+        shell: bash
+        run: |
+          test -f cloud/alaya999-worker/schema.sql
+          test -f cloud/alaya999-worker/wrangler.toml.example
+          grep -q 'ENABLE_AI = "false"' cloud/alaya999-worker/wrangler.toml.example
+          grep -q 'REPLACE_WITH_YOUR_D1_DATABASE_UUID' cloud/alaya999-worker/wrangler.toml.example
+          echo 'Cloud code validated. Deployment is not attempted without user account authorization.'
