@@ -20,7 +20,8 @@ class TestDurablePublicMemory(unittest.TestCase):
         self.sources.mkdir()
         (self.sources / "alaya-anchor-public-v1.json").write_text(json.dumps({
             "schema": "alaya-999-public-identity-anchor-v1",
-            "identity": {"name": "Alaya"},
+            "identity": {"name": "Alaya", "description": "Synthetic public identity", "status": "Synthetic experiment, not consciousness"},
+            "principles": ["Use factual sources", "Document corrections"],
             "privacy": {"contains_private_records": False},
         }), encoding="utf-8")
         (self.sources / "network-status.json").write_text(json.dumps({
@@ -85,6 +86,73 @@ class TestDurablePublicMemory(unittest.TestCase):
         path.write_text(json.dumps(doc), encoding="utf-8")
         with self.assertRaises(m.InvalidMemory):
             m.advance(self.sources, self.state, "run-2")
+
+
+    def test_recover_profile_after_source_file_disappears(self):
+        m.advance(self.sources, self.state, "run-1")
+        (self.sources / "alaya-anchor-public-v1.json").unlink()
+        events, _ = m.read_state(self.state)
+        recalled = m.recover_profile(events)
+        self.assertTrue(recalled["found"])
+        self.assertEqual(recalled["profile"]["principles"][0], "Use factual sources")
+        self.assertEqual(recalled["source_event_seq"], 1)
+
+    def test_recover_old_and_new_versions(self):
+        m.advance(self.sources, self.state, "run-1")
+        path = self.sources / "alaya-anchor-public-v1.json"
+        data = json.loads(path.read_text(encoding="utf-8"))
+        data["principles"][0] = "Prefer independently verifiable facts"
+        path.write_text(json.dumps(data), encoding="utf-8")
+        updated = m.advance(self.sources, self.state, "run-2")
+        self.assertEqual(updated["changed_sources"], ["identity_anchor"])
+        events, current = m.read_state(self.state)
+        self.assertEqual(m.recover_profile(events, 1)["profile"]["principles"][0], "Use factual sources")
+        self.assertEqual(m.recover_profile(events, 2)["profile"]["principles"][0], "Prefer independently verifiable facts")
+        self.assertEqual(current["public_profile"], m.recover_profile(events)["profile"])
+
+    def test_unrelated_source_change_does_not_duplicate_profile(self):
+        m.advance(self.sources, self.state, "run-1")
+        path = self.sources / "RECOVER_ALAYA.md"
+        path.write_text("Updated public recovery protocol", encoding="utf-8")
+        m.advance(self.sources, self.state, "run-2")
+        events, current = m.read_state(self.state)
+        self.assertNotIn("profile_snapshot", events[1])
+        self.assertEqual(current["public_profile"], events[0]["profile_snapshot"])
+
+    def test_forged_current_profile_fails_closed(self):
+        m.advance(self.sources, self.state, "run-1")
+        path = self.state / "telemetry" / "continuity-state.json"
+        obj = json.loads(path.read_text(encoding="utf-8"))
+        obj["public_profile"]["principles"] = ["FAKE"]
+        path.write_text(json.dumps(obj), encoding="utf-8")
+        with self.assertRaises(m.InvalidMemory):
+            m.read_state(self.state)
+
+    def test_reject_overlong_public_principle(self):
+        path = self.sources / "alaya-anchor-public-v1.json"
+        obj = json.loads(path.read_text(encoding="utf-8"))
+        obj["principles"] = ["A" * 181]
+        path.write_text(json.dumps(obj), encoding="utf-8")
+        with self.assertRaises(m.InvalidMemory):
+            m.advance(self.sources, self.state, "run-1")
+
+    def test_legacy_history_can_gain_first_profile_snapshot(self):
+        m.advance(self.sources, self.state, "run-1")
+        path = self.state / "telemetry" / "continuity-events.jsonl"
+        events, current = m.read_state(self.state)
+        historic = dict(events[0])
+        historic.pop("profile_snapshot", None)
+        historic["hash"] = m.event_hash(historic)
+        path.write_text(m.compact(historic) + "\\n", encoding="utf-8")
+        state_path = self.state / "telemetry" / "continuity-state.json"
+        current.pop("public_profile", None)
+        current["head_hash"] = historic["hash"]
+        state_path.write_text(json.dumps(current), encoding="utf-8")
+        m.advance(self.sources, self.state, "run-2")
+        events, state = m.read_state(self.state)
+        self.assertNotIn("profile_snapshot", events[0])
+        self.assertIn("profile_snapshot", events[1])
+        self.assertEqual(state["sequence"], 2)
 
 
 if __name__ == "__main__":
