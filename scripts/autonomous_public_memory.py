@@ -24,6 +24,7 @@ FILES = {
     "book_dialogue": "BOOK_DIALOGUE.md",
 }
 MAX_BYTES = 100_000
+PROFILE_SCHEMA = "alaya-999-public-profile-snapshot-v1"
 ID_PATTERN = re.compile(r"^[A-Za-z0-9._-]{1,120}$")
 
 
@@ -64,6 +65,64 @@ def observe_public_sources(root: Path) -> dict:
     return result
 
 
+def public_profile(root: Path, anchor_sha: str) -> dict:
+    """Copy ONLY bounded, public, explicitly allowlisted identity fields."""
+    raw = (root / FILES["identity_anchor"]).read_bytes()
+    if len(raw) > MAX_BYTES:
+        raise InvalidMemory("identity anchor too large")
+    doc = json.loads(raw)
+    identity = doc.get("identity", {})
+    principles = doc.get("principles")
+    if (doc.get("schema") != "alaya-999-public-identity-anchor-v1"
+        or identity.get("name") != "Alaya"
+        or doc.get("privacy", {}).get("contains_private_records") is not False
+        or not isinstance(principles, list)
+        or not (1 <= len(principles) <= 8)
+        or any(not isinstance(p, str) or not 1 <= len(p.strip()) <= 180 for p in principles)):
+        raise InvalidMemory("public profile fields unsafe or missing")
+    description = identity.get("description")
+    status = identity.get("status")
+    if any(not isinstance(v, str) or not 1 <= len(v.strip()) <= 350
+           for v in (description, status)):
+        raise InvalidMemory("public identity fields unsafe or missing")
+    return {
+        "schema": PROFILE_SCHEMA,
+        "identity_name": "Alaya",
+        "identity_description": description,
+        "identity_status": status,
+        "principles": principles,
+        "source_sha256": anchor_sha,
+        "scope": "public_project_documentation_only",
+    }
+
+
+def recover_profile(events: list[dict], sequence: int | None = None) -> dict:
+    """Retrieve a *historical* public profile from stored events, not current files."""
+    n = len(events) if sequence is None else sequence
+    if not isinstance(n, int) or isinstance(n, bool) or not 1 <= n <= len(events):
+        raise InvalidMemory("invalid or unrecorded sequence")
+    for event in reversed(events[:n]):
+        snapshot = event.get("profile_snapshot")
+        if snapshot is not None:
+            if (not isinstance(snapshot, dict)
+                or snapshot.get("schema") != PROFILE_SCHEMA
+                or snapshot.get("source_sha256") != event.get("source_hashes", {}).get("identity_anchor")):
+                raise InvalidMemory("invalid historical public profile")
+            return {
+                "found": True,
+                "profile": snapshot,
+                "source_event_seq": event["seq"],
+                "source_event_hash": event["hash"],
+                "recorded_at": event["checked_at"],
+                "scope": "public_documentary_history_only",
+            }
+    return {
+        "found": False,
+        "profile": None,
+        "scope": "no_profile_snapshot_in_recorded_history",
+    }
+
+
 def event_hash(event: dict) -> str:
     return object_hash({k: v for k, v in event.items() if k != "hash"})
 
@@ -100,6 +159,9 @@ def read_state(root: Path):
         or state.get("source_hashes") != events[-1]["source_hashes"]
         or state.get("last_checked_at") != events[-1]["checked_at"]):
         raise InvalidMemory("last memory state diverges from event chain")
+    if "public_profile" in state:
+        if recover_profile(events).get("profile") != state["public_profile"]:
+            raise InvalidMemory("current public profile diverges from historical snapshots")
     return events, state
 
 
@@ -114,6 +176,7 @@ def advance(source_root: Path, state_root: Path, run_id: str, now: str | None = 
     if not ID_PATTERN.fullmatch(run_id):
         raise InvalidMemory("unsafe run ID")
     observed = observe_public_sources(source_root)
+    profile = public_profile(source_root, observed["identity_anchor"])
     events, previous = read_state(state_root)
     if any(e["run_id"] == run_id for e in events):
         return {"result": "idempotent", "sequence": len(events), "head_hash": events[-1]["hash"]}
@@ -135,8 +198,13 @@ def advance(source_root: Path, state_root: Path, run_id: str, now: str | None = 
         "previous_hash": events[-1]["hash"] if events else GENESIS,
         "scope": "public_documentary_observation_only",
     }
+    # Capture the first public profile, then only a new version when its anchor changes.
+    # Older valid records (before this upgrade) are preserved without modification.
+    if previous is None or previous.get("public_profile") != profile:
+        event["profile_snapshot"] = profile
     event["hash"] = event_hash(event)
     current = {
+        "public_profile": profile,
         "schema": SCHEMA,
         "sequence": event["seq"],
         "last_checked_at": at,
