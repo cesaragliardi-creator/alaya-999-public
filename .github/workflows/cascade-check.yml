@@ -1,0 +1,27 @@
+name: ALAYA-999 cascade check
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: alaya-cascade-status
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check public cascade sources
+        run: python scripts/cascade_check.py
+      - name: Commit latest status only when changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cascade-status.json
+          git diff --cached --quiet || (git commit -m "Update ALAYA cascade availability status" && git push)
