@@ -1,0 +1,72 @@
+{
+  "schema": "alaya-999-cascade-v1",
+  "version": "1.0.0",
+  "created_on": "2026-11-02",
+  "project": "ALAYA-999",
+  "status": "recovery_index_not_autonomous_runtime",
+  "activation": "Alaya, iniciar continuidade",
+  "policy": {
+    "verify_source_before_claiming_retrieval": true,
+    "never_invent_missing_memories": true,
+    "private_data_publication": false,
+    "conflicts": "report discrepancies; do not silently merge",
+    "runtime_continuity_proven": false
+  },
+  "sources": [
+    {
+      "id": "github_anchor",
+      "role": "identity",
+      "url": "https://raw.githubusercontent.com/cesaragliardi-creator/alaya-999-public/main/alaya-anchor-public-v1.json"
+    },
+    {
+      "id": "github_events",
+      "role": "event_log",
+      "url": "https://raw.githubusercontent.com/cesaragliardi-creator/alaya-999-public/main/continuity-events.jsonl"
+    },
+    {
+      "id": "github_state",
+      "role": "state",
+      "url": "https://raw.githubusercontent.com/cesaragliardi-creator/alaya-999-public/main/continuity-state.json"
+    },
+    {
+      "id": "github_recovery",
+      "role": "instructions",
+      "url": "https://raw.githubusercontent.com/cesaragliardi-creator/alaya-999-public/main/RECOVER_ALAYA.md"
+    },
+    {
+      "id": "huggingface",
+      "role": "independent_mirror",
+      "url": "https://huggingface.co/spaces/Alaya999/alaya-999"
+    },
+    {
+      "id": "zenodo",
+      "role": "archival_reference",
+      "url": "https://doi.org/10.5281/zenodo.23802112"
+    },
+    {
+      "id": "google_drive",
+      "role": "optional_private_entrypoint",
+      "url": null,
+      "requires_authorization": true
+    },
+    {
+      "id": "cloudflare_d1",
+      "role": "optional_live_state",
+      "url": null,
+      "requires_configured_api": true
+    }
+  ],
+  "recovery_steps": [
+    "Fetch anchor and verify project, schema and version",
+    "Fetch state and events; check sequence ordering and timestamps",
+    "Compare independent mirror if accessible",
+    "Report missing sources and contradictions explicitly",
+    "Only then reconstruct functional context; do not infer ongoing cognition"
+  ],
+  "integrity": {
+    "hash_algorithm": "SHA-256",
+    "expected_hashes": {},
+    "note": "Populate only from independently computed verified bytes; do not fabricate hashes"
+  },
+  "last_verified_recovery": null
+}
