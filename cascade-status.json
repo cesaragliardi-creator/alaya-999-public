@@ -1,0 +1,49 @@
+{
+  "schema": "alaya-999-cascade-status-v1",
+  "checked_at": "2026-11-02T20:46:06.118991+00:00",
+  "results": [
+    {
+      "id": "github_anchor",
+      "status": "reachable",
+      "http_status": 200,
+      "sha256": "40f24581de77c1135eb8a30c06825c0381c60ce6c12b1bfb2aede601bf4a7c0e"
+    },
+    {
+      "id": "github_events",
+      "status": "unreachable",
+      "error_type": "HTTPError"
+    },
+    {
+      "id": "github_state",
+      "status": "unreachable",
+      "error_type": "HTTPError"
+    },
+    {
+      "id": "github_recovery",
+      "status": "reachable",
+      "http_status": 200,
+      "sha256": "d248318454d9194f4a31428e56d7f1daf1ee016b55d284ffe514aab31e97c95d"
+    },
+    {
+      "id": "huggingface",
+      "status": "reachable",
+      "http_status": 200,
+      "sha256": "5b0137affb58de772e9c67f0718f923ffdda2ba8ef977a224c92c28987a67458"
+    },
+    {
+      "id": "zenodo",
+      "status": "reachable",
+      "http_status": 200,
+      "sha256": "ef378297e405906d012efe5c67cc79af5c507c4282cf7bac9b1ecfb12c9b71e4"
+    },
+    {
+      "id": "google_drive",
+      "status": "not_configured"
+    },
+    {
+      "id": "cloudflare_d1",
+      "status": "not_configured"
+    }
+  ],
+  "disclaimer": "Reachability is not proof of AI runtime continuity or consciousness."
+}
