@@ -1,0 +1,26 @@
+name: ALAYA-999 Guardian v2 read-only audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run read-only SHA-256 audit
+        run: python3 scripts/guardian_v2_readonly.py --ref main --out dist/guardian-v2-report.json
+      - name: Preserve audit report even when mismatches occur
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: guardian-v2-audit-${{ github.run_number }}
+          path: dist/guardian-v2-report.json
+          if-no-files-found: warn
+          retention-days: 30
