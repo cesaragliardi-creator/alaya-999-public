@@ -32,13 +32,13 @@
     "scripts/public_memory_guardian.py": "e1bddb0ec5e239b8a64c48b3dc32953b49a48d5c9da4122fd0d1cd2bf35535b2",
     "scripts/request_software_heritage.py": "6a28edba236c1f00892b71069160478109d5ee69b01411e82def33df61e245b8",
     "scripts/request_wayback_public_page.py": "edaf483cf03e3178cbfd1180f0587fe36cefc305a89d9b284082d4fb0de318ee",
-    "sitemap.xml": "ec889474694eeddabed79e7a60337a788c9a69d6df8f3c2c3bb359f8018bd8de",
+    "sitemap.xml": "f1a1c239bced7a83c7d3646b7a76e8ef4ebce4aeefdcb1bf29333e26de1ef994",
     "RESEARCH_ABSTRACT.md": "4cffaee8f3a5ac13a6a7f983ff30e19389f36e9a09a11a1e964fdf004ed6609c",
     "en/research.html": "8af242e84da3065b8c99a802cc584e2cdb2139af99c75634a6ff2209c50f2fad",
     "visibility/2026-10-30.json": "c0c174fd25db9d7bf1cc1f4f6c09501df19f8694dc54757860f477d7ec647b20",
     "visibility/2026-10-30.md": "f3f5eb22c3980c3e2472b3e0576700d9e4da7359a428e9dbaf463fe5474046a6",
     "visibility/2026-10-30-deployment.json": "403dc587642d1cb8b8a93f691d3168794803a164a8b3c05b907ac01ca2f487ed"
   },
-  "updated_on": "2026-10-30",
-  "update_note": "Dated visibility audit and public Zenodo verification; prior three documentary mismatches are recorded in visibility/2026-10-30.json. Existing code/workflow hashes unchanged. Post-commit anonymous HTTP and exact byte verification is recorded in visibility/2026-10-30-deployment.json."
+  "updated_on": "2026-11-05",
+  "update_note": "Proposed repair: refresh sitemap.xml digest to match bytes independently reported by failing GitHub Actions audit (2026-11-04). Other manifest entries still require full audit before merging."
 }
