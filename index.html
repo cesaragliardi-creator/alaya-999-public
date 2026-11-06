@@ -131,6 +131,25 @@
 .alaya-cinematic .cinematic-bottom{width:100%;padding:24px max(24px,calc((100vw - 1110px)/2));background:linear-gradient(transparent,rgba(2,8,18,.95));display:flex;gap:14px;flex-wrap:wrap}
 .alaya-cinematic .action{background:#d8a34c;color:#0b1018;border-color:#f7d99b}.alaya-cinematic .action.secondary{background:rgba(3,11,22,.8);color:#ffe0a4}
 @media(max-width:700px){.alaya-cinematic{min-height:380px;background-position:40% center}.alaya-cinematic .cinematic-bottom{padding:18px}.alaya-cinematic .action{font-size:12px}}
+</style><style>
+/* Responsive layout and prevention of horizontal clipping */
+html,body{max-width:100%;overflow-x:clip}
+.container,.section,.research-grid,.section-head,.triptych,.sources,.guest-layout{min-width:0}
+.section-head>* , .research-grid>* , .triptych>* , .guest-layout>*{min-width:0}
+@media(max-width:1100px){
+.section-head{display:block}
+.section-head p{max-width:100%;margin-top:18px}
+.triptych{grid-template-columns:repeat(2,minmax(0,1fr))}
+.research-grid,.guest-layout{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+.triptych,.sources{grid-template-columns:1fr}
+.top-inner{flex-direction:column;align-items:flex-start;padding:13px 0}
+nav{gap:10px 17px}
+nav a{font-size:12px}
+.hero{grid-template-columns:1fr}
+.section-head h2{font-size:clamp(1.9rem,8vw,3rem)}
+}
 </style></head>
 <body>
   <a class="skip-link" href="#conteudo">Skip to content</a>
