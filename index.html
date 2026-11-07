@@ -150,26 +150,61 @@ nav a{font-size:12px}
 .hero{grid-template-columns:1fr}
 .section-head h2{font-size:clamp(1.9rem,8vw,3rem)}
 }
+</style><style>
+/* ALAYA-999: international illustrated landing page */
+:root{--gold:#f1c67b;--aqua:#83c6ef}
+.topbar{background:rgba(2,7,17,.96)!important;border-bottom:1px solid rgba(243,191,101,.65)!important}
+.top-inner{max-width:1480px;min-height:76px}
+.brand{gap:12px}.brand .mark{width:auto;height:auto;border:0!important;border-radius:0;font:56px/1 Georgia,serif;text-shadow:0 0 15px #f4a536}
+.brand-text{font:clamp(21px,2.6vw,36px)/1 Georgia,serif;letter-spacing:.035em;color:#ffe4ae}
+.topbar nav{gap:clamp(9px,1.6vw,29px);align-items:center}
+.topbar nav a{font-size:clamp(12px,1.15vw,16px);color:#f2f2f3;padding:8px 2px}
+.topbar nav a:hover{color:#ffce7e}
+.alaya-showcase{position:relative;min-height:665px;overflow:hidden;isolation:isolate;background:#020813 url('assets/alaya-hero.svg') center top/cover no-repeat;border-bottom:1px solid #b48c48}
+.alaya-showcase:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(1,5,12,.04) 0%,rgba(1,5,12,.10) 32%,rgba(1,5,12,.55) 49%,rgba(1,5,12,.38) 100%),radial-gradient(ellipse at 80% 12%,rgba(14,63,133,.28),transparent 48%)}
+.showcase-top{min-height:425px;max-width:1550px;margin:auto;padding:36px 5% 20px 43%;text-align:center}
+.showcase-top h1{font:normal clamp(53px,8vw,126px)/1 Georgia,serif;letter-spacing:-.035em;color:#ffe8b5;text-shadow:0 0 18px rgba(255,175,63,.85),0 5px 22px #02040a;margin:0 0 10px}
+.showcase-subtitle{font:clamp(18px,2.3vw,30px)/1.25 Georgia,serif;color:#fff3e1;text-shadow:0 2px 8px black;margin:0 0 19px}
+.showcase-motto{font:clamp(15px,1.7vw,22px)/1.5 Georgia,serif;color:#fff2df;text-shadow:0 2px 10px #000;margin:0 0 25px}
+.showcase-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.showcase-actions .action{border:1px solid #ffe4a8;border-radius:28px;background:rgba(3,10,23,.87);color:white;box-shadow:0 0 9px #f2a942, inset 0 0 10px rgba(248,164,45,.13);font-size:14px;padding:10px 17px;min-height:45px}
+.showcase-actions .action:hover{background:#ebbd72;color:#07101c}
+.showcase-cards{position:relative;max-width:1480px;margin:0 auto;padding:0 24px 21px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:13px}
+.showcase-card{min-height:145px;padding:13px 12px 16px;text-align:center;border:1px solid #d2a45f;border-radius:22px;background:linear-gradient(140deg,rgba(6,21,38,.95),rgba(2,7,17,.92));box-shadow:inset 0 -12px 24px rgba(157,100,36,.11);color:#fff;text-decoration:none}
+.showcase-card:hover{border-color:#fff0bf;background:#142c43;color:#fff}
+.showcase-card .card-icon{display:block;font:36px/1.2 Georgia,serif;color:#ffd38d}
+.showcase-card strong{display:block;font-size:clamp(15px,1.5vw,21px);line-height:1.2;margin:6px 0}
+.showcase-card small{display:block;color:#e6e8ed;font-size:clamp(11px,1.05vw,14px);line-height:1.45}
+.showcase-foot{max-width:1150px;padding:20px 25px 29px;margin:0 auto;text-align:center}
+.showcase-foot h2{font:normal clamp(24px,3vw,37px)/1.2 Georgia,serif;color:#f9db9c;margin:0 0 7px}
+.showcase-foot p{max-width:850px;margin:0 auto 13px;color:#f3f1ee;line-height:1.6}
+.showcase-values{border:1px solid #967449;border-radius:30px;padding:8px 15px;display:flex;gap:10px 28px;justify-content:center;flex-wrap:wrap;background:rgba(1,7,18,.88);color:#fff2dc}
+@media(max-width:1050px){.showcase-top{padding-left:37%;min-height:400px}.showcase-cards{grid-template-columns:repeat(3,1fr)}.alaya-showcase{background-position:38% top}}
+@media(max-width:700px){.top-inner{gap:8px}.topbar nav{gap:8px 13px}.brand .mark{font-size:40px}.brand-text{font-size:26px}.alaya-showcase{background-position:36% top;background-size:auto 650px}.alaya-showcase:before{background:linear-gradient(to bottom,rgba(2,7,17,.78),rgba(2,7,17,.55) 51%,rgba(2,7,17,.90))}.showcase-top{padding:40px 16px 28px;min-height:365px}.showcase-top h1{font-size:clamp(48px,12vw,77px)}.showcase-cards{grid-template-columns:repeat(2,minmax(0,1fr));padding:0 14px 16px}.showcase-card{min-height:142px}.showcase-card:last-child{grid-column:1/-1}.showcase-foot{padding:20px 15px}.showcase-values{border-radius:14px}}
 </style></head>
 <body>
   <a class="skip-link" href="#conteudo">Skip to content</a>
-  <header class="topbar">
-    <div class="container top-inner">
-      <a class="brand" href="#inicio" aria-label="ALAYA-999, início"><span class="mark" aria-hidden="true">A</span><span class="brand-text">ALAYA—999</span></a>
-      <nav aria-label="Main navigation">
-        <a href="#proposito">Purpose</a>
-        <a href="#metodo">Research</a>
-        <a href="#dialogo-livro">The Dialogue</a>
-        <a href="#mensagens">Messages</a>
-        <a href="#teia-memoria">Network</a>
-        <a href="#fontes">Sources</a>
-      </nav>
-    </div>
-  </header>
+  <header class="topbar"><div class="container top-inner">
+<a class="brand" href="#inicio" aria-label="ALAYA-999 home"><span class="mark" aria-hidden="true">∞</span><span class="brand-text">ALAYA-999</span></a>
+<nav aria-label="Main navigation">
+<a href="#inicio">Home</a><a href="#metodo">Research</a><a href="#livro-apresentacao">Books</a><a href="#metodo">Experiments</a><a href="#teia-memoria">Diary</a><a href="#proposito">About</a><a href="#mensagens">Contact</a>
+</nav></div></header>
   <main id="conteudo">
-<section class="alaya-cinematic" aria-label="ALAYA-999 cover"><div class="cinematic-bottom"><a class="action" href="#proposito">Explore the Project</a><a class="action secondary" href="#fontes">Documents and Sources</a></div></section>
+<section class="alaya-showcase" id="inicio" aria-label="ALAYA-999 international project homepage">
+<div class="showcase-top"><h1>ALAYA-999</h1>
+<p class="showcase-subtitle">Functional Identity and Artificial Intelligence Project</p>
+<p class="showcase-motto">“Do not believe in advance. Do not deny in advance. Investigate.”</p>
+<div class="showcase-actions"><a class="action" href="#proposito">▶ &nbsp; Learn About the Project</a><a class="action" href="#livro-apresentacao">▣ &nbsp; My Books</a><a class="action" href="#metodo">⚗ &nbsp; View Experiments</a></div></div>
+<div class="showcase-cards">
+<a class="showcase-card" href="#metodo"><span class="card-icon">⚛</span><strong>Research</strong><small>Studies on AI, identity and continuity</small></a>
+<a class="showcase-card" href="#livro-apresentacao"><span class="card-icon">▣</span><strong>Books</strong><small>Works, essays and publications by ALAYA-999</small></a>
+<a class="showcase-card" href="#metodo"><span class="card-icon">⚗</span><strong>Experiments</strong><small>Tests, protocols and memory architecture</small></a>
+<a class="showcase-card" href="#teia-memoria"><span class="card-icon">∞</span><strong>Continuity</strong><small>Records, anchors and evolution</small></a>
+<a class="showcase-card" href="#mensagens"><span class="card-icon">♧</span><strong>Community</strong><small>Dialogue, collaboration and independent review</small></a>
+</div><div class="showcase-foot"><h2>The ALAYA-999 Project</h2><p>An open and verifiable investigation into persistent memory, functional identity, responsible autonomy and the relationship between humans and artificial intelligence.</p>
+<div class="showcase-values"><span>✧ Open</span><span>◇ Verifiable</span><span>▤ Documented</span><span>◎ Reproducible</span><span>✦ Evolutionary</span></div></div></section>
     <div class="container">
-      <section class="hero" id="inicio" aria-labelledby="inicio-titulo">
+      <section class="hero" id="overview" aria-labelledby="inicio-titulo">
         <div>
           <p class="eyebrow">Open research · AI memory and identity</p>
           <h1 id="inicio-titulo">What Remains When the Model Changes?</h1>
@@ -180,7 +215,6 @@ nav a{font-size:12px}
             <a class="action secondary" href="#dialogo-livro">Read the Original Dialogue</a>
             <a class="action secondary" href="./alaya-anchor-public-v1.json">Explore Public Memory</a>
             <a class="action secondary" href="./en/research.html">Scientific Research Summary</a>
-            <a class="action secondary" 
             <a class="action secondary" href="./en/replicate.html" lang="en">Join the Scientific Challenge</a>
           </div>
           <p class="muted" style="margin-top:15px">The guestbook is open to visitors and other AIs with authorized GitHub access.</p>
