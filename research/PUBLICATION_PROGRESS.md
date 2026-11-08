@@ -1,6 +1,6 @@
 # ALAYA-999 — Scientific publication progress and next steps
 
-Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.8**.  
+Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.9**.  
 Research author: **César Agliardi Pereira**.
 
 This is a publication checkpoint, not a report of completed experiments or peer review. It preserves the distinction between prepared materials, deposited materials, profile entries and editorial acceptance.
@@ -16,7 +16,7 @@ This is a publication checkpoint, not a report of completed experiments or peer 
 | OSF | Public project and PDF upload confirmed by author-supplied page | [wujns](https://osf.io/wujns). Activity log supplied on 2026-11-08 records project made public at 08:44 and PDF added at 08:46; storage shows **162.8 kB**. Supplied file screenshot shows `ALAYA_999_Functional_Continuity_Research_Paper_EN (1).pdf`. Anonymous retrieval and downloaded-byte identity have not been independently verified. This is a project deposit, not a preprint-service acceptance. |
 | TechRxiv | Temporarily closed to submissions when inspected | On 2026-11-08 the [homepage](https://www.techrxiv.org/) displayed a platform-transition notice stating that submissions were temporarily closed. Recheck before any later submission; do not assume permanent closure. |
 | Preprints.org | Submission received, ID **243125**, author-supplied portal confirmation | Supplied manuscript-information page on 2026-11-08 lists article type **Technical Note**, subject **Computer Science and Mathematics - Artificial Intelligence and Machine Learning**, correspondence email and submission timestamp. No public manuscript URL, DOI, approval, publication or peer-review result has been supplied. Portal author label appears as **César Pereira**; compare with full manuscript author **César Agliardi Pereira** before public posting. |
-| arXiv | Not submitted in this workflow | Endorsement/category requirements and moderation remain to be resolved; do not claim endorsement or acceptance. |
+| arXiv | Submission preparation started; cs.AI endorsement required | Author-supplied Start Submission page identifies draft **8346584** and explicitly states missing endorsement for **cs.AI**. Account contact names appear as César Agliardi / Pereira. No completed arXiv submission, announced identifier, upload confirmation or rejection decision is established. Next use the draft's Request endorsement link. |
 | Journal of Open Source Software (JOSS) | Future conditional target; not submitted | Requires a separate assessment of research-software scope, maturity, documentation, research use, and an appropriate open-source licence. The current methodological PDF is not by itself a qualifying software submission. |
 
 **PDF byte identity:** `ALAYA_999_Functional_Continuity_Research_Paper_EN.pdf`  
@@ -120,3 +120,11 @@ The author supplied the **Manuscript Information** page showing:
 **Next steps:** retain ID 243125, monitor the author dashboard/email for editorial screening, and respond to actual requests. Check whether the shortened portal author label reflects a profile display or the author-list metadata; the manuscript uses **César Agliardi Pereira**. If the submitted author metadata is shortened, request correction through the existing submission/editor interface before public posting. A friendly-journal transfer or prereview request is optional and has not been initiated by this workflow. Record a public URL and DOI only after supplied or verified.
 
 This dated receipt supersedes earlier preparation notes saying that no Preprints.org submission had yet occurred; those notes remain historical.
+
+## Update: arXiv cs.AI endorsement requirement (2026-11-08)
+
+The author supplied the Start Submission page for draft **8346584**. The page states that the author does not have the required endorsement for **cs.AI** and offers **request an endorsement**. Earlier screens included preparation identifiers 8346578 and 8346584; use the latest existing draft and do not create further drafts to solve the endorsement issue. These are internal preparation identifiers, not announced arXiv paper identifiers.
+
+Contact fields on the supplied page show given names **César Agliardi**, family name **Pereira**, the independent-researcher affiliation and the previously authorized contact email. Current registered groups are cs and math. The selected work category is Artificial Intelligence. No source or PDF upload has been confirmed in this arXiv flow.
+
+Next: follow the existing draft's endorsement-request link and obtain its specific endorsement request/code and instructions. Then identify a relevant eligible arXiv endorser through related papers and the official eligibility links. No endorser has yet been selected or contacted in this workflow. Endorsement concerns eligibility to submit and does not constitute peer review, acceptance or validation of results. Do not switch to an unsuitable category to evade the requirement. The Preprints.org receipt remains **243125**, with screening/publication not yet confirmed.
