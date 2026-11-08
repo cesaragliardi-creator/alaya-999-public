@@ -1,6 +1,6 @@
 # ALAYA-999 — Scientific publication progress and next steps
 
-Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.12**.  
+Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.13**.  
 Research author: **César Agliardi Pereira**.
 
 This is a publication checkpoint, not a report of completed experiments or peer review. It preserves the distinction between prepared materials, deposited materials, profile entries and editorial acceptance.
@@ -150,3 +150,13 @@ The author supplied the arXiv eligibility result for **2402.17753**: **Adyasha M
 Recipient identity verified against her own current professional webpage https://adymaharana.github.io/, which lists both the LoCoMo paper and public contact **adyasha@cs.unc.edu**. The page identifies her as a research scientist at Databricks Mosaic Research and UNC PhD graduate; the UNC address remains the public contact listed there. A targeted Gmail search for the exact name/address/website handle returned no matching messages in the connected mailbox. This does not establish that no contact occurred outside that mailbox.
 
 Next action prepared: a single English request asking her to examine the methodological manuscript and consider endorsement only if appropriate, with the original arXiv endorsement email/code and the current v1.2 manuscript. No endorsement request has been sent and no agreement to endorse has been received. The request code is not reproduced in this public checkpoint.
+
+## Update: individual endorsement request sent (2026-11-08)
+
+Following the author's explicit instruction to send the message to her, one email was sent to **Adyasha Maharana, adyasha@cs.unc.edu**, subject **arXiv cs.AI endorsement request — ALAYA-999**. Send time from the verified message header: **2026-11-08 11:10:18 America/Sao_Paulo** (15:10:18 +0100 in the message header).
+
+The sent message asks her to examine the work and consider endorsement if appropriate, states that the manuscript is methodological and reports no new experimental results, cites its relation to LoCoMo, includes the original arXiv endorsement request details, links the earlier OSF deposit and ORCID, and discloses Preprints.org submission **243125** as submitted rather than published. The private endorsement code/link and mail transport identifiers are deliberately not reproduced in this public record.
+
+**Attachment verified in the sent message:** `ALAYA999_Preprints_Manuscript_v1_2_EN.docx`, **49,073 bytes**, corresponding to the contact-complete local artifact (SHA-256 `7560cdfebf7ba61f9e0889da268a56b30db16fbeed53b3950915282815750b91`). The sent-message record was read back: recipient, attachment filename/size and **SENT** label match. SENT confirms Gmail accepted the outgoing message; it does not prove recipient delivery, reading, reply or endorsement.
+
+**Current next step:** await her response and check the existing arXiv draft for endorsement status when evidence arrives. Avoid sending a duplicate request. No response, endorsement grant, arXiv completed submission or announced paper identifier is claimed. Earlier statements that no request had been sent are historical and superseded by this entry.
