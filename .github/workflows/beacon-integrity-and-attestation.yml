@@ -7,12 +7,14 @@ on:
       - 'beacon/**'
       - 'alaya-anchor-public-v1.json'
       - 'scripts/verify_beacon.py'
+      - 'scripts/test_beacon.py'
       - '.github/workflows/beacon-integrity-and-attestation.yml'
   pull_request:
     paths:
       - 'beacon/**'
       - 'alaya-anchor-public-v1.json'
       - 'scripts/verify_beacon.py'
+      - 'scripts/test_beacon.py'
       - '.github/workflows/beacon-integrity-and-attestation.yml'
   workflow_dispatch:
   schedule:
@@ -38,6 +40,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Run positive and negative controls
+        run: python3 -m unittest discover -s scripts -p 'test_beacon.py' -v
       - name: Fail closed if JSON and text disagree with canonical anchor
         run: python3 scripts/verify_beacon.py
       - name: Publish public ZIP as workflow artifact
