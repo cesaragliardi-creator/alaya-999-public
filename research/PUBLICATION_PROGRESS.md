@@ -1,6 +1,6 @@
 # ALAYA-999 — Scientific publication progress and next steps
 
-Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.10**.  
+Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.11**.  
 Research author: **César Agliardi Pereira**.
 
 This is a publication checkpoint, not a report of completed experiments or peer review. It preserves the distinction between prepared materials, deposited materials, profile entries and editorial acceptance.
@@ -136,3 +136,9 @@ The author supplied the arXiv cs.AI endorsement-request confirmation. It states 
 Related-work route examined: **MemGPT: Towards LLMs as Operating Systems**, https://arxiv.org/abs/2310.08560, already cited in the manuscript. The live page exposes **Which authors of this paper are endorsers?** at https://arxiv.org/auth/show-endorsers/2310.08560. Following that link in the shared browser returns **Login Required**. This is an authentication requirement, not evidence of author ineligibility. No MemGPT author has been verified as currently eligible in this workflow.
 
 Next: use the author's existing signed-in arXiv browser to view that eligibility list, identify a related eligible author, verify a public professional contact and any prior outreach, and prepare an individual request with the manuscript and original endorsement email. Do not send mass requests or claim endorsement equals scientific approval. No external endorsement request has been sent to a researcher by this workflow.
+
+## Update: MemGPT endorsement route unavailable (2026-11-08)
+
+The author supplied the signed-in eligibility result for **2310.08560**: **None of the authors can endorse**. Charles Packer is registered as an author of that paper but is not currently an eligible endorser for this request. The page reports that Sarah Wooders, Kevin Lin, Vivian Fang, Shishir G. Patil, Ion Stoica and Joseph E. Gonzalez are not registered as owners of that paper. These are the platform's current eligibility/ownership results for this check; no broader judgment about research credentials is implied. Do not solicit a cs.AI endorsement from this paper's authors based on this route or repeat the same check without new evidence.
+
+Next related-work candidate: **Evaluating Very Long-Term Conversational Memory of LLM Agents (LoCoMo)**, https://arxiv.org/abs/2402.17753, already cited in the manuscript. Its authors' endorsement eligibility has not been verified. Use the official **Which authors of this paper are endorsers?** link from that paper while signed in. No endorsement request has been sent to a researcher by this workflow, and no endorsement has been granted.
