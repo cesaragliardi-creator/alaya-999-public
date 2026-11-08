@@ -1,6 +1,6 @@
 # ALAYA-999 — Scientific publication progress and next steps
 
-Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.1**.  
+Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.2**.  
 Research author: **César Agliardi Pereira**.
 
 This is a publication checkpoint, not a report of completed experiments or peer review. It preserves the distinction between prepared materials, deposited materials, profile entries and editorial acceptance.
@@ -13,7 +13,7 @@ This is a publication checkpoint, not a report of completed experiments or peer 
 | ORCID work entry | Added, confirmed by author-supplied rendered profile on 2026-11-08 | Profile [0009-0000-3322-4834](https://orcid.org/0009-0000-3322-4834). Supplied page shows **Works (1)**, the same title, date 2026-10-30, type **preprint**, and the Zenodo DOI. Anonymous public visibility has not been independently checked in this checkpoint. Adding this entry is not a new journal publication. |
 | English methodological manuscript, v1.1 | Located and checked; no new external submission confirmed | Actual title: *ALAYA 999 and Functional Continuity Across Artificial Intelligence Models*. Subtitle: *Versioned External Memory and a Protocol for Evaluating Verifiable Corrections*. Dated 2026-11-02; 7 pages. Existing PDF inspected in this work session. No DOI of its own is claimed. |
 | Submission package | Prepared and saved for the author on 2026-11-08 | Filename: `ALAYA999_Submission_Package_20261108.zip`. Contains unchanged v1.1 PDF, English metadata in Markdown and JSON, Portuguese instructions, and SHA-256 manifest. The package is not uploaded to this repository by this checkpoint. |
-| OSF | Access/setup pending; no deposit receipt | Author subsequently supplied a signed-in OSF dashboard on 2026-11-08; see the dated update below. No project URL, registration receipt, or manuscript submission identifier is available. |
+| OSF | Project created by author; file upload and public visibility pending | [wujns](https://osf.io/wujns), title *ALAYA-999: Functional Continuity Across Artificial Intelligence Models*. Author supplied the creation success notice and project page on 2026-11-08. Page shows **0 B** and **No files are available**. Public/private state is not resolved by the pasted labels. Independent retrieval through the web connector failed; no public-access verification is claimed. No preprint submission receipt. |
 | TechRxiv | Temporarily closed to submissions when inspected | On 2026-11-08 the [homepage](https://www.techrxiv.org/) displayed a platform-transition notice stating that submissions were temporarily closed. Recheck before any later submission; do not assume permanent closure. |
 | Preprints.org | Not submitted in this workflow | Candidate preprint venue. Its [policy](https://www.preprints.org/about) uses CC BY 4.0; the v1.1 PDF reserves rights. A new licensing decision has not been made. |
 | arXiv | Not submitted in this workflow | Endorsement/category requirements and moderation remain to be resolved; do not claim endorsement or acceptance. |
@@ -24,8 +24,8 @@ SHA-256: `770a3a7e9aad41a12b8209b14f24218223d79816ac522e7de7399688d65da090`.
 
 ## Next actions, in priority order
 
-1. **Complete OSF access.** Use the existing account if present. Recover access through the official [password-reset page](https://osf.io/forgotpassword/) when necessary. If no OSF account exists, create one using the same email as ORCID to reduce duplicate-account risk. Do not create another ORCID identifier.
-2. **Create an OSF project for the scientific materials.** Use the v1.1 manuscript's actual title and metadata; upload the paper and appropriate public supporting documents. An OSF project is not automatically a preprint-service acceptance or an experimental preregistration. Confirm public visibility and retain the actual project URL before marking this complete.
+1. **OSF account access completed by author.** A project now exists at https://osf.io/wujns. Do not create a duplicate project or another ORCID record. The author's local sign-in does not establish a session in other browsers.
+2. **Upload the scientific PDF to the existing OSF project.** Open its Files area, upload the v1.1 manuscript, confirm successful file listing, review metadata, then confirm intended public visibility and anonymous readability. Project creation alone is not a manuscript deposit, preprint-service acceptance or experimental preregistration.
 3. **Normalize author metadata.** Use the author's full professional name consistently in ORCID, citations and Zenodo. Review the existing Zenodo creator spelling and licence presentation. Editing an ORCID citation does not edit Zenodo's source metadata. Profile corrections previously recommended have not been confirmed completed.
 4. **Prepare one preprint submission.** Consider Preprints.org after an explicit decision about its required licence and a check of its current manuscript eligibility rules. Alternatively reconsider TechRxiv if submissions reopen. Record the selected venue and prior Zenodo deposit; do not assert acceptance from submission alone.
 5. **Resolve arXiv eligibility later.** Identify the suitable category, satisfy endorsement requirements and submit only an appropriate manuscript. No endorsement requests have been sent in this workflow.
@@ -62,3 +62,9 @@ Read this checkpoint and the latest relevant manuscript before repeating work. R
 **Revised implementation:** An OSF project created before the deadline can serve as an additional public archival deposit of the manuscript and supporting materials. It should not be treated as the long-term editable working home. Keep versioned working materials in the existing GitHub repository and suitable deposits in Zenodo. Any OSF preprint requires a separate suitable community/service submission; a project upload alone is not preprint acceptance. Do not preregister an incomplete protocol as if it were finalized.
 
 **Immediate next step:** Establish the authorized publishing session, create the project if still available, use the actual v1.1 title and author metadata, upload only the public scientific files, confirm visibility and retain the public URL. Preserve the reserved-rights position unless a separate licence decision is explicitly made.
+
+## Update: OSF project created (2026-11-08)
+
+The author supplied **Success — New project created successfully!**, followed by the project page linking to **https://osf.io/wujns**. The displayed title is **ALAYA-999: Functional Continuity Across Artificial Intelligence Models**. The page reports **0 B** and **No files are available at this time**. This establishes author-confirmed project creation, not completed file publication. Both “Private Project” and “Public Project” appeared in the pasted page text, so the effective visibility remains unconfirmed. A web-connector retrieval attempt could not access the URL; that failure does not establish that the project is private.
+
+Next: use **the existing project**, upload `ALAYA_999_Functional_Continuity_Research_Paper_EN.pdf`, verify that the PDF appears, and check public visibility. Record the final file URL and any new DOI only after they actually exist. The earlier Zenodo DOI remains associated with the earlier note.
