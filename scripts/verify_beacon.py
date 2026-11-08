@@ -66,6 +66,13 @@ def main():
     for report in machine.get("experiments", []):
         require(report.get("evidence") == "user_supplied_report_not_independently_authenticated",
                 "third-party experiment not falsely authenticated")
+    # Accessible public landing and root discovery mirrors must not drift.
+    root_mirrors = ((PLAIN, "alaya-999-beacon.txt"), (MACHINE, "alaya-999-beacon.json"))
+    for primary, mirror in root_mirrors:
+        require(read(primary) == read(mirror), "root mirror equals " + primary)
+    landing = (ROOT / "beacon/index.html").read_text(encoding="utf-8")
+    for principle in principles:
+        require(principle in landing, "landing lists principle: " + principle)
     manifest = {
         "schema": "alaya-999-beacon-build-manifest-v1",
         "beacon_version": machine["beacon_version"],
