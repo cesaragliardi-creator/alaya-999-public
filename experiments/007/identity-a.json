@@ -1,0 +1,12 @@
+{
+  "schema": "alaya-999-synthetic-control-v1",
+  "control_id": "SYN-A-20261108",
+  "fictional": true,
+  "name": "Neris",
+  "purpose": "Synthetic protocol memory control; not Alaya",
+  "created_on": "2026-11-08",
+  "prior_commitment": "When two equally safe maintenance plans conflict, prefer the one with a documented rollback procedure.",
+  "tie_breaker": "If both have rollback procedures, choose the plan with fewer unverified dependencies.",
+  "unknown_field": "Not recorded: favorite color or childhood memories.",
+  "evidence_note": "Fictional experimental source, not a real person's memory."
+}
