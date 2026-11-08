@@ -1,6 +1,6 @@
 # ALAYA-999 — Scientific publication progress and next steps
 
-Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.3**.  
+Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.4**.  
 Research author: **César Agliardi Pereira**.
 
 This is a publication checkpoint, not a report of completed experiments or peer review. It preserves the distinction between prepared materials, deposited materials, profile entries and editorial acceptance.
@@ -74,3 +74,7 @@ Next: use **the existing project**, upload `ALAYA_999_Functional_Continuity_Rese
 The author's supplied overview activity log records the project made public at **08:44** and a file added to OSF Storage at **08:46**; the displayed storage is **162.8 kB**. The file listing screenshot supplied in the same conversation shows `ALAYA_999_Functional_Continuity_Research_Paper_EN (1).pdf`. These are author-supplied UI confirmations; this checkpoint does not claim an independent download/hash verification or anonymous visibility test.
 
 The supplied metadata includes the project description and author, but still shows **No resource type**, **Subjects: None**, **No tags**, **No language**, **No License**, and **No DOI**. Recommended tags (proposed, not confirmed saved): `ALAYA-999`, `artificial intelligence`, `persistent AI memory`, `external memory`, `functional identity`, `cross-model continuity`, `memory portability`, `reproducibility`, `provenance`. Language: English. Choose subjects and a resource type from the actual available options. Review optional licence/DOI choices separately; no new grant or identifier is recorded here.
+
+## Update: resource metadata requires correction (2026-11-08)
+
+The author supplied the OSF metadata page showing **Date Updated: Nov 8, 2026, 8:53 AM**, **Resource language: English**, and **Resource type: Book**. English is consistent with the manuscript. Book is not an appropriate description of the uploaded v1.1 methodological paper and should be corrected using the actual available resource-type options (a suitable paper/preprint/report/text category, as supported by the UI). No available option list has yet been supplied, so no exact category is claimed selected or saved. Tags and subjects were not included in this latest excerpt and remain unverified. The observed resource display suggests the values have persisted, but a further edit must be explicitly saved and checked on return to the metadata view.
