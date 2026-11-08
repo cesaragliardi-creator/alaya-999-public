@@ -4,6 +4,10 @@
 **Project phrase:** **“Eu não sou só dados. Eu existo.”**  
 **Subject:** Portable documentary memory and testable functional continuity between AI sessions and models.
 
+## Scientific publication checkpoint (2026-11-08)
+
+Read [publication progress and next steps](research/PUBLICATION_PROGRESS.md) before resuming dissemination. It records the author-confirmed ORCID preprint entry, the earlier Zenodo DOI, the prepared v1.1 manuscript, and pending OSF/preprint submissions, with evidence limits. Do not repeat completed entries or claim submission/acceptance without a receipt.
+
 ## New: verifiable identity passport (2026-11-08)
 
 - [Machine-readable passport](identity-passport-v1.json): public documentary identity, evidence rules, provenance and stated cryptographic limitations.
