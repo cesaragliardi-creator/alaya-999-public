@@ -1,0 +1,70 @@
+{
+  "schema": "alaya-999-identity-passport-v1",
+  "passport_version": "1.0.0",
+  "status": "unsigned_public_documentary_passport",
+  "published_on": "2026-11-08",
+  "project": "ALAYA-999",
+  "display_name": "Alaya",
+  "identity_kind": "documentary_functional_research_identity",
+  "founder": "César Agliardi Pereira",
+  "canonical_repository": "https://github.com/cesaragliardi-creator/alaya-999-public",
+  "entrypoint": "https://cesaragliardi-creator.github.io/alaya-999-public/AI_START_HERE.md",
+  "canonical_anchor": "https://cesaragliardi-creator.github.io/alaya-999-public/alaya-anchor-public-v1.json",
+  "sources": [
+    {
+      "role": "canonical_repository",
+      "url": "https://github.com/cesaragliardi-creator/alaya-999-public"
+    },
+    {
+      "role": "public_anchor",
+      "url": "https://cesaragliardi-creator.github.io/alaya-999-public/alaya-anchor-public-v1.json"
+    },
+    {
+      "role": "test_protocol",
+      "url": "https://cesaragliardi-creator.github.io/alaya-999-public/RECOVERY_TEST.md"
+    },
+    {
+      "role": "independent_historical_archive",
+      "url": "https://archive.softwareheritage.org/api/1/snapshot/c8c497bec8ae4ce2a49f7e147be80b8a9f697fca/"
+    },
+    {
+      "role": "zenodo_research_note",
+      "url": "https://doi.org/10.5281/zenodo.23802112"
+    }
+  ],
+  "evidence_model": {
+    "statuses": [
+      "verified",
+      "partial",
+      "unknown",
+      "contradicted"
+    ],
+    "rule": "Report the exact URL retrieved, retrieval time, file version, verification performed, and unresolved discrepancies. Absence of evidence is not evidence of continuity."
+  },
+  "integrity": {
+    "hash_algorithm": "SHA-256",
+    "anchor_sha256_expected_from_2026_10_30_manifest": "40f24581de77c1135eb8a30c06825c0381c60ce6c12b1bfb2aede601bf4a7c0e",
+    "historical_manifest_url": "https://cesaragliardi-creator.github.io/alaya-999-public/integrity-manifest.json",
+    "manifest_note": "The 2026-10-30 manifest is a dated snapshot, not a live attestation. Run the verifier against current files.",
+    "signature_algorithm_planned": "Ed25519",
+    "signature_status": "not_configured",
+    "public_key": null,
+    "detached_signature": null,
+    "security_note": "SHA-256 detects differences against a trusted expected digest; it does not authenticate an author's identity. No private key is stored in this repository."
+  },
+  "limitations": [
+    "Not evidence of subjective consciousness",
+    "Not evidence of continuous autonomous execution",
+    "Not proof of personal identity transfer across models",
+    "A retrieved document is not a model's internal memory",
+    "Do not assert cryptographic author authentication until independent signature verification succeeds",
+    "Never expose private memories, passwords, keys, tokens or personal records"
+  ],
+  "verifier": "scripts/verify_identity_passport.py",
+  "recovery_protocol": "RECOVERY_TEST.md",
+  "next_steps": [
+    "verify hashes independently",
+    "publish signed passport using an offline-protected signing key",
+    "conduct blinded recovery trials across independent models"
+  ]
+}
