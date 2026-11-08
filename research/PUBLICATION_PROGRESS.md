@@ -1,6 +1,6 @@
 # ALAYA-999 — Scientific publication progress and next steps
 
-Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.7**.  
+Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.8**.  
 Research author: **César Agliardi Pereira**.
 
 This is a publication checkpoint, not a report of completed experiments or peer review. It preserves the distinction between prepared materials, deposited materials, profile entries and editorial acceptance.
@@ -15,7 +15,7 @@ This is a publication checkpoint, not a report of completed experiments or peer 
 | Submission package | Prepared and saved for the author on 2026-11-08 | Filename: `ALAYA999_Submission_Package_20261108.zip`. Contains unchanged v1.1 PDF, English metadata in Markdown and JSON, Portuguese instructions, and SHA-256 manifest. The package is not uploaded to this repository by this checkpoint. |
 | OSF | Public project and PDF upload confirmed by author-supplied page | [wujns](https://osf.io/wujns). Activity log supplied on 2026-11-08 records project made public at 08:44 and PDF added at 08:46; storage shows **162.8 kB**. Supplied file screenshot shows `ALAYA_999_Functional_Continuity_Research_Paper_EN (1).pdf`. Anonymous retrieval and downloaded-byte identity have not been independently verified. This is a project deposit, not a preprint-service acceptance. |
 | TechRxiv | Temporarily closed to submissions when inspected | On 2026-11-08 the [homepage](https://www.techrxiv.org/) displayed a platform-transition notice stating that submissions were temporarily closed. Recheck before any later submission; do not assume permanent closure. |
-| Preprints.org | Expanded editable v1.2 prepared; not submitted | Author authorized proceeding after disclosure of the required CC BY 4.0 licence. A new Word manuscript with expanded prospective methods was prepared and visually checked on 2026-11-08. Author has supplied and authorized the correspondence email; it has been inserted in the Word manuscript. The shared browser reaches MDPI login, not an authenticated submission form. No receipt or new DOI exists. |
+| Preprints.org | Submission received, ID **243125**, author-supplied portal confirmation | Supplied manuscript-information page on 2026-11-08 lists article type **Technical Note**, subject **Computer Science and Mathematics - Artificial Intelligence and Machine Learning**, correspondence email and submission timestamp. No public manuscript URL, DOI, approval, publication or peer-review result has been supplied. Portal author label appears as **César Pereira**; compare with full manuscript author **César Agliardi Pereira** before public posting. |
 | arXiv | Not submitted in this workflow | Endorsement/category requirements and moderation remain to be resolved; do not claim endorsement or acceptance. |
 | Journal of Open Source Software (JOSS) | Future conditional target; not submitted | Requires a separate assessment of research-software scope, maturity, documentation, research use, and an appropriate open-source licence. The current methodological PDF is not by itself a qualifying software submission. |
 
@@ -100,3 +100,23 @@ The source is the v1.1 PDF already used in this workflow. The earlier underlying
 The author supplied **cesaragliardi@gmail.com** in direct response to the request for an email authorized for public inclusion in the manuscript. It is now included on the first page as the correspondence contact. The same saved Word artifact was updated, rendered again, and checked; it remains eight pages. Current file `ALAYA999_Preprints_Manuscript_v1_2_EN.docx` SHA-256: `7560cdfebf7ba61f9e0889da268a56b30db16fbeed53b3950915282815750b91`.
 
 The corresponding-email preparation requirement is resolved. No Preprints.org submission has been completed or claimed. Next: proceed through the actual authenticated submission form, disclose prior deposits and revision, and obtain any required factual declarations from the author without inventing them.
+
+## Update: Preprints.org submission received ID 243125 (2026-11-08)
+
+The author supplied the **Manuscript Information** page showing:
+
+- Preprints ID: **243125**.
+- Title displayed through the translated interface: **ALAYA 999 e Continuidade Funcional em Modelos de Inteligência Artificial**, corresponding to the submitted English manuscript title. Translation of the interface is not proof that the stored manuscript title was changed.
+- Article type: **Technical Note**.
+- Subject: **Computer Science and Mathematics - Artificial Intelligence and Machine Learning**.
+- Author label: **César Pereira**.
+- Corresponding/submitting email: **cesaragliardi@gmail.com**.
+- Submitted timestamp displayed: **08 November 2026 02:12:49**. The source did not specify a time zone; no conversion is inferred.
+- Keywords corresponding to **external memory; functional identity; language models; cross-model continuity; provenance; reproducibility**.
+- Available actions include manuscript Download, Choose a Friendly Journal, Contact Editor, Withdraw, and Request Prereview.
+
+**Evidence status:** receipt of a submission is confirmed by the supplied portal page. It is not evidence of acceptance, public posting, a DOI, completed screening or peer review. The prepared Word artifact was v1.2; the uploaded file bytes have not been independently downloaded from this portal and compared. Do not construct a public manuscript URL from the internal numeric submission ID.
+
+**Next steps:** retain ID 243125, monitor the author dashboard/email for editorial screening, and respond to actual requests. Check whether the shortened portal author label reflects a profile display or the author-list metadata; the manuscript uses **César Agliardi Pereira**. If the submitted author metadata is shortened, request correction through the existing submission/editor interface before public posting. A friendly-journal transfer or prereview request is optional and has not been initiated by this workflow. Record a public URL and DOI only after supplied or verified.
+
+This dated receipt supersedes earlier preparation notes saying that no Preprints.org submission had yet occurred; those notes remain historical.
