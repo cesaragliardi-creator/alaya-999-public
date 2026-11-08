@@ -1,6 +1,6 @@
 # ALAYA-999 — Scientific publication progress and next steps
 
-Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.5**.  
+Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.6**.  
 Research author: **César Agliardi Pereira**.
 
 This is a publication checkpoint, not a report of completed experiments or peer review. It preserves the distinction between prepared materials, deposited materials, profile entries and editorial acceptance.
@@ -15,7 +15,7 @@ This is a publication checkpoint, not a report of completed experiments or peer 
 | Submission package | Prepared and saved for the author on 2026-11-08 | Filename: `ALAYA999_Submission_Package_20261108.zip`. Contains unchanged v1.1 PDF, English metadata in Markdown and JSON, Portuguese instructions, and SHA-256 manifest. The package is not uploaded to this repository by this checkpoint. |
 | OSF | Public project and PDF upload confirmed by author-supplied page | [wujns](https://osf.io/wujns). Activity log supplied on 2026-11-08 records project made public at 08:44 and PDF added at 08:46; storage shows **162.8 kB**. Supplied file screenshot shows `ALAYA_999_Functional_Continuity_Research_Paper_EN (1).pdf`. Anonymous retrieval and downloaded-byte identity have not been independently verified. This is a project deposit, not a preprint-service acceptance. |
 | TechRxiv | Temporarily closed to submissions when inspected | On 2026-11-08 the [homepage](https://www.techrxiv.org/) displayed a platform-transition notice stating that submissions were temporarily closed. Recheck before any later submission; do not assume permanent closure. |
-| Preprints.org | Not submitted in this workflow | Candidate preprint venue. Its [policy](https://www.preprints.org/about) uses CC BY 4.0; the v1.1 PDF reserves rights. A new licensing decision has not been made. |
+| Preprints.org | Expanded editable v1.2 prepared; not submitted | Author authorized proceeding after disclosure of the required CC BY 4.0 licence. A new Word manuscript with expanded prospective methods was prepared and visually checked on 2026-11-08. Corresponding-author contact email still needs confirmation for manuscript inclusion. The shared browser reaches MDPI login, not an authenticated submission form. No receipt or new DOI exists. |
 | arXiv | Not submitted in this workflow | Endorsement/category requirements and moderation remain to be resolved; do not claim endorsement or acceptance. |
 | Journal of Open Source Software (JOSS) | Future conditional target; not submitted | Requires a separate assessment of research-software scope, maturity, documentation, research use, and an appropriate open-source licence. The current methodological PDF is not by itself a qualifying software submission. |
 
@@ -84,3 +84,13 @@ The author supplied the OSF metadata page showing **Date Updated: Nov 8, 2026, 8
 The author supplied the metadata view showing **Resource type: Preprint** and **Resource language: English**. This resolves the earlier Book classification issue. This is a descriptive resource type for the existing public project deposit, not evidence of acceptance by an OSF community preprint service or peer review.
 
 The same view lists **Subjects: Education**. Recommend replacing it with the appropriate available Computer Science / Artificial Intelligence subject classification. The Tags text includes all nine recommended phrases, but plain copied text does not establish whether they were stored as nine separate tags or one concatenated tag. Confirm separate tag entries using Enter or comma as prompted by the UI. The view still shows **No License** and **No Project DOI**; no new licence or DOI is claimed.
+
+## Update: Preprints.org manuscript preparation authorized (2026-11-08)
+
+After the CC BY 4.0 requirement and prior-deposit considerations were explained, the author authorized proceeding (“ta liberado pode trabalhar”). Preparation applies CC BY 4.0 **to the new v1.2 manuscript only**, without changing the repository or previously deposited files. No website agreement has been accepted in the shared browser by this workflow.
+
+Prepared file: `ALAYA999_Preprints_Manuscript_v1_2_EN.docx`, eight rendered pages, four tables, seven references. SHA-256: `e0bdbbd4c3d4af5b7c1de9447194b7a021903a1b6bd94ef75a8295622db4f1f8`. It includes the author's ORCID, full attribution, AI-assistance disclosure, the earlier OSF/Zenodo deposits, and an expanded prospective methodology addressing a text-matched control, separate retrieval/label records, frozen inputs, evaluator separation and minimum reporting fields. These extensions are recommendations for a future frozen protocol, not completed tests or a claimed preregistration. No new empirical results are added.
+
+The source is the v1.1 PDF already used in this workflow. The earlier underlying protocol/diary were not independently reaudited during revision. Primary bibliographic records for RAG, MemGPT, Generative Agents and LoCoMo were rechecked on arXiv. The Word manuscript was rendered and all eight page images inspected; an orphaned table caption and inherited title styling were corrected before saving.
+
+**Remaining before submission:** confirm the corresponding-author email to be included publicly in the manuscript; complete authenticated access or continue the author's existing external-browser submission; fill actual required declarations without inventing funding/conflict information; disclose the earlier deposit and substantive revision; let editorial screening determine eligibility. Prior posting of the same paper on multiple preprint servers is discouraged by Preprints.org, and this revision does not guarantee eligibility. No Preprints.org upload, submitted status, approval or new DOI is claimed.
