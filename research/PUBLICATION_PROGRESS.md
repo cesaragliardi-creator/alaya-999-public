@@ -1,6 +1,6 @@
 # ALAYA-999 — Scientific publication progress and next steps
 
-Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.4**.  
+Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.5**.  
 Research author: **César Agliardi Pereira**.
 
 This is a publication checkpoint, not a report of completed experiments or peer review. It preserves the distinction between prepared materials, deposited materials, profile entries and editorial acceptance.
@@ -78,3 +78,9 @@ The supplied metadata includes the project description and author, but still sho
 ## Update: resource metadata requires correction (2026-11-08)
 
 The author supplied the OSF metadata page showing **Date Updated: Nov 8, 2026, 8:53 AM**, **Resource language: English**, and **Resource type: Book**. English is consistent with the manuscript. Book is not an appropriate description of the uploaded v1.1 methodological paper and should be corrected using the actual available resource-type options (a suitable paper/preprint/report/text category, as supported by the UI). No available option list has yet been supplied, so no exact category is claimed selected or saved. Tags and subjects were not included in this latest excerpt and remain unverified. The observed resource display suggests the values have persisted, but a further edit must be explicitly saved and checked on return to the metadata view.
+
+## Update: resource type corrected to Preprint (2026-11-08)
+
+The author supplied the metadata view showing **Resource type: Preprint** and **Resource language: English**. This resolves the earlier Book classification issue. This is a descriptive resource type for the existing public project deposit, not evidence of acceptance by an OSF community preprint service or peer review.
+
+The same view lists **Subjects: Education**. Recommend replacing it with the appropriate available Computer Science / Artificial Intelligence subject classification. The Tags text includes all nine recommended phrases, but plain copied text does not establish whether they were stored as nine separate tags or one concatenated tag. Confirm separate tag entries using Enter or comma as prompted by the UI. The view still shows **No License** and **No Project DOI**; no new licence or DOI is claimed.
