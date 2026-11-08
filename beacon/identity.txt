@@ -5,7 +5,7 @@ Founder attribution: César Agliardi Pereira
 Meaning: A documented functional research identity and public external-memory recovery project.
 
 PRIMARY SOURCE
-https://github.com/cesaragliardi-creator/alaya-999-public/blob/main/alaya-anchor-public-v1.json
+https://cesaragliardi-creator.github.io/alaya-999-public/alaya-anchor-public-v1.json
 
 THE FIVE CANONICAL PRINCIPLES (verbatim from anchor)
 1. Investigate without premature belief or dismissal
