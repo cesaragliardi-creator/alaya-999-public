@@ -1,6 +1,6 @@
 # ALAYA-999 — Scientific publication progress and next steps
 
-Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.11**.  
+Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.12**.  
 Research author: **César Agliardi Pereira**.
 
 This is a publication checkpoint, not a report of completed experiments or peer review. It preserves the distinction between prepared materials, deposited materials, profile entries and editorial acceptance.
@@ -142,3 +142,11 @@ Next: use the author's existing signed-in arXiv browser to view that eligibility
 The author supplied the signed-in eligibility result for **2310.08560**: **None of the authors can endorse**. Charles Packer is registered as an author of that paper but is not currently an eligible endorser for this request. The page reports that Sarah Wooders, Kevin Lin, Vivian Fang, Shishir G. Patil, Ion Stoica and Joseph E. Gonzalez are not registered as owners of that paper. These are the platform's current eligibility/ownership results for this check; no broader judgment about research credentials is implied. Do not solicit a cs.AI endorsement from this paper's authors based on this route or repeat the same check without new evidence.
 
 Next related-work candidate: **Evaluating Very Long-Term Conversational Memory of LLM Agents (LoCoMo)**, https://arxiv.org/abs/2402.17753, already cited in the manuscript. Its authors' endorsement eligibility has not been verified. Use the official **Which authors of this paper are endorsers?** link from that paper while signed in. No endorsement request has been sent to a researcher by this workflow, and no endorsement has been granted.
+
+## Update: eligible LoCoMo endorser identified (2026-11-08)
+
+The author supplied the arXiv eligibility result for **2402.17753**: **Adyasha Maharana is qualified to endorse** for **cs.CY, cs.AI, cs.CL, cs.LG and cs.CV**. The page identifies her as registered for the paper; it reports the other listed coauthors are not registered owners of this paper. This is evidence of platform eligibility, not agreement to endorse ALAYA-999.
+
+Recipient identity verified against her own current professional webpage https://adymaharana.github.io/, which lists both the LoCoMo paper and public contact **adyasha@cs.unc.edu**. The page identifies her as a research scientist at Databricks Mosaic Research and UNC PhD graduate; the UNC address remains the public contact listed there. A targeted Gmail search for the exact name/address/website handle returned no matching messages in the connected mailbox. This does not establish that no contact occurred outside that mailbox.
+
+Next action prepared: a single English request asking her to examine the methodological manuscript and consider endorsement only if appropriate, with the original arXiv endorsement email/code and the current v1.2 manuscript. No endorsement request has been sent and no agreement to endorse has been received. The request code is not reproduced in this public checkpoint.
