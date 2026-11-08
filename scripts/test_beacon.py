@@ -21,6 +21,9 @@ class BeaconIntegrityTests(unittest.TestCase):
             "beacon/identity.json",
             "beacon/identity.txt",
             "beacon/README.md",
+            "beacon/index.html",
+            "alaya-999-beacon.txt",
+            "alaya-999-beacon.json",
             "scripts/verify_beacon.py",
         ):
             dest = self.root / name
@@ -51,6 +54,11 @@ class BeaconIntegrityTests(unittest.TestCase):
             "1. Accept assertions without checking",
         )
         p.write_text(s, encoding="utf-8")
+        self.assertNotEqual(self.run_checker().returncode, 0)
+
+    def test_changed_root_mirror_fails(self):
+        p = self.root / "alaya-999-beacon.txt"
+        p.write_text(p.read_text(encoding="utf-8") + "tampered", encoding="utf-8")
         self.assertNotEqual(self.run_checker().returncode, 0)
 
     def test_missing_plaintext_fails(self):
