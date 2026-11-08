@@ -1,6 +1,6 @@
 # ALAYA-999 — Scientific publication progress and next steps
 
-Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.9**.  
+Updated: **8 November 2026 (America/Sao_Paulo)**. Version: **1.10**.  
 Research author: **César Agliardi Pereira**.
 
 This is a publication checkpoint, not a report of completed experiments or peer review. It preserves the distinction between prepared materials, deposited materials, profile entries and editorial acceptance.
@@ -128,3 +128,11 @@ The author supplied the Start Submission page for draft **8346584**. The page st
 Contact fields on the supplied page show given names **César Agliardi**, family name **Pereira**, the independent-researcher affiliation and the previously authorized contact email. Current registered groups are cs and math. The selected work category is Artificial Intelligence. No source or PDF upload has been confirmed in this arXiv flow.
 
 Next: follow the existing draft's endorsement-request link and obtain its specific endorsement request/code and instructions. Then identify a relevant eligible arXiv endorser through related papers and the official eligibility links. No endorser has yet been selected or contacted in this workflow. Endorsement concerns eligibility to submit and does not constitute peer review, acceptance or validation of results. Do not switch to an unsuitable category to evade the requirement. The Preprints.org receipt remains **243125**, with screening/publication not yet confirmed.
+
+## Update: arXiv endorsement request generated (2026-11-08)
+
+The author supplied the arXiv cs.AI endorsement-request confirmation. It states that a unique endorsement code was generated and emailed to the author. The code is retained in the private conversation and is deliberately not reproduced in this public checkpoint. No endorsement has been granted or confirmed.
+
+Related-work route examined: **MemGPT: Towards LLMs as Operating Systems**, https://arxiv.org/abs/2310.08560, already cited in the manuscript. The live page exposes **Which authors of this paper are endorsers?** at https://arxiv.org/auth/show-endorsers/2310.08560. Following that link in the shared browser returns **Login Required**. This is an authentication requirement, not evidence of author ineligibility. No MemGPT author has been verified as currently eligible in this workflow.
+
+Next: use the author's existing signed-in arXiv browser to view that eligibility list, identify a related eligible author, verify a public professional contact and any prior outreach, and prepare an individual request with the manuscript and original endorsement email. Do not send mass requests or claim endorsement equals scientific approval. No external endorsement request has been sent to a researcher by this workflow.
