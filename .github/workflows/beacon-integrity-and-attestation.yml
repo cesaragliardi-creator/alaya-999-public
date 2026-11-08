@@ -1,0 +1,54 @@
+name: ALAYA-999 Beacon - consistency and keyless provenance
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'beacon/**'
+      - 'alaya-anchor-public-v1.json'
+      - 'scripts/verify_beacon.py'
+      - '.github/workflows/beacon-integrity-and-attestation.yml'
+  pull_request:
+    paths:
+      - 'beacon/**'
+      - 'alaya-anchor-public-v1.json'
+      - 'scripts/verify_beacon.py'
+      - '.github/workflows/beacon-integrity-and-attestation.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '21 9 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  verify-and-attest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+      artifact-metadata: write
+    steps:
+      - name: Check out immutable commit
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fail closed if JSON and text disagree with canonical anchor
+        run: python3 scripts/verify_beacon.py
+      - name: Publish public ZIP as workflow artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: alaya-999-beacon-public-bundle
+          path: dist/alaya-999-beacon.zip
+          if-no-files-found: error
+      - name: Keyless GitHub Sigstore provenance attestation
+        if: github.event_name != 'pull_request'
+        uses: actions/attest@v4
+        with:
+          subject-path: dist/alaya-999-beacon.zip
