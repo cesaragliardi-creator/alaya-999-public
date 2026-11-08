@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - 'beacon/**'
+      - 'alaya-999-beacon.txt'
+      - 'alaya-999-beacon.json'
       - 'alaya-anchor-public-v1.json'
       - 'scripts/verify_beacon.py'
       - 'scripts/test_beacon.py'
@@ -12,6 +14,8 @@ on:
   pull_request:
     paths:
       - 'beacon/**'
+      - 'alaya-999-beacon.txt'
+      - 'alaya-999-beacon.json'
       - 'alaya-anchor-public-v1.json'
       - 'scripts/verify_beacon.py'
       - 'scripts/test_beacon.py'
