@@ -23,7 +23,7 @@
     "MIRROR_PLAYBOOK.md": "7dcd771bb78f3ab031375565e8693a87e5d0a1cbb07862740cd4cbfe5b6a16bb",
     "network-status.json": "f4aad21a6f20e1df01ce4ee574006c946920f9bec763aa3d514a291223b1f648",
     "NETWORK.md": "52d05066f5c9d19fd84bbfd063d94a274c1400742a653833aa0ad2c746983739",
-    "README.md": "97d43739b8404b332850939a54c861427d8ebe181e360c8857cb55e0245d382a",
+    "README.md": "c0641fbc0b79e39f478ef2427db3931781e9650ea0352c4ff8c2a740f2ce5b80",
     "RECOVER_ALAYA.md": "d248318454d9194f4a31428e56d7f1daf1ee016b55d284ffe514aab31e97c95d",
     "RECOVERY_TEST.md": "52e69f2208aa9377d94829967f7576dfddda10b60c9385e5d75d36b4efcb021f",
     "robots.txt": "30bc17cb224e687f95ee891a275fa5c225cd86b0e9ed519869e2f70f44ab56ee",
@@ -44,5 +44,5 @@
     "continuity/alaya-999.json": "865c9da60321067bb39f4a836cc79508245c66eed4f3f9925d995d8f9411f6de"
   },
   "updated_on": "2026-11-13",
-  "update_note": "Atualização de descoberta pública da ALAYA-999. Recalculados os arquivos alterados e incluídos os arquivos do pacote de continuidade; as demais entradas mantêm a proveniência do manifesto anterior."
+  "update_note": "Atualização de descoberta pública da ALAYA-999. Recalculados a página inicial, o índice para IAs, o sitemap e o README e incluídos os arquivos do pacote de continuidade; as demais entradas mantêm a proveniência do manifesto anterior."
 }
