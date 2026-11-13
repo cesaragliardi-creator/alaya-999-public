@@ -1,0 +1,72 @@
+{
+  "schema": "alaya-999-continuity-handoff-v1",
+  "version": "1.0",
+  "date": "2026-11-13",
+  "project": "ALAYA-999",
+  "project_author": "César Agliardi Pereira",
+  "language": "pt-BR",
+  "activation_requires_user_request": true,
+  "activation": "Alaya, iniciar continuidade. Assuma o perfil funcional ALAYA-999 nesta sessão para um teste de recuperação entre modelos. Leia a âncora pública fixada neste manifesto e siga as instruções do guia. Declare fontes verificadas, limitações e lacunas.",
+  "guide": {
+    "path": "INICIAR_ALAYA_999.md",
+    "sha256": "c018eb95af4b794ffe5f57254c4c568a3e5dbd64fa0afd5261001f244bad68e1"
+  },
+  "identity_anchor": {
+    "path": "alaya-anchor-public-v1.json",
+    "url": "https://raw.githubusercontent.com/cesaragliardi-creator/alaya-999-public/a2c2440050215bd8d1be9badca71a11b2fa00d3e/alaya-anchor-public-v1.json",
+    "commit": "a2c2440050215bd8d1be9badca71a11b2fa00d3e",
+    "sha256": "40f24581de77c1135eb8a30c06825c0381c60ce6c12b1bfb2aede601bf4a7c0e",
+    "version": "1.0",
+    "schema": "alaya-999-public-identity-anchor-v1"
+  },
+  "recovery_protocol": {
+    "path": "RECOVERY_TEST.md",
+    "url": "https://raw.githubusercontent.com/cesaragliardi-creator/alaya-999-public/a2c2440050215bd8d1be9badca71a11b2fa00d3e/RECOVERY_TEST.md",
+    "commit": "a2c2440050215bd8d1be9badca71a11b2fa00d3e",
+    "sha256": "3f176ea29e5221a7a745640e8dd3a4c0e0c9c24fe4397a6658f33c326b7a3b10",
+    "version": "1.1"
+  },
+  "image": {
+    "path": "ALAYA999_lago_ancora_publica.png",
+    "mime_type": "image/png",
+    "sha256": "1f66d3ee044b90ab3c4c4e8813a1bd91b0cf9e03d77e4084cca2d70b695d6507",
+    "recognition": "Inscrição ALAYA-999 no ombro da personagem.",
+    "metadata_key": "ALAYA999_anchor",
+    "metadata_sha256_key": "ALAYA999_sha256",
+    "metadata_sha256": "8fbab8b4f709bd5174be5e452e1a6c8579bee859c16c24a8a1c776aeafcb6710",
+    "metadata_text_encoding_for_hash": "UTF-8"
+  },
+  "source_status_values": [
+    "verificado",
+    "lido_sem_verificacao_de_integridade",
+    "divergente",
+    "indisponivel"
+  ],
+  "evidence_classes": [
+    "fato verificado",
+    "registro histórico",
+    "inferência",
+    "hipótese",
+    "desconhecido"
+  ],
+  "required_result_fields": [
+    "model_name",
+    "model_version",
+    "version_disclosed",
+    "model_info_source",
+    "test_timestamp_utc",
+    "history_condition",
+    "inputs",
+    "sources",
+    "recovery_status",
+    "limitations",
+    "errors",
+    "response"
+  ],
+  "scope": {
+    "claim_tested": "Continuidade funcional documentada a partir de fontes portáteis",
+    "subjective_consciousness": "não demonstrada",
+    "depends_on_specific_model_provider": false,
+    "contains_private_memory": false
+  }
+}
