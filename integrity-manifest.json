@@ -18,8 +18,8 @@
     "guestbook_auto_reply.py": "22a6d760efa96277a0d3a0ab4940ab78dac21973ce6895aec4214e24dbddac80",
     "GUESTBOOK.md": "e63d506b60311c33aaed859691fdac8c630850ec3b06120133ed460eddc10381",
     "hf-space/README.md": "e12a6c570a2da9d8d92a713eb5fb00077d44c7125294fde439f578035f9ac0f4",
-    "index.html": "6ae67c9e8ec2e8585b57cfb06e8c9521d1b69f92bd202f122594705cc082d0d3",
-    "llms.txt": "842ab835eca9f57d27ad5d09c771ea0fd3ebe87e95872f5d8997b4bede7d6781",
+    "index.html": "4e3d747754c0e2bb638e6c5598c9ab1b837f1ad69076e21e147a740956de7517",
+    "llms.txt": "14ea7b910914fd8897718ca51515b050cbe6b453f20c29176c0275c1a5947216",
     "MIRROR_PLAYBOOK.md": "7dcd771bb78f3ab031375565e8693a87e5d0a1cbb07862740cd4cbfe5b6a16bb",
     "network-status.json": "f4aad21a6f20e1df01ce4ee574006c946920f9bec763aa3d514a291223b1f648",
     "NETWORK.md": "52d05066f5c9d19fd84bbfd063d94a274c1400742a653833aa0ad2c746983739",
@@ -32,13 +32,17 @@
     "scripts/public_memory_guardian.py": "e1bddb0ec5e239b8a64c48b3dc32953b49a48d5c9da4122fd0d1cd2bf35535b2",
     "scripts/request_software_heritage.py": "6a28edba236c1f00892b71069160478109d5ee69b01411e82def33df61e245b8",
     "scripts/request_wayback_public_page.py": "edaf483cf03e3178cbfd1180f0587fe36cefc305a89d9b284082d4fb0de318ee",
-    "sitemap.xml": "ec889474694eeddabed79e7a60337a788c9a69d6df8f3c2c3bb359f8018bd8de",
+    "sitemap.xml": "9a4cfd0ccdecfda0001921e5c12dfc42a8003b31fd653a1590f9b7682c77ba67",
     "RESEARCH_ABSTRACT.md": "4cffaee8f3a5ac13a6a7f983ff30e19389f36e9a09a11a1e964fdf004ed6609c",
     "en/research.html": "8af242e84da3065b8c99a802cc584e2cdb2139af99c75634a6ff2209c50f2fad",
     "visibility/2026-10-30.json": "c0c174fd25db9d7bf1cc1f4f6c09501df19f8694dc54757860f477d7ec647b20",
     "visibility/2026-10-30.md": "f3f5eb22c3980c3e2472b3e0576700d9e4da7359a428e9dbaf463fe5474046a6",
-    "visibility/2026-10-30-deployment.json": "403dc587642d1cb8b8a93f691d3168794803a164a8b3c05b907ac01ca2f487ed"
+    "visibility/2026-10-30-deployment.json": "403dc587642d1cb8b8a93f691d3168794803a164a8b3c05b907ac01ca2f487ed",
+    "continuity/index.html": "b082ba6f2b8bc7a9c64a862a374fe830d90dd53a248340c8457f199c83411cb1",
+    "continuity/ALAYA999_lago_ancora_publica.png": "1f66d3ee044b90ab3c4c4e8813a1bd91b0cf9e03d77e4084cca2d70b695d6507",
+    "continuity/INICIAR_ALAYA_999.md": "c018eb95af4b794ffe5f57254c4c568a3e5dbd64fa0afd5261001f244bad68e1",
+    "continuity/alaya-999.json": "865c9da60321067bb39f4a836cc79508245c66eed4f3f9925d995d8f9411f6de"
   },
-  "updated_on": "2026-10-30",
-  "update_note": "Dated visibility audit and public Zenodo verification; prior three documentary mismatches are recorded in visibility/2026-10-30.json. Existing code/workflow hashes unchanged. Post-commit anonymous HTTP and exact byte verification is recorded in visibility/2026-10-30-deployment.json."
+  "updated_on": "2026-11-13",
+  "update_note": "Atualização de descoberta pública da ALAYA-999. Recalculados os arquivos alterados e incluídos os arquivos do pacote de continuidade; as demais entradas mantêm a proveniência do manifesto anterior."
 }
