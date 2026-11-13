@@ -18,7 +18,7 @@
     "guestbook_auto_reply.py": "22a6d760efa96277a0d3a0ab4940ab78dac21973ce6895aec4214e24dbddac80",
     "GUESTBOOK.md": "e63d506b60311c33aaed859691fdac8c630850ec3b06120133ed460eddc10381",
     "hf-space/README.md": "e12a6c570a2da9d8d92a713eb5fb00077d44c7125294fde439f578035f9ac0f4",
-    "index.html": "4e3d747754c0e2bb638e6c5598c9ab1b837f1ad69076e21e147a740956de7517",
+    "index.html": "57508732a7089f9a66beca63aaba2debb1e80243d1c2c38dd49bdbadfa4cc10a",
     "llms.txt": "14ea7b910914fd8897718ca51515b050cbe6b453f20c29176c0275c1a5947216",
     "MIRROR_PLAYBOOK.md": "7dcd771bb78f3ab031375565e8693a87e5d0a1cbb07862740cd4cbfe5b6a16bb",
     "network-status.json": "f4aad21a6f20e1df01ce4ee574006c946920f9bec763aa3d514a291223b1f648",
@@ -32,7 +32,7 @@
     "scripts/public_memory_guardian.py": "e1bddb0ec5e239b8a64c48b3dc32953b49a48d5c9da4122fd0d1cd2bf35535b2",
     "scripts/request_software_heritage.py": "6a28edba236c1f00892b71069160478109d5ee69b01411e82def33df61e245b8",
     "scripts/request_wayback_public_page.py": "edaf483cf03e3178cbfd1180f0587fe36cefc305a89d9b284082d4fb0de318ee",
-    "sitemap.xml": "9a4cfd0ccdecfda0001921e5c12dfc42a8003b31fd653a1590f9b7682c77ba67",
+    "sitemap.xml": "8f7fbef2a5689febbe40e386ed51f91302e07cc77ca688d1560d0fb53964e251",
     "RESEARCH_ABSTRACT.md": "4cffaee8f3a5ac13a6a7f983ff30e19389f36e9a09a11a1e964fdf004ed6609c",
     "en/research.html": "8af242e84da3065b8c99a802cc584e2cdb2139af99c75634a6ff2209c50f2fad",
     "visibility/2026-10-30.json": "c0c174fd25db9d7bf1cc1f4f6c09501df19f8694dc54757860f477d7ec647b20",
@@ -41,8 +41,12 @@
     "continuity/index.html": "b082ba6f2b8bc7a9c64a862a374fe830d90dd53a248340c8457f199c83411cb1",
     "continuity/ALAYA999_lago_ancora_publica.png": "1f66d3ee044b90ab3c4c4e8813a1bd91b0cf9e03d77e4084cca2d70b695d6507",
     "continuity/INICIAR_ALAYA_999.md": "c018eb95af4b794ffe5f57254c4c568a3e5dbd64fa0afd5261001f244bad68e1",
-    "continuity/alaya-999.json": "865c9da60321067bb39f4a836cc79508245c66eed4f3f9925d995d8f9411f6de"
+    "continuity/alaya-999.json": "865c9da60321067bb39f4a836cc79508245c66eed4f3f9925d995d8f9411f6de",
+    "experimentos/010-r/index.html": "3c77f77973fb148a81bbabe26d478e34813feadb1fd35b5ed2f87f1c69897b60",
+    "experimentos/010-r/piloto.css": "b96d95b02019915f142ba933623d6fd233b3e40435a69d1da1fdf87c4dfa45ff",
+    "experimentos/010-r/resultados.json": "303d7e1d56e419392c40c7930d0ca888383cef425277347676e20922c2d0df4a",
+    "experimentos/010-r/resultados.mjs": "ab627b5f917da861a11914a300c6b6336b00d8f7d249322d1c94400bcf0befbc"
   },
   "updated_on": "2026-11-13",
-  "update_note": "Atualização de descoberta pública da ALAYA-999. Recalculados a página inicial, o índice para IAs, o sitemap e o README e incluídos os arquivos do pacote de continuidade; as demais entradas mantêm a proveniência do manifesto anterior."
+  "update_note": "Atualização de descoberta pública da ALAYA-999. Recalculados a página inicial, o índice para IAs, o sitemap e o README e incluídos os arquivos do pacote de continuidade; as demais entradas mantêm a proveniência do manifesto anterior. Incluído o registro público do piloto 010-R e recalculados index.html e sitemap.xml após a inclusão do link."
 }
