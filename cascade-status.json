@@ -1,6 +1,6 @@
 {
   "schema": "alaya-999-cascade-status-v1",
-  "checked_at": "2026-11-14T14:59:07.735515+00:00",
+  "checked_at": "2026-11-14T19:51:55.610803+00:00",
   "results": [
     {
       "id": "github_anchor",
@@ -28,13 +28,13 @@
       "id": "huggingface",
       "status": "reachable",
       "http_status": 200,
-      "sha256": "70d4c48db0269b87c851cee2ac7e35d4a24000050af4141578f2589c9e0c4d48"
+      "sha256": "a6df93728d7a5858ce5de690a59f79181477ec27823612580163855cea273860"
     },
     {
       "id": "zenodo",
       "status": "reachable",
       "http_status": 200,
-      "sha256": "ee0e90d261c50ba6e5a550e496171fff26acc2da8e0fe5a91ea582a0f7fc78a6"
+      "sha256": "f7a320c1235740b63677737529432a118f405c53212329d14d00adf0cbfedc5a"
     },
     {
       "id": "google_drive",
