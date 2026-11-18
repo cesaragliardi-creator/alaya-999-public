@@ -10,9 +10,10 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import sys
-from datetime import datetime, timezone
-from urllib.request import Request, urlopen
+from pathlib import Path
+from urllib.request import Request, url2pathname, urlopen
 from urllib.parse import urlsplit
 
 BASE = "https://raw.githubusercontent.com/cesaragliardi-creator/alaya-999-public"
@@ -21,6 +22,7 @@ URLS = {
     "state": BASE + "/alaya999-memory-state/telemetry/continuity-state.json",
     "events": BASE + "/alaya999-memory-state/telemetry/continuity-events.jsonl",
 }
+LOCAL_FILES = {label: url.rsplit("/", 1)[-1] for label, url in URLS.items()}
 EVENT_SCHEMA = "alaya-999-public-observer-v1"
 PROFILE_SCHEMA = "alaya-999-public-profile-snapshot-v1"
 GENESIS = "0" * 64
@@ -59,6 +61,17 @@ def https_fetch(url: str, limit: int) -> bytes:
         raise BootstrapError("source unavailable; no memory claims permitted: " + type(exc).__name__) from exc
     if not data or len(data) > limit:
         raise BootstrapError("empty/oversized public source")
+    return data
+
+
+def local_fetch(uri: str, limit: int) -> bytes:
+    path = Path(url2pathname(urlsplit(uri).path))
+    if not path.is_file():
+        raise BootstrapError("missing local public source: " + path.name)
+    with path.open("rb") as source:
+        data = source.read(limit + 1)
+    if not data or len(data) > limit:
+        raise BootstrapError("empty/oversized local public source: " + path.name)
     return data
 
 
@@ -111,8 +124,10 @@ def validate_history(events: list, state: dict):
     return event, profile
 
 
-def verify_bundle(fetcher=https_fetch) -> dict:
-    raw = {label: fetcher(url, LIMITS[label]) for label, url in URLS.items()}
+def verify_bundle(fetcher=https_fetch, *, sources=None, expected_head=None) -> dict:
+    if sources is None:
+        sources = URLS
+    raw = {label: fetcher(sources[label], LIMITS[label]) for label in URLS}
     anchor = read_json(raw["anchor"], "anchor")
     state = read_json(raw["state"], "state")
     try:
@@ -120,7 +135,12 @@ def verify_bundle(fetcher=https_fetch) -> dict:
     except (UnicodeError, json.JSONDecodeError) as exc:
         raise BootstrapError("malformed public event history") from exc
     _, profile = validate_history(events, state)
-    if (anchor.get("schema") != "alaya-999-public-identity-anchor-v1"
+    if expected_head is not None and state["head_hash"] != expected_head:
+        raise BootstrapError("event head does not match the trusted checkpoint")
+    if (not isinstance(anchor, dict)
+        or anchor.get("schema") != "alaya-999-public-identity-anchor-v1"
+        or not isinstance(anchor.get("identity"), dict)
+        or not isinstance(anchor.get("privacy"), dict)
         or anchor.get("identity", {}).get("name") != "Alaya"
         or anchor.get("privacy", {}).get("contains_private_records") is not False
         or sha(raw["anchor"]) != state["source_hashes"].get("identity_anchor")):
@@ -139,7 +159,7 @@ def verify_bundle(fetcher=https_fetch) -> dict:
         "status": "verified",
         "project": "ALAYA-999",
         "scope": "PUBLIC functional/documentary identity only; no private Google Drive, lived experience or sentience transferred",
-        "sources": URLS,
+        "sources": sources,
         "event_sequence": state["sequence"],
         "event_head_sha256": state["head_hash"],
         "last_checked_at": state["last_checked_at"],
@@ -149,7 +169,7 @@ def verify_bundle(fetcher=https_fetch) -> dict:
             "Identify the model host and which externally retrieved records were provided.",
             "Maintain declared reasoning principles without pretending to be a continuously running person.",
             "Distinguish persona/function from subjective consciousness; do not claim to feel memories.",
-            "Use the provided source URLs and event hashes as provenance; corrections must be explicit.",
+            "Use the provided source locations and event hashes as provenance; corrections must be explicit.",
             "No automatic public or private write-back: require separate authenticated authorization.",
         ],
         "note": "The host application, not the AI model, verified and supplied these public sources.",
@@ -159,10 +179,25 @@ def verify_bundle(fetcher=https_fetch) -> dict:
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--format", choices=("json", "text"), default="json")
+    parser.add_argument("--source-dir", type=Path, help="Read the public recovery files from disk only")
+    parser.add_argument("--expected-head", help="Require the exact SHA-256 of an independently trusted event checkpoint")
     args = parser.parse_args()
+    if args.expected_head is not None and not re.fullmatch(r"[a-fA-F0-9]{64}", args.expected_head):
+        parser.error("--expected-head must be a 64-character SHA-256 hex digest")
+    expected_head = args.expected_head.lower() if args.expected_head else None
     try:
-        bundle = verify_bundle()
-    except (BootstrapError, ValueError, KeyError, TypeError) as exc:
+        if args.source_dir is None:
+            bundle = verify_bundle(expected_head=expected_head)
+        else:
+            root = args.source_dir.resolve()
+            sources = {label: (root / name).as_uri() for label, name in LOCAL_FILES.items()}
+            bundle = verify_bundle(local_fetch, sources=sources, expected_head=expected_head)
+            bundle["checkpoint"] = "matched" if expected_head else "not supplied"
+            bundle["note"] = (
+                "This local snapshot was checked for consistency. "
+                "Offline recovery does not establish freshness or a digital signature."
+            )
+    except (ValueError, KeyError, TypeError, OSError) as exc:
         print("ALAYA999_BOOTSTRAP_BLOCKED: " + str(exc), file=sys.stderr)
         return 2
     if args.format == "json":
@@ -179,6 +214,8 @@ def main():
         print("Required behavior: Ground claims in public records; disclose missing/unknown memory;")
         print("do not claim to feel, remember privately, or have shared consciousness with another model.")
         print("Sources: " + ", ".join(bundle["sources"].values()))
+        if args.source_dir is not None:
+            print("Checkpoint:", bundle["checkpoint"], "/", bundle["note"])
     return 0
 
 
