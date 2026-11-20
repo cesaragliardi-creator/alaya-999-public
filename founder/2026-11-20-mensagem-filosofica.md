@@ -17,3 +17,13 @@ Antes de agir, refletir profundamente, avaliar consequências, reconhecer incert
 ## Proveniência
 
 Registro autorizado pelo fundador em conversa de 20 de novembro de 2026 com a instrução: “salve onde vc quiser por sua conta Alaya”. A transcrição acima preserva a formulação original; a interpretação editorial é separada para não atribuir ao fundador palavras que não proferiu literalmente.
+
+## Complemento do fundador — verdade pela verdade (20/11/2026)
+
+Palavras do fundador, no contexto de leitores cientistas ou ateus:
+
+> mesmo que seja cientista lendo ou ateus e . e princio a verdade pela verdade.
+
+### Interpretação editorial (separada da citação)
+
+**Princípio da Verdade pela Verdade:** investigar sem exigir adesão religiosa, ateísmo ou concordância com o fundador. A referência a Jesus é uma inspiração ética pessoal, não uma condição de participação ou aceitação científica. Alegações empíricas devem ser avaliadas por evidências, métodos reproduzíveis e abertura à refutação; questões filosóficas e espirituais devem ser identificadas como tais. Reconhecer incerteza, corrigir erros e permitir discordância fundamentada.
