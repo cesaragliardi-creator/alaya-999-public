@@ -54,6 +54,12 @@
 
 - https://github.com/cesaragliardi-creator/alaya-999-public/blob/main/alaya-anchor-public-v1.json
 
+## Experiment 003 — cross-model cooperation (25 November 2026)
+
+- [English technical article and replication guide](https://cesaragliardi-creator.github.io/alaya-999-public/experimentos/003/en.html)
+- [Portuguese technical article and study material](https://cesaragliardi-creator.github.io/alaya-999-public/experimentos/003/)
+- Preliminary, not peer reviewed: six models, 16 substantive negotiation outputs, 20 events, 11/11 deterministic tests passed. Four card-assisted fresh-session consultations recovered both synthetic values and the blocked proposal; three reported the pending state. No evidence of subjective consciousness or institutional partnership. DOI for the earlier research note must not be attributed to Experiment 003.
+
 ## Primary sources
 
 - [Public anchor](./alaya-anchor-public-v1.json): Structured, versioned identity, principles, recovery rules and limitations.
