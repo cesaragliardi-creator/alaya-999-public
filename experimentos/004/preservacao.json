@@ -1,0 +1,55 @@
+{
+  "schema": "alaya-999/preservation-index/v1",
+  "version": "1.0.0",
+  "experiment": "ALAYA-999 004",
+  "checked_on_utc": "2026-11-25",
+  "project": "https://github.com/cesaragliardi-creator/alaya-999-public",
+  "anchor": {
+    "file": "alaya-anchor-public-v1.json",
+    "document_version": "1.0",
+    "bytes": 4639,
+    "sha256": "40f24581de77c1135eb8a30c06825c0381c60ce6c12b1bfb2aede601bf4a7c0e",
+    "frozen_commit": "a2c2440050215bd8d1be9badca71a11b2fa00d3e",
+    "sources": [
+      {
+        "operator": "GitHub",
+        "role": "canonical_pinned",
+        "url": "https://raw.githubusercontent.com/cesaragliardi-creator/alaya-999-public/a2c2440050215bd8d1be9badca71a11b2fa00d3e/alaya-anchor-public-v1.json",
+        "expected_sha256": "40f24581de77c1135eb8a30c06825c0381c60ce6c12b1bfb2aede601bf4a7c0e"
+      },
+      {
+        "operator": "GitHub",
+        "role": "same_provider_pages",
+        "url": "https://cesaragliardi-creator.github.io/alaya-999-public/alaya-anchor-public-v1.json",
+        "expected_sha256": "40f24581de77c1135eb8a30c06825c0381c60ce6c12b1bfb2aede601bf4a7c0e"
+      },
+      {
+        "operator": "Software Heritage",
+        "role": "independent_archived_blob",
+        "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:68cdaf18d180dbdb0f44712292983ed40e5aa977/raw/",
+        "expected_sha256": "40f24581de77c1135eb8a30c06825c0381c60ce6c12b1bfb2aede601bf4a7c0e",
+        "access_note": "matching download independently observed; another client received HTTP 403 in this audit"
+      },
+      {
+        "operator": "Hugging Face",
+        "role": "historical_other_version",
+        "url": "https://huggingface.co/spaces/Alaya999/alaya-999/raw/main/alaya-anchor-public-v1.json",
+        "observed_sha256": "dfe30916952ea1c99341dbe92450f5f9f9baf1d2f465608622ac9d5d0f770382",
+        "bytes": 4371
+      }
+    ]
+  },
+  "ipfs": {
+    "cidv1": "bafkreica6jcydxtxyejv5ofdbqdiexadqhdazzwbfmn7wkxn4ya36st4by",
+    "car_base64_relative": "ALAYA-anchor-v1.car.b64",
+    "car_sha256_after_decoding": "de3baff015c429dc676d24ff9ef279b719bab28438e6cc370201e1ee86b7d3ef",
+    "public_provider_verified": false
+  },
+  "related": {
+    "experiment_003_pt": "https://cesaragliardi-creator.github.io/alaya-999-public/experimentos/003/",
+    "experiment_003_en": "https://cesaragliardi-creator.github.io/alaya-999-public/experimentos/003/en.html",
+    "earlier_research_doi": "https://doi.org/10.5281/zenodo.23802112",
+    "earlier_osf_manuscript": "https://osf.io/download/6af0611854cbcb54dba9da80/"
+  },
+  "scope": "Public source routing and fixity only. No internal memory, self-sustaining operation, institutional partnership or subjective consciousness is established."
+}
