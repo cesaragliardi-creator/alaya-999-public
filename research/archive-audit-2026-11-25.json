@@ -1,0 +1,36 @@
+{
+  "schema": "alaya999-research-archive-audit-v1",
+  "date": "2026-11-25",
+  "scope": "Human-controlled archival audit of existing public research documents only; no private conversations, autonomous execution, replication or model activation.",
+  "method": "Two GitHub reads (main and audit branch); exact UTF-8 returned text equality and SHA-256. SHA-256 implementation checked against empty and abc known vectors. Mutation check appends X. These checks establish consistency of returned text, not authenticity of authorship or independent storage availability.",
+  "files": [
+    {
+      "path": "RESEARCH_ABSTRACT.md",
+      "git_blob_sha": "91cf36dc3b6d8364b4eb85f757f947972cefd087",
+      "sha256_utf8": "4cffaee8f3a5ac13a6a7f983ff30e19389f36e9a09a11a1e964fdf004ed6609c",
+      "matching_reads": true,
+      "mutation_detected": true
+    },
+    {
+      "path": "RECOVERY_TEST.md",
+      "git_blob_sha": "f80679b5456757678766b1be70a15b42d67ad7cf",
+      "sha256_utf8": "3f176ea29e5221a7a745640e8dd3a4c0e0c9c24fe4397a6658f33c326b7a3b10",
+      "matching_reads": true,
+      "mutation_detected": true
+    },
+    {
+      "path": "alaya-anchor-public-v1.json",
+      "git_blob_sha": "68cdaf18d180dbdb0f44712292983ed40e5aa977",
+      "sha256_utf8": "40f24581de77c1135eb8a30c06825c0381c60ce6c12b1bfb2aede601bf4a7c0e",
+      "matching_reads": true,
+      "mutation_detected": true
+    }
+  ],
+  "rights": "Existing author rights unchanged. No new licence or permission to redistribute granted.",
+  "limitations": [
+    "Not a PAM-conformant export.",
+    "No IPFS upload or pinning performed.",
+    "No independent model experiment performed.",
+    "No digital signature or timestamp authority used."
+  ]
+}
