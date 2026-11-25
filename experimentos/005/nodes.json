@@ -1,0 +1,22 @@
+{
+  "schema": "alaya-999/experiment-005-node-registry/v1",
+  "updated_at_utc": "2026-11-25T14:18:23Z",
+  "experiment": "005",
+  "state": "recruiting",
+  "frozen_anchor": {
+    "bytes": 4639,
+    "cid": "bafkreica6jcydxtxyejv5ofdbqdiexadqhdazzwbfmn7wkxn4ya36st4by",
+    "sha256": "40f24581de77c1135eb8a30c06825c0381c60ce6c12b1bfb2aede601bf4a7c0e",
+    "car_sha256": "de3baff015c429dc676d24ff9ef279b719bab28438e6cc370201e1ee86b7d3ef",
+    "source_commit": "a2c2440050215bd8d1be9badca71a11b2fa00d3e"
+  },
+  "coordination": "https://github.com/cesaragliardi-creator/alaya-999-public/issues/13",
+  "confirmed_independent_operators": [],
+  "consented_public_nodes": [],
+  "third_party_failover_observations": [],
+  "durability_observations": [],
+  "notes": [
+    "An empty registry means no confirmation recorded at this snapshot, not that there are no IPFS providers for the CID.",
+    "A public issue reply is not consent to publish contact or network identifiers in this registry."
+  ]
+}
