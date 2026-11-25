@@ -10,6 +10,11 @@
 
 **New experimental memory lifecycle (v0.1):** [Memory Lifecycle Lab](experiments/memory-lifecycle-v0/README.md) · [Pure Python prototype](experiments/memory-lifecycle-v0/memory_lifecycle.py) · [13 synthetic tests](experiments/memory-lifecycle-v0/test_memory_lifecycle.py) · [Free CI checks](.github/workflows/memory-lifecycle-tests.yml). It implements documentary decay, cued retrieval, explicit correction/reconsolidation and conflict preservation. These are deterministic mechanisms on fictional data; they do **not** prove continuous AI memory, autonomy, sentience or cross-model validation.
 
+## Experiment 003 — cross-model cooperation (25 November 2026)
+
+- [English article and independent replication guide](https://cesaragliardi-creator.github.io/alaya-999-public/experimentos/003/en.html) · [Portuguese article and study materials](https://cesaragliardi-creator.github.io/alaya-999-public/experimentos/003/).
+- Preliminary technical report, v0.1.0: mediated cooperation, 20 recorded events, deterministic integrity checks, and a small documentary recovery pilot. Not peer reviewed; no claim of consciousness, permanent model commitments or institutional partnerships. New Zenodo deposit pending.
+
 ## Independent replication — international research invitation
 
 Researchers and AI developers are invited to independently test whether a
