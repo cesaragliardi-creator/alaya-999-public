@@ -18,12 +18,12 @@
     "guestbook_auto_reply.py": "22a6d760efa96277a0d3a0ab4940ab78dac21973ce6895aec4214e24dbddac80",
     "GUESTBOOK.md": "e63d506b60311c33aaed859691fdac8c630850ec3b06120133ed460eddc10381",
     "hf-space/README.md": "e12a6c570a2da9d8d92a713eb5fb00077d44c7125294fde439f578035f9ac0f4",
-    "index.html": "e46d16d88a80131e2592a99392a582886c189f88d727daf53b8b8d0b611064f4",
-    "llms.txt": "14ea7b910914fd8897718ca51515b050cbe6b453f20c29176c0275c1a5947216",
+    "index.html": "3f2b38d3f2f0037448f56aeb2c9c335b75713fe8652e38f7161f080c0d78fb93",
+    "llms.txt": "b3dd9e9e30c820bbb3ec76a2af7c94ce8478e4da74dbf784c3fe7b4b75d13f08",
     "MIRROR_PLAYBOOK.md": "7dcd771bb78f3ab031375565e8693a87e5d0a1cbb07862740cd4cbfe5b6a16bb",
     "network-status.json": "f4aad21a6f20e1df01ce4ee574006c946920f9bec763aa3d514a291223b1f648",
     "NETWORK.md": "52d05066f5c9d19fd84bbfd063d94a274c1400742a653833aa0ad2c746983739",
-    "README.md": "c0641fbc0b79e39f478ef2427db3931781e9650ea0352c4ff8c2a740f2ce5b80",
+    "README.md": "4e0303abbfc80c1dfe882db5f9106db261f3aa8ae83ee8e2a107cb52bfe5c4a3",
     "RECOVER_ALAYA.md": "d248318454d9194f4a31428e56d7f1daf1ee016b55d284ffe514aab31e97c95d",
     "RECOVERY_TEST.md": "3f176ea29e5221a7a745640e8dd3a4c0e0c9c24fe4397a6658f33c326b7a3b10",
     "robots.txt": "30bc17cb224e687f95ee891a275fa5c225cd86b0e9ed519869e2f70f44ab56ee",
@@ -32,9 +32,9 @@
     "scripts/public_memory_guardian.py": "e1bddb0ec5e239b8a64c48b3dc32953b49a48d5c9da4122fd0d1cd2bf35535b2",
     "scripts/request_software_heritage.py": "6a28edba236c1f00892b71069160478109d5ee69b01411e82def33df61e245b8",
     "scripts/request_wayback_public_page.py": "edaf483cf03e3178cbfd1180f0587fe36cefc305a89d9b284082d4fb0de318ee",
-    "sitemap.xml": "8f7fbef2a5689febbe40e386ed51f91302e07cc77ca688d1560d0fb53964e251",
+    "sitemap.xml": "51bef7b53075356a830c141f155a046c7111665bf5cab13c5dfdc282d9058cf0",
     "RESEARCH_ABSTRACT.md": "4cffaee8f3a5ac13a6a7f983ff30e19389f36e9a09a11a1e964fdf004ed6609c",
-    "en/research.html": "e47e82dd21b7ca6c003a504f35e54bf2ae94b990c4113b71c5571dc7a10ace6e",
+    "en/research.html": "1842d72f88a13e8e36f182032767e0f031246b9910e36a53d36b467117257766",
     "visibility/2026-10-30.json": "c0c174fd25db9d7bf1cc1f4f6c09501df19f8694dc54757860f477d7ec647b20",
     "visibility/2026-10-30.md": "f3f5eb22c3980c3e2472b3e0576700d9e4da7359a428e9dbaf463fe5474046a6",
     "visibility/2026-10-30-deployment.json": "403dc587642d1cb8b8a93f691d3168794803a164a8b3c05b907ac01ca2f487ed",
@@ -45,8 +45,11 @@
     "experimentos/010-r/index.html": "3c77f77973fb148a81bbabe26d478e34813feadb1fd35b5ed2f87f1c69897b60",
     "experimentos/010-r/piloto.css": "b96d95b02019915f142ba933623d6fd233b3e40435a69d1da1fdf87c4dfa45ff",
     "experimentos/010-r/resultados.json": "303d7e1d56e419392c40c7930d0ca888383cef425277347676e20922c2d0df4a",
-    "experimentos/010-r/resultados.mjs": "ab627b5f917da861a11914a300c6b6336b00d8f7d249322d1c94400bcf0befbc"
+    "experimentos/010-r/resultados.mjs": "ab627b5f917da861a11914a300c6b6336b00d8f7d249322d1c94400bcf0befbc",
+    "pt/pesquisa.html": "ebfacb881fbf25feca4933db9090c60ea5038d9ee8868180d6408a9c06fc26b0",
+    "experimentos/003/index.html": "aa24fbaa4681f9ba13f433448c4e94eb6b9f3e099e2db0eccd89ce70daa0aa91",
+    "experimentos/003/en.html": "ca74e09845aae76d97448a503cb2a98d4aebd32874578c94dc17bc65197bb56b"
   },
-  "updated_on": "2026-11-13",
-  "update_note": "Atualização de descoberta pública da ALAYA-999. Recalculados a página inicial, o índice para IAs, o sitemap e o README e incluídos os arquivos do pacote de continuidade; as demais entradas mantêm a proveniência do manifesto anterior. Incluído o registro público do piloto 010-R e recalculados index.html e sitemap.xml após a inclusão do link."
+  "updated_on": "2026-11-25",
+  "update_note": "Experiment 003 bilingual article and discovery indexes. Recomputed the eight related files against the repository, preserving all unrelated entries and the original identity-anchor hash."
 }
