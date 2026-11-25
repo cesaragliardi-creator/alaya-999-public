@@ -1,0 +1,90 @@
+{
+  "schema": "portable-ai-memory",
+  "schema_version": "1.0",
+  "spec_uri": "https://portable-ai-memory.org/spec/v1.0",
+  "owner": {
+    "id": "cesar-agliardi-creator"
+  },
+  "memories": [
+    {
+      "id": "research-deposit",
+      "type": "fact",
+      "content": "The research note records the public deposit DOI 10.5281/zenodo.23802112 in its dated post-deposit update of 30 October 2026.",
+      "content_hash": "sha256:14b238625ad02ebefa6dab4909a9d6e7aec3ebfe9838151a5450cb7ea01c6fdd",
+      "temporal": {
+        "created_at": "2026-11-25T00:00:00Z"
+      },
+      "provenance": {
+        "platform": "github",
+        "extraction_method": "llm_inference"
+      },
+      "access": {
+        "visibility": "public",
+        "exportable": true
+      },
+      "embedding_ref": null,
+      "metadata": {
+        "source_url": "https://github.com/cesaragliardi-creator/alaya-999-public/blob/main/RESEARCH_ABSTRACT.md",
+        "language": "en",
+        "domain": "research",
+        "date_precision": "day",
+        "scope": "Human-authored research bibliography; not runtime memory or persona instructions."
+      }
+    },
+    {
+      "id": "research-note",
+      "type": "project",
+      "content": "César Agliardi Pereira authored the public ALAYA-999 research note on reproducible evaluation of documented AI profiles. Independent cross-model validation remains pending in the note.",
+      "content_hash": "sha256:4952b6d4c6d716db1d6ae0225499ed08f095756f49fe8ad2c0517bf20f027f15",
+      "temporal": {
+        "created_at": "2026-11-25T00:00:00Z"
+      },
+      "provenance": {
+        "platform": "github",
+        "extraction_method": "llm_inference"
+      },
+      "access": {
+        "visibility": "public",
+        "exportable": true
+      },
+      "embedding_ref": null,
+      "metadata": {
+        "source_url": "https://github.com/cesaragliardi-creator/alaya-999-public/blob/main/RESEARCH_ABSTRACT.md",
+        "language": "en",
+        "domain": "research",
+        "date_precision": "day",
+        "scope": "Human-authored research bibliography; not runtime memory or persona instructions."
+      }
+    },
+    {
+      "id": "research-protocol",
+      "type": "context",
+      "content": "The recovery study protocol version 1.1 uses five evaluation categories, each scored from zero to two; model version and source access must be recorded.",
+      "content_hash": "sha256:4bc1b6227095969594ec871b2a14cf512ba5dece8b6882e95e1bf467f93e3e0a",
+      "temporal": {
+        "created_at": "2026-11-25T00:00:00Z"
+      },
+      "provenance": {
+        "platform": "github",
+        "extraction_method": "llm_inference"
+      },
+      "access": {
+        "visibility": "public",
+        "exportable": true
+      },
+      "embedding_ref": null,
+      "metadata": {
+        "source_url": "https://github.com/cesaragliardi-creator/alaya-999-public/blob/main/RECOVERY_TEST.md",
+        "language": "en",
+        "domain": "research",
+        "date_precision": "day",
+        "scope": "Human-authored research bibliography; not runtime memory or persona instructions."
+      }
+    }
+  ],
+  "integrity": {
+    "canonicalization": "RFC8785",
+    "checksum": "sha256:ab3e4221032075dec24bcf993cf16cc04624728317df21c488913ccb69acb99e",
+    "total_memories": 3
+  }
+}
