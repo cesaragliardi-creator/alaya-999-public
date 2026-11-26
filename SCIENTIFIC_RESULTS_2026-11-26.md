@@ -1,4 +1,4 @@
-# ALAYA-999 — Preliminary Scientific Results
+# Alaya 999 — Preliminary Scientific Results
 
 **26 November 2026 | Research project led by Cesar Agliardi Pereira**
 
